@@ -1,6 +1,6 @@
 {
   "name": "rikray-ui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ui-kit",
   "main": "./dist/index.js",
   "scripts": {
@@ -14,7 +14,6 @@
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.20.7",
-    "@iconscout/react-unicons": "^1.1.6",
     "@storybook/addon-actions": "^6.5.15",
     "@storybook/addon-essentials": "^6.5.15",
     "@storybook/addon-interactions": "^6.5.15",
@@ -30,6 +29,7 @@
     "file-loader": "^6.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "style-loader": "^3.3.1",
     "styled-components": "^5.3.6",
     "ts-loader": "^9.4.2",
     "typescript": "^4.9.4",
@@ -38,7 +38,8 @@
   },
   "peerDependencies": {
     "react": "*",
-    "react-dom": "*"
+    "react-dom": "*",
+    "styled-components": "^5.3.6"
   },
   "files": [
     "dist"

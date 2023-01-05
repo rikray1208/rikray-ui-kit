@@ -8,10 +8,16 @@ module.exports = {
         filename: "index.js",
         path: path.resolve(__dirname, 'dist'),
         clean: true,
-        libraryTarget: "umd",
+        libraryTarget: "umd"
     },
     resolve: {
-        extensions: ['.ts', '.tsx']
+        extensions: ['.ts', '.tsx'],
+        alias: {
+            "styled-components": path.resolve("./node_modules/styled-components"),
+            react: path.resolve('./node_modules/react'),
+            "react-dom": path.resolve('./node_modules/react-dom'),
+            symlinks: false
+        }
     },
     module: {
         rules: [
@@ -31,6 +37,22 @@ module.exports = {
         ]
     },
     externals: {
-        react: 'react'
+        react: {
+            root: "React",
+            commonjs2: "react",
+            commonjs: "react",
+            amd: "react",
+        },
+        "react-dom": {
+            root: "ReactDOM",
+            commonjs2: "react-dom",
+            commonjs: "react-dom",
+            amd: "react-dom",
+        },
+        "styled-components": {
+            commonjs: "styled-components",
+            commonjs2: "styled-components",
+            amd: "styled-components",
+        },
     },
 }
