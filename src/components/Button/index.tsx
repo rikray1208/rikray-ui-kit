@@ -1,43 +1,41 @@
 import React, {FC, PropsWithChildren} from 'react';
-import styled from "styled-components";
+import {ThemeProvider} from "../../utils/styled-components";
 import BaseTheme from "../../theme";
+import StyledButton from "./SyledButton";
 
-export type Variant = 'text' | 'contained' | 'outline';
-
-interface ButtonProps {
-    variant: Variant,
-    disabled: boolean,
+export type Variant = 'Text' | 'Filled' | 'Outline' | 'Dashed';
+type Size = 'Small' | 'Medium' | 'Large';
+type Shape = 'Rectangle' | 'SemiRound' | 'Round';
+export interface ButtonProps {
+    variant?: Variant,
+    size?: Size,
+    shape?: Shape,
+    danger?: boolean,
+    success?: boolean
+    disabled?: boolean,
     onClick?: () => void,
-    color: any,
-    size: any,
 }
-
-interface StyledProps {
-    color?: string,
-    variant: Variant,
-    size: string
-}
-
-
-const StyledButton = styled.button<StyledProps>`
-  background-color: ${({color, variant}) => variant == 'text' || variant == 'outline' ? 'inherit' : color};
-  padding: 16px;
-  border: ${({variant, color}) => variant === 'outline' ? `1px solid ${color}` : 'none'};
-  border-radius: ${({variant}) => variant !== 'text' ? '16px' : '0'};
-  color: ${({variant, color}) => variant == 'text' || variant == 'outline' ? color : "white"};
-  font-weight: bold;
-  font-size: ${({size}) => size};
-  
-`
 
 const Button: FC<PropsWithChildren<ButtonProps>> = ({children, ...props}) => {
     return (
-        <div>
+        <ThemeProvider theme={BaseTheme}>
             <StyledButton {...props}>
-                {children}
+                    <span>
+                        {children}
+                    </span>
             </StyledButton>
-        </div>
+        </ThemeProvider>
     );
 };
 
+const defaultProps: ButtonProps = {
+    variant: 'Filled',
+    size: 'Small',
+    shape: "SemiRound",
+    danger: false,
+    success: false,
+    disabled: false,
+}
+
+Button.defaultProps = defaultProps;
 export default Button;

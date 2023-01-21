@@ -13,7 +13,7 @@ module.exports = {
     resolve: {
         extensions: ['.ts', '.tsx'],
         alias: {
-            "styled-components": path.resolve("./node_modules/styled-components"),
+            "styled-components": path.resolve("./node_modules/styled-components.ts"),
             react: path.resolve('./node_modules/react'),
             "react-dom": path.resolve('./node_modules/react-dom'),
             symlinks: false
@@ -32,7 +32,8 @@ module.exports = {
             {
                 test: /\.(ts|tsx)?$/,
                 exclude: /node_modules/,
-                use: ['ts-loader']
+                use: ['ts-loader'],
+
             }
         ]
     },
