@@ -1,5 +1,6 @@
 import styled, {css} from "../../utils/styled-components"
-import {ButtonProps, Variant} from "./index";
+import {ButtonProps} from "./index";
+import {Variant} from "../types";
 
 type StyledProps = Omit<ButtonProps, 'onClick'>
 

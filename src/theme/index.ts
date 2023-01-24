@@ -1,5 +1,14 @@
 import {ITheme} from "./types";
 
+const positions = {
+    0: '0px',
+    px: '1px',
+    1: '0.25rem',
+    2: '0.5rem',
+    3: '0.75trm',
+    4: '1rem',
+}
+
 const BaseTheme: ITheme = {
     Typography: {
         fontSize: {
@@ -49,8 +58,28 @@ const BaseTheme: ITheme = {
             "4": '1rem',
             "5": '1.25rem',
             "6": '1.5rem'
+        },
+        gap: {
+            px: '1px',
+            "0.5": '0.125rem',
+            "1": '0.25rem',
+            "1.5": '0.375rem',
+            "2": '0.5rem',
+            "2.5": '0.625rem',
+            "3": '0.75rem',
+            "4": '1rem',
+            "5": '1.25rem',
+            "6": '1.5rem'
         }
     },
+    Position: {
+        top: positions,
+        bottom: positions,
+        left: positions,
+        right: positions,
+        center: '50%'
+    },
+
     Filter: {
         brightness: {
             darker: '85%',
@@ -73,10 +102,14 @@ const BaseTheme: ITheme = {
         tertiary: "#8BADF8",
         success: "#198754",
         danger: "#ff0e0e",
+        warning: "#ffcc00",
+        error: "#ff3333",
+        neutral: 'rgb(250 250 250)',
         hover: 'rgba(0, 0, 0, 5%)'
     },
     transitions: {
-        all: 'all .1s cubic-bezier(0.4, 0, 0.2, 1)'
+        all: 'all .1s cubic-bezier(0.4, 0, 0.2, 1)',
+        toast: 'transform 0.2s, opacity 0.4s ease'
     },
     rounded: {
         Rectangle: '0px',

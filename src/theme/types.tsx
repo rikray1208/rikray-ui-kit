@@ -1,8 +1,10 @@
 interface Colors {
-    primary: string;
-    secondary: string;
+    primary: string
+    secondary: string
+    warning: string
+    error: string
 
-    [index: string]: string;
+    [index: string]: string
 }
 
 interface FontSize {
@@ -23,22 +25,7 @@ interface LineHeight {
     [index: string]: string;
 }
 
-interface Margin {
-    px: string;
-    '0.5': string;
-    '1': string;
-    '1.5': string;
-    '2': string;
-    '2.5': string;
-    '3': string;
-    '4': string;
-    '5': string;
-    '6': string;
-
-    [index: string]: string;
-}
-
-interface Padding {
+interface Spacing {
     px: string;
     '0.5': string;
     '1': string;
@@ -65,8 +52,19 @@ interface Scale {
     [index: string]: string;
 }
 
+interface Positions {
+    0: string,
+    px: string
+    1: string
+    2: string
+    3: string
+    4: string
+    [index: string]: string;
+}
+
 interface Transitions {
     all: string
+    toast: string
 }
 
 interface Brightness {
@@ -82,23 +80,37 @@ interface Opacity {
 interface Border {
     [index: string]: string;
 }
+
+interface Shadow {
+    base: ''
+}
 export interface ITheme {
     Typography: {
         fontSize: FontSize
         lineHeight: LineHeight
     }
     Spacing: {
-        padding: Padding
-        margin: Margin
+        padding: Spacing
+        margin: Spacing
+        gap: Spacing
     }
     Filter: {
         brightness: Brightness
         opacity: Opacity
     }
-
     Transform: {
         scale: Scale
     }
+    Position: {
+        top: Positions
+        bottom: Positions
+        left: Positions
+        right: Positions
+        center: string
+
+    }
+
+    shadow?: Shadow
     transitions: Transitions
     colors: Colors
     rounded: Rounded
