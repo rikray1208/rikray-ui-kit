@@ -65,6 +65,7 @@ interface Positions {
 interface Transitions {
     all: string
     toast: string
+    input: string
 }
 
 interface Brightness {
@@ -75,6 +76,7 @@ interface Brightness {
 
 interface Opacity {
     disable: string
+    placeholder: string
 }
 
 interface Border {
@@ -82,7 +84,8 @@ interface Border {
 }
 
 interface Shadow {
-    base: ''
+    base: string
+    sm: string
 }
 export interface ITheme {
     Typography: {
@@ -97,6 +100,7 @@ export interface ITheme {
     Filter: {
         brightness: Brightness
         opacity: Opacity
+        dropShadow: Shadow
     }
     Transform: {
         scale: Scale
@@ -110,7 +114,6 @@ export interface ITheme {
 
     }
 
-    shadow?: Shadow
     transitions: Transitions
     colors: Colors
     rounded: Rounded

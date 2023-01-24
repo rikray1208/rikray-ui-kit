@@ -1,4 +1,4 @@
-import styled, {css, keyframes} from "../../utils/styled-components"
+import styled, {css} from "../../utils/styled-components"
 
 import theme from "../../theme";
 import {ToasterProps, ToastProps} from "./index";
@@ -65,7 +65,7 @@ const ToastStyle = css<StyledProps>`
       margin: 0 auto;
       padding: ${theme.Spacing.padding["2"]} ${theme.Spacing.padding["3"]};
 
-      filter: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
+      filter: ${theme.Filter.dropShadow["base"]};
       
       text-align: center;
       cursor: pointer;

@@ -1,0 +1,620 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input should return a Input 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.c1 {
+  display: inline-block;
+  min-width: 0;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  -webkit-transition: all .2s cubic-bezier(0.4,0,0.2,1);
+  transition: all .2s cubic-bezier(0.4,0,0.2,1);
+  background-color: white;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(209 213 219);
+  color: black;
+  outline: none;
+  border-radius: 8px;
+}
+
+.c1:hover {
+  border-color: #3B74F3;
+}
+
+.c1:focus {
+  border-color: #3B74F3;
+  -webkit-filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
+  filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
+}
+
+.c1::-webkit-input-placeholder {
+  color: black;
+  -webkit-filter: opacity(40%);
+  filter: opacity(40%);
+}
+
+.c1::-moz-placeholder {
+  color: black;
+  -webkit-filter: opacity(40%);
+  filter: opacity(40%);
+}
+
+.c1:-ms-input-placeholder {
+  color: black;
+  -webkit-filter: opacity(40%);
+  filter: opacity(40%);
+}
+
+.c1::placeholder {
+  color: black;
+  -webkit-filter: opacity(40%);
+  filter: opacity(40%);
+}
+
+<div
+  className="c0"
+>
+  <input
+    className="c1"
+    type="base"
+  />
+</div>
+`;
+
+exports[`Input should return a Large Input 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.c1 {
+  display: inline-block;
+  min-width: 0;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  -webkit-transition: all .2s cubic-bezier(0.4,0,0.2,1);
+  transition: all .2s cubic-bezier(0.4,0,0.2,1);
+  background-color: white;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(209 213 219);
+  color: black;
+  outline: none;
+  border-radius: 8px;
+}
+
+.c1:hover {
+  border-color: #3B74F3;
+}
+
+.c1:focus {
+  border-color: #3B74F3;
+  -webkit-filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
+  filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
+}
+
+.c1::-webkit-input-placeholder {
+  color: black;
+  -webkit-filter: opacity(40%);
+  filter: opacity(40%);
+}
+
+.c1::-moz-placeholder {
+  color: black;
+  -webkit-filter: opacity(40%);
+  filter: opacity(40%);
+}
+
+.c1:-ms-input-placeholder {
+  color: black;
+  -webkit-filter: opacity(40%);
+  filter: opacity(40%);
+}
+
+.c1::placeholder {
+  color: black;
+  -webkit-filter: opacity(40%);
+  filter: opacity(40%);
+}
+
+<div
+  className="c0"
+>
+  <input
+    className="c1"
+    type="base"
+  />
+</div>
+`;
+
+exports[`Input should return a Medium Input 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.c1 {
+  display: inline-block;
+  min-width: 0;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  -webkit-transition: all .2s cubic-bezier(0.4,0,0.2,1);
+  transition: all .2s cubic-bezier(0.4,0,0.2,1);
+  background-color: white;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(209 213 219);
+  color: black;
+  outline: none;
+  border-radius: 8px;
+}
+
+.c1:hover {
+  border-color: #3B74F3;
+}
+
+.c1:focus {
+  border-color: #3B74F3;
+  -webkit-filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
+  filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
+}
+
+.c1::-webkit-input-placeholder {
+  color: black;
+  -webkit-filter: opacity(40%);
+  filter: opacity(40%);
+}
+
+.c1::-moz-placeholder {
+  color: black;
+  -webkit-filter: opacity(40%);
+  filter: opacity(40%);
+}
+
+.c1:-ms-input-placeholder {
+  color: black;
+  -webkit-filter: opacity(40%);
+  filter: opacity(40%);
+}
+
+.c1::placeholder {
+  color: black;
+  -webkit-filter: opacity(40%);
+  filter: opacity(40%);
+}
+
+<div
+  className="c0"
+>
+  <input
+    className="c1"
+    type="base"
+  />
+</div>
+`;
+
+exports[`Input should return a Small Input 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.c1 {
+  display: inline-block;
+  min-width: 0;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  -webkit-transition: all .2s cubic-bezier(0.4,0,0.2,1);
+  transition: all .2s cubic-bezier(0.4,0,0.2,1);
+  background-color: white;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(209 213 219);
+  color: black;
+  outline: none;
+  border-radius: 8px;
+}
+
+.c1:hover {
+  border-color: #3B74F3;
+}
+
+.c1:focus {
+  border-color: #3B74F3;
+  -webkit-filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
+  filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
+}
+
+.c1::-webkit-input-placeholder {
+  color: black;
+  -webkit-filter: opacity(40%);
+  filter: opacity(40%);
+}
+
+.c1::-moz-placeholder {
+  color: black;
+  -webkit-filter: opacity(40%);
+  filter: opacity(40%);
+}
+
+.c1:-ms-input-placeholder {
+  color: black;
+  -webkit-filter: opacity(40%);
+  filter: opacity(40%);
+}
+
+.c1::placeholder {
+  color: black;
+  -webkit-filter: opacity(40%);
+  filter: opacity(40%);
+}
+
+<div
+  className="c0"
+>
+  <input
+    className="c1"
+    type="base"
+  />
+</div>
+`;
+
+exports[`Input should return a error Input 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.c1 {
+  display: inline-block;
+  min-width: 0;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  -webkit-transition: all .2s cubic-bezier(0.4,0,0.2,1);
+  transition: all .2s cubic-bezier(0.4,0,0.2,1);
+  background-color: white;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ff3333;
+  color: black;
+  outline: none;
+  border-radius: 8px;
+}
+
+.c1:hover {
+  border-color: #ff3333;
+}
+
+.c1:focus {
+  border-color: #ff3333;
+  -webkit-filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
+  filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
+}
+
+.c1::-webkit-input-placeholder {
+  color: black;
+  -webkit-filter: opacity(40%);
+  filter: opacity(40%);
+}
+
+.c1::-moz-placeholder {
+  color: black;
+  -webkit-filter: opacity(40%);
+  filter: opacity(40%);
+}
+
+.c1:-ms-input-placeholder {
+  color: black;
+  -webkit-filter: opacity(40%);
+  filter: opacity(40%);
+}
+
+.c1::placeholder {
+  color: black;
+  -webkit-filter: opacity(40%);
+  filter: opacity(40%);
+}
+
+<div
+  className="c0"
+>
+  <input
+    className="c1"
+    type="error"
+  />
+</div>
+`;
+
+exports[`Input should return a success Input 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.c1 {
+  display: inline-block;
+  min-width: 0;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  -webkit-transition: all .2s cubic-bezier(0.4,0,0.2,1);
+  transition: all .2s cubic-bezier(0.4,0,0.2,1);
+  background-color: white;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #198754;
+  color: black;
+  outline: none;
+  border-radius: 8px;
+}
+
+.c1:hover {
+  border-color: #198754;
+}
+
+.c1:focus {
+  border-color: #198754;
+  -webkit-filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
+  filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
+}
+
+.c1::-webkit-input-placeholder {
+  color: black;
+  -webkit-filter: opacity(40%);
+  filter: opacity(40%);
+}
+
+.c1::-moz-placeholder {
+  color: black;
+  -webkit-filter: opacity(40%);
+  filter: opacity(40%);
+}
+
+.c1:-ms-input-placeholder {
+  color: black;
+  -webkit-filter: opacity(40%);
+  filter: opacity(40%);
+}
+
+.c1::placeholder {
+  color: black;
+  -webkit-filter: opacity(40%);
+  filter: opacity(40%);
+}
+
+<div
+  className="c0"
+>
+  <input
+    className="c1"
+    type="success"
+  />
+</div>
+`;
+
+exports[`Input should return a warning Input 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.c1 {
+  display: inline-block;
+  min-width: 0;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  -webkit-transition: all .2s cubic-bezier(0.4,0,0.2,1);
+  transition: all .2s cubic-bezier(0.4,0,0.2,1);
+  background-color: white;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ffcc00;
+  color: black;
+  outline: none;
+  border-radius: 8px;
+}
+
+.c1:hover {
+  border-color: #ffcc00;
+}
+
+.c1:focus {
+  border-color: #ffcc00;
+  -webkit-filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
+  filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
+}
+
+.c1::-webkit-input-placeholder {
+  color: black;
+  -webkit-filter: opacity(40%);
+  filter: opacity(40%);
+}
+
+.c1::-moz-placeholder {
+  color: black;
+  -webkit-filter: opacity(40%);
+  filter: opacity(40%);
+}
+
+.c1:-ms-input-placeholder {
+  color: black;
+  -webkit-filter: opacity(40%);
+  filter: opacity(40%);
+}
+
+.c1::placeholder {
+  color: black;
+  -webkit-filter: opacity(40%);
+  filter: opacity(40%);
+}
+
+<div
+  className="c0"
+>
+  <input
+    className="c1"
+    type="warning"
+  />
+</div>
+`;
+
+exports[`Input should return a with prefix and postfix Input 1`] = `
+.c1 {
+  border-left: 1px solid;
+  border-radius: 8px 0 0 8px;
+  padding: 0.5rem 1rem;
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  background-color: white;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-color: rgb(209 213 219);
+  color: black;
+}
+
+.c3 {
+  border-right: 1px solid;
+  border-radius: 0 8px 8px 0;
+  padding: 0.5rem 1rem;
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  background-color: white;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-color: rgb(209 213 219);
+  color: black;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.c2 {
+  display: inline-block;
+  min-width: 0;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  -webkit-transition: all .2s cubic-bezier(0.4,0,0.2,1);
+  transition: all .2s cubic-bezier(0.4,0,0.2,1);
+  background-color: white;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(209 213 219);
+  color: black;
+  outline: none;
+  border-radius: 0;
+}
+
+.c2:hover {
+  border-color: #3B74F3;
+}
+
+.c2:focus {
+  border-color: #3B74F3;
+  -webkit-filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
+  filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
+}
+
+.c2::-webkit-input-placeholder {
+  color: black;
+  -webkit-filter: opacity(40%);
+  filter: opacity(40%);
+}
+
+.c2::-moz-placeholder {
+  color: black;
+  -webkit-filter: opacity(40%);
+  filter: opacity(40%);
+}
+
+.c2:-ms-input-placeholder {
+  color: black;
+  -webkit-filter: opacity(40%);
+  filter: opacity(40%);
+}
+
+.c2::placeholder {
+  color: black;
+  -webkit-filter: opacity(40%);
+  filter: opacity(40%);
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+    prefix="https://"
+    type="base"
+  >
+    https://
+  </div>
+  <input
+    className="c2"
+    prefix="https://"
+    type="base"
+  />
+  <div
+    className="c3"
+    prefix="https://"
+    type="base"
+  >
+    .com
+  </div>
+</div>
+`;

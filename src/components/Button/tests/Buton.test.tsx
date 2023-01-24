@@ -1,11 +1,9 @@
 import React from "react";
 import Button from "../index";
 import BaseTheme from "../../../theme";
-import { screen } from "@testing-library/react";
 import renderer from "react-test-renderer";
 import { ThemeProvider } from "../../../utils/styled-components";
 import 'jest-styled-components'
-import {renderWithTheme} from "../../../utils/renderWithTheme";
 
 const assertReactElement = (element: React.ReactElement) => {
   const component = renderer.create(element);

@@ -86,7 +86,12 @@ const BaseTheme: ITheme = {
             lighter: '115%'
         },
         opacity: {
-            disable: '60%'
+            disable: '60%',
+            placeholder: '40%'
+        },
+        dropShadow: {
+            base: 'drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08))',
+            sm: 'drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06))'
         }
     },
 
@@ -105,16 +110,18 @@ const BaseTheme: ITheme = {
         warning: "#ffcc00",
         error: "#ff3333",
         neutral: 'rgb(250 250 250)',
-        hover: 'rgba(0, 0, 0, 5%)'
+        hover: 'rgba(0, 0, 0, 5%)',
+        grey: 'rgb(209 213 219)'
     },
     transitions: {
         all: 'all .1s cubic-bezier(0.4, 0, 0.2, 1)',
-        toast: 'transform 0.2s, opacity 0.4s ease'
+        toast: 'transform 0.2s, opacity 0.4s ease',
+        input: 'all .2s cubic-bezier(0.4, 0, 0.2, 1)'
     },
     rounded: {
         Rectangle: '0px',
         SemiRound: '8px',
-        Round: '12px'
+        Round: '12px',
     },
     border: {
         outline: '1px solid #3B74F3',
