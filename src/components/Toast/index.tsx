@@ -4,6 +4,7 @@ import Toast from "./Toast";
 import {createPortal} from "react-dom";
 import {StyledToastContainer} from "./StyledToast";
 import {useToast} from "./hooks";
+import {ThemeProvider} from "../../index";
 
 export interface ToasterRef {
     show: (item: ToastProps) => void

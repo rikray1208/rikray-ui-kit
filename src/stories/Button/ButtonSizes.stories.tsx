@@ -1,13 +1,22 @@
 import Button from "../../components/Button";
 import {ComponentMeta, ComponentStory} from "@storybook/react";
 import React from "react";
+import {ThemeProvider} from "../../index";
 
-
+export const decorators = [
+    (Story: any) => (
+        <ThemeProvider>
+            <Story />
+        </ThemeProvider>
+    ),
+];
 export default {
     title: 'Design System/Button/Sizes',
     component: Button,
+    decorators: decorators
 } as ComponentMeta<typeof Button>;
 const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
+
 export const LargeButton = Template.bind({});
 LargeButton.args = {
     children: 'Кнопка',

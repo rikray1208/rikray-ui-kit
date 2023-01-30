@@ -1,8 +1,7 @@
 import React, {FC, InputHTMLAttributes} from 'react';
 import {Size, Status} from "../types";
 import StyledInput, {StyledInputWrapper, StyledPostfix, StyledPrefix} from "./StyledInput";
-import {ThemeProvider} from "../../utils/styled-components";
-import BaseTheme from "../../theme";
+
 
 export type BaseInputProps = Omit<InputHTMLAttributes<HTMLInputElement>, 'type' | 'size'>
 
@@ -17,15 +16,11 @@ export interface InputProps extends BaseInputProps {
 
 const Input: FC<InputProps> = (props) => {
     return (
-        <>
-            <ThemeProvider theme={BaseTheme}>
-                <StyledInputWrapper>
-                    {props.prefix && <StyledPrefix {...props}>{props.prefix}</StyledPrefix>}
-                    <StyledInput {...props}/>
-                    {props.postfix && <StyledPostfix {...props}>{props.postfix}</StyledPostfix>}
-                </StyledInputWrapper>
-            </ThemeProvider>
-        </>
+        <StyledInputWrapper>
+            {props.prefix && <StyledPrefix Size={props.Size}>{props.prefix}</StyledPrefix>}
+            <StyledInput {...props}/>
+            {props.postfix && <StyledPostfix Size={props.Size}>{props.postfix}</StyledPostfix>}
+        </StyledInputWrapper>
     );
 };
 

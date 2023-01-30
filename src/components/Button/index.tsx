@@ -1,9 +1,6 @@
 import React, {FC, PropsWithChildren} from 'react';
-import {ThemeProvider} from "../../utils/styled-components";
-import BaseTheme from "../../theme";
 import StyledButton from "./SyledButton";
 import {Shape, Size, Variant} from "../types";
-
 
 export interface ButtonProps {
     variant?: Variant,
@@ -17,19 +14,17 @@ export interface ButtonProps {
 
 const Button: FC<PropsWithChildren<ButtonProps>> = ({children, ...props}) => {
     return (
-        <ThemeProvider theme={BaseTheme}>
-            <StyledButton {...props}>
+        <StyledButton {...props}>
                     <span>
                         {children}
                     </span>
-            </StyledButton>
-        </ThemeProvider>
+        </StyledButton>
     );
 };
 
 const defaultProps: ButtonProps = {
     variant: 'Filled',
-    size: 'Small',
+    size: 'Medium',
     shape: "SemiRound",
     danger: false,
     success: false,

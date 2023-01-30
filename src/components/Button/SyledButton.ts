@@ -1,58 +1,116 @@
-import styled, {css} from "../../utils/styled-components"
+
 import {ButtonProps} from "./index";
-import {Variant} from "../types";
+import {Shape, Size, Variant} from "../types";
+import styled, {css} from "styled-components";
 
 type StyledProps = Omit<ButtonProps, 'onClick'>
 
-    function additionStyles(styleName: string, variant: Variant) {
 
-    if (variant == 'Filled') {
+function setAdditionalStyles(variant: Variant, isSuccess: boolean) {
+    if( variant == 'Filled' ) {
         return css`
-          background: ${({theme}) => theme.colors[styleName]};
-        `
-    } else {
-        return css`
-          border-color: ${({theme}) => theme.colors[styleName]};
-          color: ${({theme}) => theme.colors[styleName]};
+          background: ${({theme}) => isSuccess ? theme.Button.colorSuccess : theme.Button.colorError };
+
+          &:hover {
+            background: ${({theme}) => isSuccess ? theme.Button.colorHoverSuccess : theme.Button.colorHoverError};
+          }
         `
     }
+
+    if ( variant == 'Text' ) {
+        return css`
+          color: ${({theme}) => isSuccess ? theme.Button.colorSuccess : theme.Button.colorError };
+
+          &:hover {
+            color: ${({theme}) =>  isSuccess ? theme.Button.colorHoverSuccess : theme.Button.colorHoverError};
+            background-color: ${({theme}) => isSuccess ? theme.Button.colorHoverSuccess + '10' : theme.Button.colorHoverError + '10'};
+          }
+        `
+    }
+
+    return css`
+      border-color: ${({theme}) =>isSuccess ? theme.Button.colorSuccess : theme.Button.colorError};
+      color: ${({theme}) => isSuccess ? theme.Button.colorSuccess : theme.Button.colorError};
+
+      &:hover {
+        background: ${({theme}) => isSuccess ? theme.Button.colorHoverSuccess + '06' : theme.Button.colorHoverError + '06'};
+        border-color: ${({theme}) => isSuccess ? theme.Button.colorHoverSuccess : theme.Button.colorHoverError};
+        color: ${({theme}) => isSuccess ? theme.Button.colorHoverSuccess : theme.Button.colorHoverError};
+      }
+    `
 }
 
 const Filled = css<StyledProps>`
-  background: ${({theme}) => theme.colors.primary};
-  color: white;
+  ${({theme, success, danger}) =>
+          css`
+            background: ${theme.Button.colorPrimary};
+            color: ${theme.Button.colorWhite};
 
-  ${({variant,danger}) => danger && additionStyles('danger', variant as Variant)}
-  ${({variant,success}) => success && additionStyles('success', variant as Variant)}
+            &:hover {
+              background: ${theme.Button.colorHoverBase};
+            }
+            &:disabled {
+              background-color: ${theme.Button.colorDisable};
+            }
+
+            ${success && setAdditionalStyles('Filled', true)}
+            ${danger && setAdditionalStyles('Filled', false)}
+
+          `
+  }
 `;
 
 const Outline = css<StyledProps>`
-  border: ${({theme}) => theme.border['outline']};
-  color: ${({theme}) => theme.colors.primary};
+  ${({theme, success, danger}) => css`
+    border-style: ${theme.Button.borderStyle};
+    border-width: ${theme.Button.borderWidth};
+    border-color: ${theme.Button.colorPrimary};
+    color: ${theme.Button.colorPrimaryText};
 
-  background: transparent;
-
-  ${({variant,danger}) => danger && additionStyles('danger', variant as Variant)}
-  ${({variant,success}) => success && additionStyles('success', variant as Variant)}
+    &:hover {
+      border-color: ${theme.Button.colorHoverPrimary};
+      color: ${theme.Button.colorHoverPrimary};
+      background: ${theme.Button.colorHoverPrimary + '06 '};
+    }
+    &:disabled {
+      border-color: ${theme.Button.colorDisable};
+    }
+    ${success && setAdditionalStyles('Outline', true)}
+    ${danger && setAdditionalStyles('Outline', false)}
+  `}
 `;
 
 const Dashed = css<StyledProps>`
-  border: ${({theme}) => theme.border['dashed']};
-  color: ${({theme}) => theme.colors.primary};
+  ${({theme, success, danger}) => css`
+    border-style: ${theme.Button.buttonBorderDashed};
+    border-width: ${theme.Button.borderWidth};
+    border-color: ${theme.Button.colorPrimary};
+    color: ${theme.Button.colorPrimaryText};
 
-  background: transparent;
-
-  ${({variant,danger}) => danger && additionStyles('danger', variant as Variant)}
-  ${({variant,success}) => success && additionStyles('success', variant as Variant)}
+    &:hover {
+      background: ${theme.Button.colorHoverBase + '15'};
+    }
+    &:disabled {
+      border-color: ${theme.Button.colorDisable};
+    }
+    ${success && setAdditionalStyles('Dashed', true)}
+    ${danger && setAdditionalStyles('Dashed', false)}
+  `}
 `;
 
 const Text = css<StyledProps>`
-  color: ${({theme}) => theme.colors.primary};
-  background: transparent;
-  
+  color: ${({theme}) => theme.Button.colorPrimaryText};
+
   &:hover {
-    background: ${({theme}) => theme.colors['hover']};
+    background: ${({theme}) => theme.Button.colorHoverPrimary + '15'};
   }
+  &:disabled {
+    background: none;
+  }
+
+  ${({success}) => success && setAdditionalStyles('Text', true)}
+  ${({danger}) => danger && setAdditionalStyles('Text', false)}
+
 `;
 
 const variants = {
@@ -62,42 +120,88 @@ const variants = {
     Text
 }
 
+function setSize(size: Size) {
+    if (size == 'Small') {
+        return css`
+          font-size: ${({theme}) => theme.Button["fontSize-sm"] + 'rem'};
+          line-height: ${({theme}) => theme.Button["lineHeight-sm"] + 'rem'};
+        `
+    }
+
+    if (size == 'Medium') {
+        return css`
+          font-size: ${({theme}) => theme.Button["fontSize-base"] + 'rem'};
+          line-height: ${({theme}) => theme.Button["lineHeight-base"] + 'rem'};
+        `
+    }
+
+    if (size == 'Large') {
+        return css`
+          font-size: ${({theme}) => theme.Button["fontSize-lg"] + 'rem'};
+          line-height: ${({theme}) => theme.Button["lineHeight-lg"] + 'rem'};
+        `
+    }
+}
+
+function setShape(shape: Shape) {
+    if (shape == 'Rectangle') {
+        return css`
+          border-radius: ${({theme}) => theme.Button["borderRadius-xs"] + 'px'};
+        `
+    }
+
+    if (shape == 'Round') {
+        return css`
+          border-radius: ${({theme}) => theme.Button["borderRadius-lg"] + 'px'};
+        `
+    }
+
+    if (shape == 'SemiRound') {
+        return css`
+          border-radius: ${({theme}) => theme.Button["borderRadius-sm"] + 'px'};
+        `
+    }
+}
+
+
 const ButtonStyle = css<StyledProps>`
   ${({ theme, shape, size, variant }) => css`
-    font-size: ${theme.Typography.fontSize.base};
-    line-height: ${theme.Typography.lineHeight.base};
+    font-size: ${theme.Button["fontSize-base"] + 'rem'};
+    line-height: ${theme.Button["lineHeight-base"] + 'rem'};
+    font-family: ${theme.Button["fontFamily"]};
+
+    background: transparent;
     border: none;
 
-    padding: ${theme.Spacing.padding['2']};
+    color: ${theme.Button.colorTextBase};
 
-    transition: ${theme.transitions['all']};
+    padding: ${theme.Button["padding-1"] + 'rem'} ${theme.Button["padding-3"] + 'rem'};
+
+    transition: all ${theme.Button["durationBase"] + 'ms'} ${theme.Button['transitionEaseInOut']};
 
     cursor: pointer;
 
-    &:active {
-      transform: scale(${theme.Transform.scale['less']});
-    }
-    &:hover {
-      filter: brightness(${theme.Filter.brightness.lighter});
-    }
-    &:disabled {
-      filter: opacity(${theme.Filter.opacity.disable});
+    ${
+            shape && setShape(shape)
     }
     ${
-            shape &&
-            css`
-              border-radius: ${theme.rounded[shape]};
-            `
+            size && setSize(size)
     }
-    ${
-            size &&
-            css`
-              font-size: ${theme.Typography.fontSize[size]};
-              line-height: ${theme.Typography.lineHeight[size]};
-            `
+
+    &:not([disabled]):active {
+      transform: scale(${theme.Button.scaleButtonActive});
     }
 
     ${variant && variants[variant]}
+
+    &:disabled {
+      color: ${theme.Button.colorDisableText};
+      cursor: not-allowed;
+      background-color: ${theme.Button.colorDisable}
+    }
+
+
+
   `}
 `
 

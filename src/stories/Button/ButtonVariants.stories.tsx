@@ -2,16 +2,23 @@ import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 import Button from "../../components/Button";
+import {ThemeProvider} from "../../index";
 
+export const decorators = [
+    (Story: any) => (
+        <ThemeProvider>
+            <Story/>
+        </ThemeProvider>
+    ),
+];
 export default {
     title: 'Design System/Button/Variants',
     component: Button,
+    decorators: decorators
 } as ComponentMeta<typeof Button>;
 
 const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
 
-export const DefaultButton = Template.bind({});
-DefaultButton.args = { children: 'Кнопка' }
 export const FiledButton = Template.bind({});
 FiledButton.args = {
     children: 'Кнопка',
