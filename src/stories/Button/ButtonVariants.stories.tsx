@@ -12,7 +12,7 @@ export const decorators = [
     ),
 ];
 export default {
-    title: 'Design System/Button/Variants',
+    title: 'Design System/Global/Button/Variants',
     component: Button,
     decorators: decorators
 } as ComponentMeta<typeof Button>;

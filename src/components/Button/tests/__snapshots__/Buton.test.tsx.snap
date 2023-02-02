@@ -2,8 +2,6 @@
 
 exports[`button should return a Button 1`] = `
 .c0 {
-  font-size: 1rem;
-  line-height: 1.5rem;
   font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
   background: transparent;
   border: none;
@@ -12,17 +10,17 @@ exports[`button should return a Button 1`] = `
   -webkit-transition: all 200ms cubic-bezier(0.4,0,0.2,1);
   transition: all 200ms cubic-bezier(0.4,0,0.2,1);
   cursor: pointer;
+  background: #3B74F3;
+  color: #fff;
   border-radius: 8px;
   font-size: 1rem;
   line-height: 1.5rem;
-  background: #3B74F3;
-  color: #fff;
 }
 
 .c0:not([disabled]):active {
-  -webkit-transform: scale(0.9);
-  -ms-transform: scale(0.9);
-  transform: scale(0.9);
+  -webkit-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
 }
 
 .c0:hover {
@@ -51,41 +49,46 @@ exports[`button should return a Button 1`] = `
 
 exports[`button should return a Button with children 1`] = `
 .c0 {
+  font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+  background: transparent;
+  border: none;
+  color: #000;
+  padding: 0.30000000000000004rem 0.8rem;
+  -webkit-transition: all 200ms cubic-bezier(0.4,0,0.2,1);
+  transition: all 200ms cubic-bezier(0.4,0,0.2,1);
+  cursor: pointer;
+  background: #3B74F3;
+  color: #fff;
+  border-radius: 8px;
   font-size: 1rem;
   line-height: 1.5rem;
-  border: none;
-  padding: 0.5rem;
-  -webkit-transition: all .1s cubic-bezier(0.4,0,0.2,1);
-  transition: all .1s cubic-bezier(0.4,0,0.2,1);
-  cursor: pointer;
-  border-radius: 8px;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  background: #3B74F3;
-  color: white;
 }
 
-.c0:active {
-  -webkit-transform: scale(.95);
-  -ms-transform: scale(.95);
-  transform: scale(.95);
+.c0:not([disabled]):active {
+  -webkit-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
 }
 
 .c0:hover {
-  -webkit-filter: brightness(115%);
-  filter: brightness(115%);
+  background: #437cfb;
 }
 
 .c0:disabled {
-  -webkit-filter: opacity(60%);
-  filter: opacity(60%);
+  background-color: rgba(0,0,0,0.12);
+}
+
+.c0:disabled {
+  color: rgba(0,0,0,0.25);
+  cursor: not-allowed;
+  background-color: rgba(0,0,0,0.12);
 }
 
 <button
   className="c0"
   disabled={false}
   shape="SemiRound"
-  size="Small"
+  size="Medium"
 >
   <span>
     Button
@@ -95,41 +98,46 @@ exports[`button should return a Button with children 1`] = `
 
 exports[`button should return a Button with disabled 1`] = `
 .c0 {
+  font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+  background: transparent;
+  border: none;
+  color: #000;
+  padding: 0.30000000000000004rem 0.8rem;
+  -webkit-transition: all 200ms cubic-bezier(0.4,0,0.2,1);
+  transition: all 200ms cubic-bezier(0.4,0,0.2,1);
+  cursor: pointer;
+  background: #3B74F3;
+  color: #fff;
+  border-radius: 8px;
   font-size: 1rem;
   line-height: 1.5rem;
-  border: none;
-  padding: 0.5rem;
-  -webkit-transition: all .1s cubic-bezier(0.4,0,0.2,1);
-  transition: all .1s cubic-bezier(0.4,0,0.2,1);
-  cursor: pointer;
-  border-radius: 8px;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  background: #3B74F3;
-  color: white;
 }
 
-.c0:active {
-  -webkit-transform: scale(.95);
-  -ms-transform: scale(.95);
-  transform: scale(.95);
+.c0:not([disabled]):active {
+  -webkit-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
 }
 
 .c0:hover {
-  -webkit-filter: brightness(115%);
-  filter: brightness(115%);
+  background: #437cfb;
 }
 
 .c0:disabled {
-  -webkit-filter: opacity(60%);
-  filter: opacity(60%);
+  background-color: rgba(0,0,0,0.12);
+}
+
+.c0:disabled {
+  color: rgba(0,0,0,0.25);
+  cursor: not-allowed;
+  background-color: rgba(0,0,0,0.12);
 }
 
 <button
   className="c0"
   disabled={true}
   shape="SemiRound"
-  size="Small"
+  size="Medium"
 >
   <span>
     Button
@@ -139,42 +147,48 @@ exports[`button should return a Button with disabled 1`] = `
 
 exports[`button should return a Dashed Button 1`] = `
 .c0 {
+  font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+  background: transparent;
+  border: none;
+  color: #000;
+  padding: 0.30000000000000004rem 0.8rem;
+  -webkit-transition: all 200ms cubic-bezier(0.4,0,0.2,1);
+  transition: all 200ms cubic-bezier(0.4,0,0.2,1);
+  cursor: pointer;
+  border-style: dashed;
+  border-width: 1px;
+  border-color: #3B74F3;
+  color: #3B74F3;
+  border-radius: 8px;
   font-size: 1rem;
   line-height: 1.5rem;
-  border: none;
-  padding: 0.5rem;
-  -webkit-transition: all .1s cubic-bezier(0.4,0,0.2,1);
-  transition: all .1s cubic-bezier(0.4,0,0.2,1);
-  cursor: pointer;
-  border-radius: 8px;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  border: 1px dashed #3B74F3;
-  color: #3B74F3;
-  background: transparent;
 }
 
-.c0:active {
-  -webkit-transform: scale(.95);
-  -ms-transform: scale(.95);
-  transform: scale(.95);
+.c0:not([disabled]):active {
+  -webkit-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
 }
 
 .c0:hover {
-  -webkit-filter: brightness(115%);
-  filter: brightness(115%);
+  background: #437cfb15;
 }
 
 .c0:disabled {
-  -webkit-filter: opacity(60%);
-  filter: opacity(60%);
+  border-color: rgba(0,0,0,0.12);
+}
+
+.c0:disabled {
+  color: rgba(0,0,0,0.25);
+  cursor: not-allowed;
+  background-color: rgba(0,0,0,0.12);
 }
 
 <button
   className="c0"
   disabled={false}
   shape="SemiRound"
-  size="Small"
+  size="Medium"
 >
   <span>
     Button
@@ -184,34 +198,39 @@ exports[`button should return a Dashed Button 1`] = `
 
 exports[`button should return a Large Button 1`] = `
 .c0 {
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+  background: transparent;
   border: none;
-  padding: 0.5rem;
-  -webkit-transition: all .1s cubic-bezier(0.4,0,0.2,1);
-  transition: all .1s cubic-bezier(0.4,0,0.2,1);
+  color: #000;
+  padding: 0.30000000000000004rem 0.8rem;
+  -webkit-transition: all 200ms cubic-bezier(0.4,0,0.2,1);
+  transition: all 200ms cubic-bezier(0.4,0,0.2,1);
   cursor: pointer;
-  border-radius: 8px;
-  font-size: 1.25rem;
-  line-height: 1.75rem;
   background: #3B74F3;
-  color: white;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
-.c0:active {
-  -webkit-transform: scale(.95);
-  -ms-transform: scale(.95);
-  transform: scale(.95);
+.c0:not([disabled]):active {
+  -webkit-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
 }
 
 .c0:hover {
-  -webkit-filter: brightness(115%);
-  filter: brightness(115%);
+  background: #437cfb;
 }
 
 .c0:disabled {
-  -webkit-filter: opacity(60%);
-  filter: opacity(60%);
+  background-color: rgba(0,0,0,0.12);
+}
+
+.c0:disabled {
+  color: rgba(0,0,0,0.25);
+  cursor: not-allowed;
+  background-color: rgba(0,0,0,0.12);
 }
 
 <button
@@ -228,34 +247,39 @@ exports[`button should return a Large Button 1`] = `
 
 exports[`button should return a Medium Button 1`] = `
 .c0 {
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+  background: transparent;
   border: none;
-  padding: 0.5rem;
-  -webkit-transition: all .1s cubic-bezier(0.4,0,0.2,1);
-  transition: all .1s cubic-bezier(0.4,0,0.2,1);
+  color: #000;
+  padding: 0.30000000000000004rem 0.8rem;
+  -webkit-transition: all 200ms cubic-bezier(0.4,0,0.2,1);
+  transition: all 200ms cubic-bezier(0.4,0,0.2,1);
   cursor: pointer;
+  background: #3B74F3;
+  color: #fff;
   border-radius: 8px;
   font-size: 1rem;
   line-height: 1.5rem;
-  background: #3B74F3;
-  color: white;
 }
 
-.c0:active {
-  -webkit-transform: scale(.95);
-  -ms-transform: scale(.95);
-  transform: scale(.95);
+.c0:not([disabled]):active {
+  -webkit-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
 }
 
 .c0:hover {
-  -webkit-filter: brightness(115%);
-  filter: brightness(115%);
+  background: #437cfb;
 }
 
 .c0:disabled {
-  -webkit-filter: opacity(60%);
-  filter: opacity(60%);
+  background-color: rgba(0,0,0,0.12);
+}
+
+.c0:disabled {
+  color: rgba(0,0,0,0.25);
+  cursor: not-allowed;
+  background-color: rgba(0,0,0,0.12);
 }
 
 <button
@@ -272,42 +296,50 @@ exports[`button should return a Medium Button 1`] = `
 
 exports[`button should return a Outline Button 1`] = `
 .c0 {
+  font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+  background: transparent;
+  border: none;
+  color: #000;
+  padding: 0.30000000000000004rem 0.8rem;
+  -webkit-transition: all 200ms cubic-bezier(0.4,0,0.2,1);
+  transition: all 200ms cubic-bezier(0.4,0,0.2,1);
+  cursor: pointer;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #3B74F3;
+  color: #3B74F3;
+  border-radius: 8px;
   font-size: 1rem;
   line-height: 1.5rem;
-  border: none;
-  padding: 0.5rem;
-  -webkit-transition: all .1s cubic-bezier(0.4,0,0.2,1);
-  transition: all .1s cubic-bezier(0.4,0,0.2,1);
-  cursor: pointer;
-  border-radius: 8px;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  border: 1px solid #3B74F3;
-  color: #3B74F3;
-  background: transparent;
 }
 
-.c0:active {
-  -webkit-transform: scale(.95);
-  -ms-transform: scale(.95);
-  transform: scale(.95);
+.c0:not([disabled]):active {
+  -webkit-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
 }
 
 .c0:hover {
-  -webkit-filter: brightness(115%);
-  filter: brightness(115%);
+  border-color: #437cfb;
+  color: #437cfb;
+  background: #437cfb06;
 }
 
 .c0:disabled {
-  -webkit-filter: opacity(60%);
-  filter: opacity(60%);
+  border-color: rgba(0,0,0,0.12);
+}
+
+.c0:disabled {
+  color: rgba(0,0,0,0.25);
+  cursor: not-allowed;
+  background-color: rgba(0,0,0,0.12);
 }
 
 <button
   className="c0"
   disabled={false}
   shape="SemiRound"
-  size="Small"
+  size="Medium"
 >
   <span>
     Button
@@ -317,41 +349,46 @@ exports[`button should return a Outline Button 1`] = `
 
 exports[`button should return a Rectangle Button 1`] = `
 .c0 {
+  font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+  background: transparent;
+  border: none;
+  color: #000;
+  padding: 0.30000000000000004rem 0.8rem;
+  -webkit-transition: all 200ms cubic-bezier(0.4,0,0.2,1);
+  transition: all 200ms cubic-bezier(0.4,0,0.2,1);
+  cursor: pointer;
+  background: #3B74F3;
+  color: #fff;
+  border-radius: 4px;
   font-size: 1rem;
   line-height: 1.5rem;
-  border: none;
-  padding: 0.5rem;
-  -webkit-transition: all .1s cubic-bezier(0.4,0,0.2,1);
-  transition: all .1s cubic-bezier(0.4,0,0.2,1);
-  cursor: pointer;
-  border-radius: 0px;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  background: #3B74F3;
-  color: white;
 }
 
-.c0:active {
-  -webkit-transform: scale(.95);
-  -ms-transform: scale(.95);
-  transform: scale(.95);
+.c0:not([disabled]):active {
+  -webkit-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
 }
 
 .c0:hover {
-  -webkit-filter: brightness(115%);
-  filter: brightness(115%);
+  background: #437cfb;
 }
 
 .c0:disabled {
-  -webkit-filter: opacity(60%);
-  filter: opacity(60%);
+  background-color: rgba(0,0,0,0.12);
+}
+
+.c0:disabled {
+  color: rgba(0,0,0,0.25);
+  cursor: not-allowed;
+  background-color: rgba(0,0,0,0.12);
 }
 
 <button
   className="c0"
   disabled={false}
   shape="Rectangle"
-  size="Small"
+  size="Medium"
 >
   <span>
     Button
@@ -361,41 +398,46 @@ exports[`button should return a Rectangle Button 1`] = `
 
 exports[`button should return a Round Button 1`] = `
 .c0 {
+  font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+  background: transparent;
+  border: none;
+  color: #000;
+  padding: 0.30000000000000004rem 0.8rem;
+  -webkit-transition: all 200ms cubic-bezier(0.4,0,0.2,1);
+  transition: all 200ms cubic-bezier(0.4,0,0.2,1);
+  cursor: pointer;
+  background: #3B74F3;
+  color: #fff;
+  border-radius: 12px;
   font-size: 1rem;
   line-height: 1.5rem;
-  border: none;
-  padding: 0.5rem;
-  -webkit-transition: all .1s cubic-bezier(0.4,0,0.2,1);
-  transition: all .1s cubic-bezier(0.4,0,0.2,1);
-  cursor: pointer;
-  border-radius: 12px;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  background: #3B74F3;
-  color: white;
 }
 
-.c0:active {
-  -webkit-transform: scale(.95);
-  -ms-transform: scale(.95);
-  transform: scale(.95);
+.c0:not([disabled]):active {
+  -webkit-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
 }
 
 .c0:hover {
-  -webkit-filter: brightness(115%);
-  filter: brightness(115%);
+  background: #437cfb;
 }
 
 .c0:disabled {
-  -webkit-filter: opacity(60%);
-  filter: opacity(60%);
+  background-color: rgba(0,0,0,0.12);
+}
+
+.c0:disabled {
+  color: rgba(0,0,0,0.25);
+  cursor: not-allowed;
+  background-color: rgba(0,0,0,0.12);
 }
 
 <button
   className="c0"
   disabled={false}
   shape="Round"
-  size="Small"
+  size="Medium"
 >
   <span>
     Button
@@ -405,41 +447,46 @@ exports[`button should return a Round Button 1`] = `
 
 exports[`button should return a SemiRound Button 1`] = `
 .c0 {
+  font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+  background: transparent;
+  border: none;
+  color: #000;
+  padding: 0.30000000000000004rem 0.8rem;
+  -webkit-transition: all 200ms cubic-bezier(0.4,0,0.2,1);
+  transition: all 200ms cubic-bezier(0.4,0,0.2,1);
+  cursor: pointer;
+  background: #3B74F3;
+  color: #fff;
+  border-radius: 8px;
   font-size: 1rem;
   line-height: 1.5rem;
-  border: none;
-  padding: 0.5rem;
-  -webkit-transition: all .1s cubic-bezier(0.4,0,0.2,1);
-  transition: all .1s cubic-bezier(0.4,0,0.2,1);
-  cursor: pointer;
-  border-radius: 8px;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  background: #3B74F3;
-  color: white;
 }
 
-.c0:active {
-  -webkit-transform: scale(.95);
-  -ms-transform: scale(.95);
-  transform: scale(.95);
+.c0:not([disabled]):active {
+  -webkit-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
 }
 
 .c0:hover {
-  -webkit-filter: brightness(115%);
-  filter: brightness(115%);
+  background: #437cfb;
 }
 
 .c0:disabled {
-  -webkit-filter: opacity(60%);
-  filter: opacity(60%);
+  background-color: rgba(0,0,0,0.12);
+}
+
+.c0:disabled {
+  color: rgba(0,0,0,0.25);
+  cursor: not-allowed;
+  background-color: rgba(0,0,0,0.12);
 }
 
 <button
   className="c0"
   disabled={false}
   shape="SemiRound"
-  size="Small"
+  size="Medium"
 >
   <span>
     Button
@@ -449,34 +496,39 @@ exports[`button should return a SemiRound Button 1`] = `
 
 exports[`button should return a Small Button 1`] = `
 .c0 {
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+  background: transparent;
   border: none;
-  padding: 0.5rem;
-  -webkit-transition: all .1s cubic-bezier(0.4,0,0.2,1);
-  transition: all .1s cubic-bezier(0.4,0,0.2,1);
+  color: #000;
+  padding: 0.30000000000000004rem 0.8rem;
+  -webkit-transition: all 200ms cubic-bezier(0.4,0,0.2,1);
+  transition: all 200ms cubic-bezier(0.4,0,0.2,1);
   cursor: pointer;
+  background: #3B74F3;
+  color: #fff;
   border-radius: 8px;
   font-size: 0.875rem;
   line-height: 1.25rem;
-  background: #3B74F3;
-  color: white;
 }
 
-.c0:active {
-  -webkit-transform: scale(.95);
-  -ms-transform: scale(.95);
-  transform: scale(.95);
+.c0:not([disabled]):active {
+  -webkit-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
 }
 
 .c0:hover {
-  -webkit-filter: brightness(115%);
-  filter: brightness(115%);
+  background: #437cfb;
 }
 
 .c0:disabled {
-  -webkit-filter: opacity(60%);
-  filter: opacity(60%);
+  background-color: rgba(0,0,0,0.12);
+}
+
+.c0:disabled {
+  color: rgba(0,0,0,0.25);
+  cursor: not-allowed;
+  background-color: rgba(0,0,0,0.12);
 }
 
 <button
@@ -493,45 +545,45 @@ exports[`button should return a Small Button 1`] = `
 
 exports[`button should return a Text Button 1`] = `
 .c0 {
+  font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+  background: transparent;
+  border: none;
+  color: #000;
+  padding: 0.30000000000000004rem 0.8rem;
+  -webkit-transition: all 200ms cubic-bezier(0.4,0,0.2,1);
+  transition: all 200ms cubic-bezier(0.4,0,0.2,1);
+  cursor: pointer;
+  color: #3B74F3;
+  border-radius: 8px;
   font-size: 1rem;
   line-height: 1.5rem;
-  border: none;
-  padding: 0.5rem;
-  -webkit-transition: all .1s cubic-bezier(0.4,0,0.2,1);
-  transition: all .1s cubic-bezier(0.4,0,0.2,1);
-  cursor: pointer;
-  border-radius: 8px;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  color: #3B74F3;
-  background: transparent;
 }
 
-.c0:active {
-  -webkit-transform: scale(.95);
-  -ms-transform: scale(.95);
-  transform: scale(.95);
+.c0:not([disabled]):active {
+  -webkit-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
 }
 
 .c0:hover {
-  -webkit-filter: brightness(115%);
-  filter: brightness(115%);
+  background: #437cfb15;
 }
 
 .c0:disabled {
-  -webkit-filter: opacity(60%);
-  filter: opacity(60%);
+  background: none;
 }
 
-.c0:hover {
-  background: rgba(0,0,0,5%);
+.c0:disabled {
+  color: rgba(0,0,0,0.25);
+  cursor: not-allowed;
+  background-color: rgba(0,0,0,0.12);
 }
 
 <button
   className="c0"
   disabled={false}
   shape="SemiRound"
-  size="Small"
+  size="Medium"
 >
   <span>
     Button
@@ -541,42 +593,51 @@ exports[`button should return a Text Button 1`] = `
 
 exports[`button should return a danger Button 1`] = `
 .c0 {
+  font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+  background: transparent;
+  border: none;
+  color: #000;
+  padding: 0.30000000000000004rem 0.8rem;
+  -webkit-transition: all 200ms cubic-bezier(0.4,0,0.2,1);
+  transition: all 200ms cubic-bezier(0.4,0,0.2,1);
+  cursor: pointer;
+  background: #3B74F3;
+  color: #fff;
+  background: #ff0e0e;
+  border-radius: 8px;
   font-size: 1rem;
   line-height: 1.5rem;
-  border: none;
-  padding: 0.5rem;
-  -webkit-transition: all .1s cubic-bezier(0.4,0,0.2,1);
-  transition: all .1s cubic-bezier(0.4,0,0.2,1);
-  cursor: pointer;
-  border-radius: 8px;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  background: #3B74F3;
-  color: white;
-  background: #ff0e0e;
 }
 
-.c0:active {
-  -webkit-transform: scale(.95);
-  -ms-transform: scale(.95);
-  transform: scale(.95);
+.c0:not([disabled]):active {
+  -webkit-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
 }
 
 .c0:hover {
-  -webkit-filter: brightness(115%);
-  filter: brightness(115%);
+  background: #437cfb;
 }
 
 .c0:disabled {
-  -webkit-filter: opacity(60%);
-  filter: opacity(60%);
+  background-color: rgba(0,0,0,0.12);
+}
+
+.c0:hover {
+  background: #ff1616;
+}
+
+.c0:disabled {
+  color: rgba(0,0,0,0.25);
+  cursor: not-allowed;
+  background-color: rgba(0,0,0,0.12);
 }
 
 <button
   className="c0"
   disabled={false}
   shape="SemiRound"
-  size="Small"
+  size="Medium"
 >
   <span>
     Button
@@ -586,42 +647,51 @@ exports[`button should return a danger Button 1`] = `
 
 exports[`button should return a success Button 1`] = `
 .c0 {
+  font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+  background: transparent;
+  border: none;
+  color: #000;
+  padding: 0.30000000000000004rem 0.8rem;
+  -webkit-transition: all 200ms cubic-bezier(0.4,0,0.2,1);
+  transition: all 200ms cubic-bezier(0.4,0,0.2,1);
+  cursor: pointer;
+  background: #3B74F3;
+  color: #fff;
+  background: #198754;
+  border-radius: 8px;
   font-size: 1rem;
   line-height: 1.5rem;
-  border: none;
-  padding: 0.5rem;
-  -webkit-transition: all .1s cubic-bezier(0.4,0,0.2,1);
-  transition: all .1s cubic-bezier(0.4,0,0.2,1);
-  cursor: pointer;
-  border-radius: 8px;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  background: #3B74F3;
-  color: white;
-  background: #198754;
 }
 
-.c0:active {
-  -webkit-transform: scale(.95);
-  -ms-transform: scale(.95);
-  transform: scale(.95);
+.c0:not([disabled]):active {
+  -webkit-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
 }
 
 .c0:hover {
-  -webkit-filter: brightness(115%);
-  filter: brightness(115%);
+  background: #437cfb;
 }
 
 .c0:disabled {
-  -webkit-filter: opacity(60%);
-  filter: opacity(60%);
+  background-color: rgba(0,0,0,0.12);
+}
+
+.c0:hover {
+  background: #218f5c;
+}
+
+.c0:disabled {
+  color: rgba(0,0,0,0.25);
+  cursor: not-allowed;
+  background-color: rgba(0,0,0,0.12);
 }
 
 <button
   className="c0"
   disabled={false}
   shape="SemiRound"
-  size="Small"
+  size="Medium"
 >
   <span>
     Button

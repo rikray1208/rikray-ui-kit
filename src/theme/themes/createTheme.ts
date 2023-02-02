@@ -54,8 +54,8 @@ export function genSizeStyles (seed: SeedMap, options: Partial<SizeMap>): SizeMa
         "size-sm": "",
         "size-xl": "",
         "fontSize-2xl": (seed.fontSize / fontUnit) + 0.375,
-        "fontSize-lg": (seed.fontSize / fontUnit) + 0.250,
-        "fontSize-xl": (seed.fontSize / fontUnit) + 0.125,
+        "fontSize-xl": (seed.fontSize / fontUnit) + 0.250,
+        "fontSize-lg": (seed.fontSize / fontUnit) + 0.125,
         "fontSize-base": (seed.fontSize / fontUnit),
         "fontSize-sm":(seed.fontSize / fontUnit) - 0.125,
         "fontSize-xs": (seed.fontSize / fontUnit) - 0.250,
@@ -95,7 +95,7 @@ export function genColorStyles(seed: SeedMap, options: Partial<ColorMap>): Color
         colorSuccessText: seed.colorSuccess,
         colorWarningText: seed.colorWarning,
         colorTextPlaceholder: "rgba(0, 0, 0, 0.25)",
-        colorBorderBase: '#D1D5DB',
+        colorBorderBase: '#e6e9ee',
         colorShadowError: seed.colorError + '20',
         colorShadowInfo: seed.colorInfo + '20',
         colorShadowPrimary: seed.colorPrimary + '20',
@@ -110,7 +110,7 @@ export function genColorStyles(seed: SeedMap, options: Partial<ColorMap>): Color
     }
 }
 
-const componentKeys: ComponentNames[] = ["Button", "Input", "Toaster"]
+const componentKeys: ComponentNames[] = ["Button", "Input", "Toaster", "Card"]
 function genComponents(
     seed: SeedMap,
     color: ColorMap,
@@ -157,7 +157,7 @@ export function createTheme(
     const size: SizeMap = genSizeStyles(seed, {...themePresets?.[themeName].size, ...options?.size});
     const color: ColorMap = genColorStyles(seed, {...themePresets?.[themeName].color, ...options?.color});
 
-    const components: OverrideComponents = genComponents(seed, color, size, compOptions)
+    const components: OverrideComponents = genComponents(seed, color, size, compOptions);
 
     return {
         ...components

@@ -4,9 +4,10 @@ import StyledInput, {StyledInputWrapper, StyledPostfix, StyledPrefix} from "./St
 
 
 export type BaseInputProps = Omit<InputHTMLAttributes<HTMLInputElement>, 'type' | 'size'>
+export type InputType = Status | 'base'
 
 export interface InputProps extends BaseInputProps {
-    type?: Status
+    type?: InputType
     placeholder?: string
     Size?: Size
     prefix?: string
@@ -16,7 +17,7 @@ export interface InputProps extends BaseInputProps {
 
 const Input: FC<InputProps> = (props) => {
     return (
-        <StyledInputWrapper>
+        <StyledInputWrapper Size={props.Size}>
             {props.prefix && <StyledPrefix Size={props.Size}>{props.prefix}</StyledPrefix>}
             <StyledInput {...props}/>
             {props.postfix && <StyledPostfix Size={props.Size}>{props.postfix}</StyledPostfix>}

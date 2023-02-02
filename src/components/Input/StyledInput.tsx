@@ -1,9 +1,11 @@
 
-import {InputProps} from "./index";
+import {InputProps, InputType} from "./index";
 import {Size, Status, Variant} from "../types";
 import styled, {css} from "styled-components";
+import {setFontSize} from "../../utils/helpers";
 
 type Pfix = Pick<InputProps, 'Size'>
+
 function setBorderRadius(prefix: string | undefined, postfix: string | undefined) {
     if (prefix && postfix) {
         return css`
@@ -28,41 +30,7 @@ function setBorderRadius(prefix: string | undefined, postfix: string | undefined
     }
 }
 
-const CommonTabs = css<InputProps>`
-  ${({theme, Size, type}) => css`
-
-    padding: ${theme.Input["padding-2"] + 'rem' + ' ' + theme.Input["padding-4"] + 'rem'};
-    margin: 0;
-
-    font-family: ${({theme}) => theme.Input.fontFamily};
-    ${ Size && setSize(Size) }
-    
-    background-color: ${theme.Input.colorBgContainer};
-    border-top: ${theme.Input.borderWidth} ${theme.Input.borderStyle};
-    border-bottom: ${theme.Input.borderWidth} ${theme.Input.borderStyle};
-    border-color: ${theme.Input.colorBorderBase};
-    color: ${theme.Input.colorTextBase};
-  `}
-`
-export const StyledPrefix = styled.div<Pfix>`
-  ${({theme, Size}) => css`
-    border-left: ${theme.Input.borderWidth} ${theme.Input.borderStyle};
-    border-radius: ${theme.Input["borderRadius-lg"] + 'px' + ' ' + '0' + ' ' + '0' + ' ' + theme.Input["borderRadius-lg"] + 'px'};
-    ${ Size && setSize(Size) }
-    ${CommonTabs}
-  `}
-`
-
-export const StyledPostfix = styled.div<Pfix>`
-  ${({theme, Size}) => css`
-    border-right: ${theme.Input.borderWidth} ${theme.Input.borderStyle};
-    border-radius: ${'0' + ' ' + theme.Input["borderRadius-lg"] + 'px' + ' ' + theme.Input["borderRadius-lg"] + 'px' + ' ' + '0'};
-    ${ Size && setSize(Size) }
-    ${CommonTabs}
-  `}
-`
-
-function getColor(type: Status, isShadow?: boolean) {
+function getColor(type: InputType, isShadow?: boolean) {
     if(isShadow) {
         switch (type) {
             case "success":
@@ -88,28 +56,42 @@ function getColor(type: Status, isShadow?: boolean) {
     }
 }
 
-function setSize(size: Size) {
-    if (size == "Medium") {
-        return css`
-          font-size: ${({theme}) => theme.Input['fontSize-base'] + 'rem'};
-          line-height: ${({theme}) => theme.Button["lineHeight-base"] + 'rem'};
-        `
-    }
-    if(size == 'Large') {
-        return css`
-          font-size: ${({theme}) => theme.Input['fontSize-lg'] + 'rem'};
-          line-height: ${({theme}) => theme.Button["lineHeight-lg"] + 'rem'};
-        `
-    }
-    if(size == 'Small') {
-        return css`
-          font-size: ${({theme}) => theme.Input['fontSize-sm'] + 'rem'};
-          line-height: ${({theme}) => theme.Button["lineHeight-sm"] + 'rem'};
-          padding: ${({theme}) => theme.Input["padding-1"] + 'rem' + ' ' + theme.Input["padding-2"] + 'rem'};
-        `
-    }
+function setPadding(size: Size) {
+    if (size == 'Small')
+        return css`padding: ${({theme}) => theme.Input["padding-1"] + 'rem' + ' ' + theme.Input["padding-2"] + 'rem'};`
+    return css`padding: ${({theme}) => theme.Input["padding-2"] + 'rem' + ' ' + theme.Input["padding-4"] + 'rem'};`
 }
 
+const CommonTabs = css<InputProps>`
+  ${({theme, Size}) => css`
+    ${setPadding(Size as Size)}
+    margin: 0;
+
+    font: inherit;
+    
+    background-color: ${theme.Input.colorBgContainer};
+    border-top: ${theme.Input.borderWidth} ${theme.Input.borderStyle};
+    border-bottom: ${theme.Input.borderWidth} ${theme.Input.borderStyle};
+    border-color: ${theme.Input.colorBorderBase};
+    color: ${theme.Input.colorTextBase};
+    transition: all ${theme.Input["durationBase"] + 'ms'} ${theme.Input['transitionEaseInOut']};
+  `}
+`
+export const StyledPrefix = styled.div<Pfix>`
+  ${({theme}) => css`
+    border-left: ${theme.Input.borderWidth} ${theme.Input.borderStyle};
+    border-radius: ${theme.Input["borderRadius-lg"] + 'px' + ' ' + '0' + ' ' + '0' + ' ' + theme.Input["borderRadius-lg"] + 'px'};
+    ${CommonTabs}
+  `}
+`
+
+export const StyledPostfix = styled.div<Pfix>`
+  ${({theme}) => css`
+    border-right: ${theme.Input.borderWidth} ${theme.Input.borderStyle};
+    border-radius: ${'0' + ' ' + theme.Input["borderRadius-lg"] + 'px' + ' ' + theme.Input["borderRadius-lg"] + 'px' + ' ' + '0'};
+    ${CommonTabs}
+  `}
+`
 const InputStyles = css<InputProps>`
   ${({theme, type, Size, postfix, prefix}) =>
           css`
@@ -117,12 +99,12 @@ const InputStyles = css<InputProps>`
             min-width: 0;
             width: 100%;
 
-            font-family: ${({theme}) => theme.Input.fontFamily};
+            font: inherit;
 
-            padding: ${theme.Input["padding-2"] + 'rem' + ' ' + theme.Input["padding-4"] + 'rem'};
+            ${setPadding(Size as Size)}
             margin: 0;
             
-            transition: all ${theme.Button["durationBase"] + 'ms'} ${theme.Button['transitionEaseInOut']};
+            transition: all ${theme.Input["durationBase"] + 'ms'} ${theme.Input['transitionEaseInOut']};
 
             background-color: ${theme.Input.colorBgContainer};
             border-width: ${theme.Input.borderWidth};
@@ -133,15 +115,13 @@ const InputStyles = css<InputProps>`
             border-color: ${theme.Input.colorBorderBase};
             ${setBorderRadius(postfix, prefix)}
             
-            ${ Size && setSize(Size) }
-
             &:hover {
-              border-color: ${getColor(type as Status)};
+              border-color: ${getColor(type as InputType)};
             }
 
             &:focus {
-              box-shadow: 0 0 0 ${theme.Input.shadowWidthBase}px ${getColor(type as Status, true)};
-              border-color: ${getColor(type as Status)};;
+              box-shadow: 0 0 0 ${theme.Input.shadowWidthBase}px ${getColor(type as InputType, true)};
+              border-color: ${getColor(type as InputType)};;
             }
 
             &::placeholder {
@@ -152,9 +132,11 @@ const InputStyles = css<InputProps>`
 `
 
 
-export const StyledInputWrapper = styled.div`
+export const StyledInputWrapper = styled.div<Pick<InputProps, 'Size'>>`
   display: flex;
   width: 100%;
+  font-family: ${({theme}) => theme.Input.fontFamily};
+  ${({Size}) => Size && setFontSize(Size, 'Input')}
 `
 
 const StyledInput = styled.input<InputProps>`

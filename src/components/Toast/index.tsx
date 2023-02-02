@@ -6,6 +6,8 @@ import {StyledToastContainer} from "./StyledToast";
 import {useToast} from "./hooks";
 import {ThemeProvider} from "../../index";
 
+
+export type ToastType = Status | 'info'
 export interface ToasterRef {
     show: (item: ToastProps) => void
 }
@@ -17,7 +19,7 @@ export interface ToasterProps {
 
 export interface ToastProps extends ToasterProps{
     message: string
-    type: Status
+    type: ToastType
 }
 
 export const DEFAULT_DURATION = 2000

@@ -11,7 +11,7 @@ export const decorators = [
     ),
 ];
 export default {
-    title: 'Design System/Button/Sizes',
+    title: 'Design System/Global/Button/Sizes',
     component: Button,
     decorators: decorators
 } as ComponentMeta<typeof Button>;

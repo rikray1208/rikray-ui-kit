@@ -1,13 +1,13 @@
-
 import {ButtonProps} from "./index";
-import {Shape, Size, Variant} from "../types";
+import {Variant} from "../types";
 import styled, {css} from "styled-components";
+import {setFontSize, setShape} from "../../utils/helpers";
 
 type StyledProps = Omit<ButtonProps, 'onClick'>
 
 
 function setAdditionalStyles(variant: Variant, isSuccess: boolean) {
-    if( variant == 'Filled' ) {
+    if( variant == 'Filled' )
         return css`
           background: ${({theme}) => isSuccess ? theme.Button.colorSuccess : theme.Button.colorError };
 
@@ -15,9 +15,7 @@ function setAdditionalStyles(variant: Variant, isSuccess: boolean) {
             background: ${({theme}) => isSuccess ? theme.Button.colorHoverSuccess : theme.Button.colorHoverError};
           }
         `
-    }
-
-    if ( variant == 'Text' ) {
+    if ( variant == 'Text' )
         return css`
           color: ${({theme}) => isSuccess ? theme.Button.colorSuccess : theme.Button.colorError };
 
@@ -26,8 +24,6 @@ function setAdditionalStyles(variant: Variant, isSuccess: boolean) {
             background-color: ${({theme}) => isSuccess ? theme.Button.colorHoverSuccess + '10' : theme.Button.colorHoverError + '10'};
           }
         `
-    }
-
     return css`
       border-color: ${({theme}) =>isSuccess ? theme.Button.colorSuccess : theme.Button.colorError};
       color: ${({theme}) => isSuccess ? theme.Button.colorSuccess : theme.Button.colorError};
@@ -107,10 +103,8 @@ const Text = css<StyledProps>`
   &:disabled {
     background: none;
   }
-
   ${({success}) => success && setAdditionalStyles('Text', true)}
   ${({danger}) => danger && setAdditionalStyles('Text', false)}
-
 `;
 
 const variants = {
@@ -120,54 +114,8 @@ const variants = {
     Text
 }
 
-function setSize(size: Size) {
-    if (size == 'Small') {
-        return css`
-          font-size: ${({theme}) => theme.Button["fontSize-sm"] + 'rem'};
-          line-height: ${({theme}) => theme.Button["lineHeight-sm"] + 'rem'};
-        `
-    }
-
-    if (size == 'Medium') {
-        return css`
-          font-size: ${({theme}) => theme.Button["fontSize-base"] + 'rem'};
-          line-height: ${({theme}) => theme.Button["lineHeight-base"] + 'rem'};
-        `
-    }
-
-    if (size == 'Large') {
-        return css`
-          font-size: ${({theme}) => theme.Button["fontSize-lg"] + 'rem'};
-          line-height: ${({theme}) => theme.Button["lineHeight-lg"] + 'rem'};
-        `
-    }
-}
-
-function setShape(shape: Shape) {
-    if (shape == 'Rectangle') {
-        return css`
-          border-radius: ${({theme}) => theme.Button["borderRadius-xs"] + 'px'};
-        `
-    }
-
-    if (shape == 'Round') {
-        return css`
-          border-radius: ${({theme}) => theme.Button["borderRadius-lg"] + 'px'};
-        `
-    }
-
-    if (shape == 'SemiRound') {
-        return css`
-          border-radius: ${({theme}) => theme.Button["borderRadius-sm"] + 'px'};
-        `
-    }
-}
-
-
 const ButtonStyle = css<StyledProps>`
   ${({ theme, shape, size, variant }) => css`
-    font-size: ${theme.Button["fontSize-base"] + 'rem'};
-    line-height: ${theme.Button["lineHeight-base"] + 'rem'};
     font-family: ${theme.Button["fontFamily"]};
 
     background: transparent;
@@ -181,12 +129,6 @@ const ButtonStyle = css<StyledProps>`
 
     cursor: pointer;
 
-    ${
-            shape && setShape(shape)
-    }
-    ${
-            size && setSize(size)
-    }
 
     &:not([disabled]):active {
       transform: scale(${theme.Button.scaleButtonActive});
@@ -199,12 +141,14 @@ const ButtonStyle = css<StyledProps>`
       cursor: not-allowed;
       background-color: ${theme.Button.colorDisable}
     }
-
-
-
+    ${
+            shape && setShape(shape, 'Button')
+    }
+    ${
+            size && setFontSize(size, 'Button')
+    }
   `}
 `
-
 const StyledButton = styled.button<ButtonProps>`
   ${ButtonStyle}
 `

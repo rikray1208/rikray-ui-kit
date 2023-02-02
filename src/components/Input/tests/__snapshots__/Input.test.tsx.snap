@@ -7,28 +7,28 @@ exports[`Input should return a Input 1`] = `
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .c1 {
   display: inline-block;
   min-width: 0;
   width: 100%;
-  font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
-  padding: 0.55rem 1.05rem;
+  font: inherit;
+  padding: 0.30000000000000004rem 0.55rem;
   margin: 0;
   -webkit-transition: all 200ms cubic-bezier(0.4,0,0.2,1);
   transition: all 200ms cubic-bezier(0.4,0,0.2,1);
   background-color: #fff;
   border-width: 1px;
   border-style: solid;
-  border-color: #D1D5DB;
+  border-color: #e6e9ee;
   color: black;
   outline: none;
-  border-color: #D1D5DB;
+  border-color: #e6e9ee;
   border-radius: 12px;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  padding: 0.30000000000000004rem 0.55rem;
 }
 
 .c1:hover {
@@ -73,25 +73,28 @@ exports[`Input should return a Large Input 1`] = `
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .c1 {
   display: inline-block;
   min-width: 0;
   width: 100%;
-  padding: 0.5rem 1rem;
+  font: inherit;
+  padding: 0.55rem 1.05rem;
   margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-  -webkit-transition: all .2s cubic-bezier(0.4,0,0.2,1);
-  transition: all .2s cubic-bezier(0.4,0,0.2,1);
-  background-color: white;
+  -webkit-transition: all 200ms cubic-bezier(0.4,0,0.2,1);
+  transition: all 200ms cubic-bezier(0.4,0,0.2,1);
+  background-color: #fff;
   border-width: 1px;
   border-style: solid;
-  border-color: rgb(209 213 219);
+  border-color: #e6e9ee;
   color: black;
   outline: none;
-  border-radius: 8px;
+  border-color: #e6e9ee;
+  border-radius: 12px;
 }
 
 .c1:hover {
@@ -99,33 +102,24 @@ exports[`Input should return a Large Input 1`] = `
 }
 
 .c1:focus {
+  box-shadow: 0 0 0 2px #3B74F320;
   border-color: #3B74F3;
-  -webkit-filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
-  filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
 }
 
 .c1::-webkit-input-placeholder {
-  color: black;
-  -webkit-filter: opacity(40%);
-  filter: opacity(40%);
+  color: rgba(0,0,0,0.25);
 }
 
 .c1::-moz-placeholder {
-  color: black;
-  -webkit-filter: opacity(40%);
-  filter: opacity(40%);
+  color: rgba(0,0,0,0.25);
 }
 
 .c1:-ms-input-placeholder {
-  color: black;
-  -webkit-filter: opacity(40%);
-  filter: opacity(40%);
+  color: rgba(0,0,0,0.25);
 }
 
 .c1::placeholder {
-  color: black;
-  -webkit-filter: opacity(40%);
-  filter: opacity(40%);
+  color: rgba(0,0,0,0.25);
 }
 
 <div
@@ -145,25 +139,28 @@ exports[`Input should return a Medium Input 1`] = `
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .c1 {
   display: inline-block;
   min-width: 0;
   width: 100%;
-  padding: 0.5rem 1rem;
+  font: inherit;
+  padding: 0.55rem 1.05rem;
   margin: 0;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  -webkit-transition: all .2s cubic-bezier(0.4,0,0.2,1);
-  transition: all .2s cubic-bezier(0.4,0,0.2,1);
-  background-color: white;
+  -webkit-transition: all 200ms cubic-bezier(0.4,0,0.2,1);
+  transition: all 200ms cubic-bezier(0.4,0,0.2,1);
+  background-color: #fff;
   border-width: 1px;
   border-style: solid;
-  border-color: rgb(209 213 219);
+  border-color: #e6e9ee;
   color: black;
   outline: none;
-  border-radius: 8px;
+  border-color: #e6e9ee;
+  border-radius: 12px;
 }
 
 .c1:hover {
@@ -171,33 +168,24 @@ exports[`Input should return a Medium Input 1`] = `
 }
 
 .c1:focus {
+  box-shadow: 0 0 0 2px #3B74F320;
   border-color: #3B74F3;
-  -webkit-filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
-  filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
 }
 
 .c1::-webkit-input-placeholder {
-  color: black;
-  -webkit-filter: opacity(40%);
-  filter: opacity(40%);
+  color: rgba(0,0,0,0.25);
 }
 
 .c1::-moz-placeholder {
-  color: black;
-  -webkit-filter: opacity(40%);
-  filter: opacity(40%);
+  color: rgba(0,0,0,0.25);
 }
 
 .c1:-ms-input-placeholder {
-  color: black;
-  -webkit-filter: opacity(40%);
-  filter: opacity(40%);
+  color: rgba(0,0,0,0.25);
 }
 
 .c1::placeholder {
-  color: black;
-  -webkit-filter: opacity(40%);
-  filter: opacity(40%);
+  color: rgba(0,0,0,0.25);
 }
 
 <div
@@ -217,25 +205,28 @@ exports[`Input should return a Small Input 1`] = `
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .c1 {
   display: inline-block;
   min-width: 0;
   width: 100%;
-  padding: 0.5rem 1rem;
+  font: inherit;
+  padding: 0.30000000000000004rem 0.55rem;
   margin: 0;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  -webkit-transition: all .2s cubic-bezier(0.4,0,0.2,1);
-  transition: all .2s cubic-bezier(0.4,0,0.2,1);
-  background-color: white;
+  -webkit-transition: all 200ms cubic-bezier(0.4,0,0.2,1);
+  transition: all 200ms cubic-bezier(0.4,0,0.2,1);
+  background-color: #fff;
   border-width: 1px;
   border-style: solid;
-  border-color: rgb(209 213 219);
+  border-color: #e6e9ee;
   color: black;
   outline: none;
-  border-radius: 8px;
+  border-color: #e6e9ee;
+  border-radius: 12px;
 }
 
 .c1:hover {
@@ -243,33 +234,24 @@ exports[`Input should return a Small Input 1`] = `
 }
 
 .c1:focus {
+  box-shadow: 0 0 0 2px #3B74F320;
   border-color: #3B74F3;
-  -webkit-filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
-  filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
 }
 
 .c1::-webkit-input-placeholder {
-  color: black;
-  -webkit-filter: opacity(40%);
-  filter: opacity(40%);
+  color: rgba(0,0,0,0.25);
 }
 
 .c1::-moz-placeholder {
-  color: black;
-  -webkit-filter: opacity(40%);
-  filter: opacity(40%);
+  color: rgba(0,0,0,0.25);
 }
 
 .c1:-ms-input-placeholder {
-  color: black;
-  -webkit-filter: opacity(40%);
-  filter: opacity(40%);
+  color: rgba(0,0,0,0.25);
 }
 
 .c1::placeholder {
-  color: black;
-  -webkit-filter: opacity(40%);
-  filter: opacity(40%);
+  color: rgba(0,0,0,0.25);
 }
 
 <div
@@ -289,59 +271,53 @@ exports[`Input should return a error Input 1`] = `
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .c1 {
   display: inline-block;
   min-width: 0;
   width: 100%;
-  padding: 0.5rem 1rem;
+  font: inherit;
+  padding: 0.30000000000000004rem 0.55rem;
   margin: 0;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  -webkit-transition: all .2s cubic-bezier(0.4,0,0.2,1);
-  transition: all .2s cubic-bezier(0.4,0,0.2,1);
-  background-color: white;
+  -webkit-transition: all 200ms cubic-bezier(0.4,0,0.2,1);
+  transition: all 200ms cubic-bezier(0.4,0,0.2,1);
+  background-color: #fff;
   border-width: 1px;
   border-style: solid;
-  border-color: #ff3333;
+  border-color: #e6e9ee;
   color: black;
   outline: none;
-  border-radius: 8px;
+  border-color: #e6e9ee;
+  border-radius: 12px;
 }
 
 .c1:hover {
-  border-color: #ff3333;
+  border-color: #ff0e0e;
 }
 
 .c1:focus {
-  border-color: #ff3333;
-  -webkit-filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
-  filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
+  box-shadow: 0 0 0 2px #ff0e0e20;
+  border-color: #ff0e0e;
 }
 
 .c1::-webkit-input-placeholder {
-  color: black;
-  -webkit-filter: opacity(40%);
-  filter: opacity(40%);
+  color: rgba(0,0,0,0.25);
 }
 
 .c1::-moz-placeholder {
-  color: black;
-  -webkit-filter: opacity(40%);
-  filter: opacity(40%);
+  color: rgba(0,0,0,0.25);
 }
 
 .c1:-ms-input-placeholder {
-  color: black;
-  -webkit-filter: opacity(40%);
-  filter: opacity(40%);
+  color: rgba(0,0,0,0.25);
 }
 
 .c1::placeholder {
-  color: black;
-  -webkit-filter: opacity(40%);
-  filter: opacity(40%);
+  color: rgba(0,0,0,0.25);
 }
 
 <div
@@ -361,25 +337,28 @@ exports[`Input should return a success Input 1`] = `
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .c1 {
   display: inline-block;
   min-width: 0;
   width: 100%;
-  padding: 0.5rem 1rem;
+  font: inherit;
+  padding: 0.30000000000000004rem 0.55rem;
   margin: 0;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  -webkit-transition: all .2s cubic-bezier(0.4,0,0.2,1);
-  transition: all .2s cubic-bezier(0.4,0,0.2,1);
-  background-color: white;
+  -webkit-transition: all 200ms cubic-bezier(0.4,0,0.2,1);
+  transition: all 200ms cubic-bezier(0.4,0,0.2,1);
+  background-color: #fff;
   border-width: 1px;
   border-style: solid;
-  border-color: #198754;
+  border-color: #e6e9ee;
   color: black;
   outline: none;
-  border-radius: 8px;
+  border-color: #e6e9ee;
+  border-radius: 12px;
 }
 
 .c1:hover {
@@ -387,33 +366,24 @@ exports[`Input should return a success Input 1`] = `
 }
 
 .c1:focus {
+  box-shadow: 0 0 0 2px #19875420;
   border-color: #198754;
-  -webkit-filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
-  filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
 }
 
 .c1::-webkit-input-placeholder {
-  color: black;
-  -webkit-filter: opacity(40%);
-  filter: opacity(40%);
+  color: rgba(0,0,0,0.25);
 }
 
 .c1::-moz-placeholder {
-  color: black;
-  -webkit-filter: opacity(40%);
-  filter: opacity(40%);
+  color: rgba(0,0,0,0.25);
 }
 
 .c1:-ms-input-placeholder {
-  color: black;
-  -webkit-filter: opacity(40%);
-  filter: opacity(40%);
+  color: rgba(0,0,0,0.25);
 }
 
 .c1::placeholder {
-  color: black;
-  -webkit-filter: opacity(40%);
-  filter: opacity(40%);
+  color: rgba(0,0,0,0.25);
 }
 
 <div
@@ -433,25 +403,28 @@ exports[`Input should return a warning Input 1`] = `
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .c1 {
   display: inline-block;
   min-width: 0;
   width: 100%;
-  padding: 0.5rem 1rem;
+  font: inherit;
+  padding: 0.30000000000000004rem 0.55rem;
   margin: 0;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  -webkit-transition: all .2s cubic-bezier(0.4,0,0.2,1);
-  transition: all .2s cubic-bezier(0.4,0,0.2,1);
-  background-color: white;
+  -webkit-transition: all 200ms cubic-bezier(0.4,0,0.2,1);
+  transition: all 200ms cubic-bezier(0.4,0,0.2,1);
+  background-color: #fff;
   border-width: 1px;
   border-style: solid;
-  border-color: #ffcc00;
+  border-color: #e6e9ee;
   color: black;
   outline: none;
-  border-radius: 8px;
+  border-color: #e6e9ee;
+  border-radius: 12px;
 }
 
 .c1:hover {
@@ -459,33 +432,24 @@ exports[`Input should return a warning Input 1`] = `
 }
 
 .c1:focus {
+  box-shadow: 0 0 0 2px #ffcc0020;
   border-color: #ffcc00;
-  -webkit-filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
-  filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
 }
 
 .c1::-webkit-input-placeholder {
-  color: black;
-  -webkit-filter: opacity(40%);
-  filter: opacity(40%);
+  color: rgba(0,0,0,0.25);
 }
 
 .c1::-moz-placeholder {
-  color: black;
-  -webkit-filter: opacity(40%);
-  filter: opacity(40%);
+  color: rgba(0,0,0,0.25);
 }
 
 .c1:-ms-input-placeholder {
-  color: black;
-  -webkit-filter: opacity(40%);
-  filter: opacity(40%);
+  color: rgba(0,0,0,0.25);
 }
 
 .c1::placeholder {
-  color: black;
-  -webkit-filter: opacity(40%);
-  filter: opacity(40%);
+  color: rgba(0,0,0,0.25);
 }
 
 <div
@@ -501,30 +465,32 @@ exports[`Input should return a warning Input 1`] = `
 exports[`Input should return a with prefix and postfix Input 1`] = `
 .c1 {
   border-left: 1px solid;
-  border-radius: 8px 0 0 8px;
-  padding: 0.5rem 1rem;
+  border-radius: 12px 0 0 12px;
+  padding: 0.55rem 1.05rem;
   margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-  background-color: white;
+  font: inherit;
+  background-color: #fff;
   border-top: 1px solid;
   border-bottom: 1px solid;
-  border-color: rgb(209 213 219);
-  color: black;
+  border-color: #e6e9ee;
+  color: #000;
+  -webkit-transition: all 200ms cubic-bezier(0.4,0,0.2,1);
+  transition: all 200ms cubic-bezier(0.4,0,0.2,1);
 }
 
 .c3 {
   border-right: 1px solid;
-  border-radius: 0 8px 8px 0;
-  padding: 0.5rem 1rem;
+  border-radius: 0 12px 12px 0;
+  padding: 0.55rem 1.05rem;
   margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-  background-color: white;
+  font: inherit;
+  background-color: #fff;
   border-top: 1px solid;
   border-bottom: 1px solid;
-  border-color: rgb(209 213 219);
-  color: black;
+  border-color: #e6e9ee;
+  color: #000;
+  -webkit-transition: all 200ms cubic-bezier(0.4,0,0.2,1);
+  transition: all 200ms cubic-bezier(0.4,0,0.2,1);
 }
 
 .c0 {
@@ -533,24 +499,27 @@ exports[`Input should return a with prefix and postfix Input 1`] = `
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .c2 {
   display: inline-block;
   min-width: 0;
   width: 100%;
-  padding: 0.5rem 1rem;
+  font: inherit;
+  padding: 0.55rem 1.05rem;
   margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-  -webkit-transition: all .2s cubic-bezier(0.4,0,0.2,1);
-  transition: all .2s cubic-bezier(0.4,0,0.2,1);
-  background-color: white;
+  -webkit-transition: all 200ms cubic-bezier(0.4,0,0.2,1);
+  transition: all 200ms cubic-bezier(0.4,0,0.2,1);
+  background-color: #fff;
   border-width: 1px;
   border-style: solid;
-  border-color: rgb(209 213 219);
+  border-color: #e6e9ee;
   color: black;
   outline: none;
+  border-color: #e6e9ee;
   border-radius: 0;
 }
 
@@ -559,33 +528,24 @@ exports[`Input should return a with prefix and postfix Input 1`] = `
 }
 
 .c2:focus {
+  box-shadow: 0 0 0 2px #3B74F320;
   border-color: #3B74F3;
-  -webkit-filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
-  filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
 }
 
 .c2::-webkit-input-placeholder {
-  color: black;
-  -webkit-filter: opacity(40%);
-  filter: opacity(40%);
+  color: rgba(0,0,0,0.25);
 }
 
 .c2::-moz-placeholder {
-  color: black;
-  -webkit-filter: opacity(40%);
-  filter: opacity(40%);
+  color: rgba(0,0,0,0.25);
 }
 
 .c2:-ms-input-placeholder {
-  color: black;
-  -webkit-filter: opacity(40%);
-  filter: opacity(40%);
+  color: rgba(0,0,0,0.25);
 }
 
 .c2::placeholder {
-  color: black;
-  -webkit-filter: opacity(40%);
-  filter: opacity(40%);
+  color: rgba(0,0,0,0.25);
 }
 
 <div
@@ -593,8 +553,6 @@ exports[`Input should return a with prefix and postfix Input 1`] = `
 >
   <div
     className="c1"
-    prefix="https://"
-    type="base"
   >
     https://
   </div>
@@ -605,8 +563,6 @@ exports[`Input should return a with prefix and postfix Input 1`] = `
   />
   <div
     className="c3"
-    prefix="https://"
-    type="base"
   >
     .com
   </div>

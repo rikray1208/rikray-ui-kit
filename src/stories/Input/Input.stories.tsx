@@ -14,7 +14,7 @@ export const decorators = [
 ];
 
 export default {
-    title: 'Design System/Inputs/Input',
+    title: 'Design System/Data Entry/Inputs/Input',
     component: Input,
     decorators: decorators
 } as ComponentMeta<typeof Input>;

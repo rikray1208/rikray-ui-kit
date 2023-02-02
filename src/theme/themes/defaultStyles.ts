@@ -1,10 +1,10 @@
-import {ComponentMap, OverrideComponents, SeedMap} from "../types";
+import {ComponentMap, SeedMap} from "../types";
 
 export const defaultSeed: SeedMap = {
     colorPrimary: '#3B74F3',
     colorSuccess: '#198754',
     colorError: '#ff0e0e',
-    colorInfo: '#D1D5DB',
+    colorInfo: 'rgba(244,244,245,0.6)',
     colorWarning: '#ffcc00',
     colorTextBase: '#000',
     colorBgBase: '#3B74F3',
@@ -18,6 +18,7 @@ export const defaultSeed: SeedMap = {
     fontFamily: `-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'`,
     fontSize: 16,
     lineHeight: 1.5,
+    fontWeightBold: 600,
 
     zIndexBase: 0,
     zIndexPopup: 1000,
@@ -32,15 +33,17 @@ export const defaultSeed: SeedMap = {
     durationSlow: 300,
 
     shadowWidthBase: 2,
+    boxShadowBase: 'rgba(100, 100, 111, 0.2) 0 7px 29px 0',
 }
 
 export const defaultComponents: ComponentMap = {
+    Card: {},
     Button: {
-        scaleButtonActive: 0.9,
+        scaleButtonActive: 0.95,
         buttonBorderDashed: 'dashed'
     },
     Input: {},
     Toaster: {
         gapBetweenToasts: 12
-    }
+    },
 }

@@ -1,15 +1,8 @@
 import React from "react";
 import Button from "../index";
-
-import renderer from "react-test-renderer";
-
 import 'jest-styled-components'
 import {ThemeProvider} from "../../../index";
-
-const assertReactElement = (element: React.ReactElement) => {
-  const component = renderer.create(element);
-  return component.toJSON();
-};
+import {assertReactElement} from "../../../utils/helpers";
 
 describe('button', () => {
     it('should return a Button', () =>{

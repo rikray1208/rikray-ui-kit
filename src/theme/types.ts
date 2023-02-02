@@ -7,11 +7,13 @@ interface InputStyles {}
 interface ToasterStyles {
     gapBetweenToasts?: number
 }
+interface CardStyles {}
 
 export interface ComponentMap {
     Button: ButtonStyles;
     Input: InputStyles;
     Toaster: ToasterStyles;
+    Card: CardStyles;
 }
 
 export type ComponentNames = keyof ComponentMap;
@@ -117,6 +119,7 @@ export interface SeedMap {
     fontFamily: string;
     fontSize: number;
     lineHeight: number;
+    fontWeightBold: number;
 
     zIndexBase: number;
     zIndexPopup: number
@@ -131,6 +134,7 @@ export interface SeedMap {
     durationSlow: number;
 
     shadowWidthBase: number;
+    boxShadowBase: string;
 }
 
 export type Theme = OverrideComponents;

@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card should return a Card 1`] = `
+<div
+  className="sc-iBYQkv jmiuSv"
+  shape="SemiRound"
+>
+  <div
+    className="sc-ftTHYK sc-pyfCe hMniyA dCYhwO"
+  >
+    Card title
+  </div>
+  <div
+    className="sc-kDvujY jbOUMt"
+  >
+    <p
+      style={
+        {
+          "margin": 0,
+        }
+      }
+    >
+      Card content...
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Card should return a Rectangle Card 1`] = `
+<div
+  className="sc-iBYQkv bfapFn"
+  shape="Rectangle"
+>
+  <div
+    className="sc-ftTHYK sc-pyfCe hMniyA dCYhwO"
+  >
+    Card title
+  </div>
+  <div
+    className="sc-kDvujY jbOUMt"
+  >
+    <p
+      style={
+        {
+          "margin": 0,
+        }
+      }
+    >
+      Card content...
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Card should return a Round Card 1`] = `
+<div
+  className="sc-iBYQkv gZDPuE"
+  shape="Round"
+>
+  <div
+    className="sc-ftTHYK sc-pyfCe hMniyA dCYhwO"
+  >
+    Card title
+  </div>
+  <div
+    className="sc-kDvujY jbOUMt"
+  >
+    <p
+      style={
+        {
+          "margin": 0,
+        }
+      }
+    >
+      Card content...
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Card should return a SemiRound Card 1`] = `
+<div
+  className="sc-iBYQkv jmiuSv"
+  shape="SemiRound"
+>
+  <div
+    className="sc-ftTHYK sc-pyfCe hMniyA dCYhwO"
+  >
+    Card title
+  </div>
+  <div
+    className="sc-kDvujY jbOUMt"
+  >
+    <p
+      style={
+        {
+          "margin": 0,
+        }
+      }
+    >
+      Card content...
+    </p>
+  </div>
+</div>
+`;

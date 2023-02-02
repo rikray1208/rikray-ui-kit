@@ -1,14 +1,9 @@
 import React from "react";
-import renderer from "react-test-renderer";
-
 import Input from "../index";
 import 'jest-styled-components'
 import {ThemeProvider} from "../../../index";
+import {assertReactElement} from "../../../utils/helpers";
 
-const assertReactElement = (element: React.ReactElement) => {
-    const component = renderer.create(element);
-    return component.toJSON();
-};
 
 describe('Input', () => {
     it('should return a Input', () => {
