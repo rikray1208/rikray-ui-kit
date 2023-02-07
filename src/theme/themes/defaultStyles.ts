@@ -4,12 +4,12 @@ export const defaultSeed: SeedMap = {
     colorPrimary: '#3B74F3',
     colorSuccess: '#198754',
     colorError: '#ff0e0e',
-    colorInfo: 'rgba(244,244,245,0.6)',
+    colorInfo: '#f4f4f599',
     colorWarning: '#ffcc00',
-    colorTextBase: '#000',
+    colorTextBase: '#000000',
     colorBgBase: '#3B74F3',
-    colorWhite: '#fff',
-    colorBgContainer: '#fff',
+    colorWhite: '#ffffff',
+    colorBgContainer: '#ffffff',
 
     borderRadius: 8,
     borderStyle: 'solid',
@@ -42,8 +42,11 @@ export const defaultComponents: ComponentMap = {
         scaleButtonActive: 0.95,
         buttonBorderDashed: 'dashed'
     },
-    Input: {},
     Toaster: {
         gapBetweenToasts: 12
+    },
+    Input: {},
+    Select: {
+        maxHeight: 250
     },
 }

@@ -2,6 +2,7 @@ import React, {FC, PropsWithChildren} from 'react';
 import {Shape, Size} from "../types";
 import {CardContent, CardWrapper, CardHeader, CardFooter} from "./StyledCard";
 import {ThemeProvider} from "../../index";
+import {AlertCircle} from "lucide-react";
 
 export interface CardProps {
     header?: string;
@@ -12,6 +13,7 @@ const Card: FC<PropsWithChildren<CardProps>> = ({children, ...props}) => {
     return (
         <ThemeProvider>
             <CardWrapper shape={props.shape}>
+                <AlertCircle/>
                 {props.header && <CardHeader>{props.header}</CardHeader>}
                 <CardContent>
                     {children}

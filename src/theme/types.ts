@@ -8,12 +8,16 @@ interface ToasterStyles {
     gapBetweenToasts?: number
 }
 interface CardStyles {}
+interface SelectStyles {
+    maxHeight?: number
+}
 
 export interface ComponentMap {
     Button: ButtonStyles;
     Input: InputStyles;
     Toaster: ToasterStyles;
     Card: CardStyles;
+    Select: SelectStyles;
 }
 
 export type ComponentNames = keyof ComponentMap;

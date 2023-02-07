@@ -43,7 +43,7 @@ const Filled = css<StyledProps>`
             color: ${theme.Button.colorWhite};
 
             &:hover {
-              background: ${theme.Button.colorHoverBase};
+              background: ${theme.Button.colorHoverPrimary};
             }
             &:disabled {
               background-color: ${theme.Button.colorDisable};

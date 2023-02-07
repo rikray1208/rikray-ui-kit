@@ -13,7 +13,8 @@ export const decorators = [
 export default {
     title: 'Design System/Global/Button/Sizes',
     component: Button,
-    decorators: decorators
+    decorators: decorators,
+
 } as ComponentMeta<typeof Button>;
 const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
 
