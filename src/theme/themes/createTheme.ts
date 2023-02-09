@@ -65,6 +65,10 @@ export function genSizeStyles (seed: SeedMap, options: Partial<SizeMap>): SizeMa
         "lineHeight-base": seed.lineHeight,
         "lineHeight-sm": seed.lineHeight - 0.250,
         "lineHeight-xs": seed.lineHeight - 0.500,
+        screenMaxSm: 640,
+        screenMaxMd: 768,
+        screenMaxLg: 1024,
+        screenMaxXl: 1280,
     }
 
     return {
@@ -110,7 +114,7 @@ export function genColorStyles(seed: SeedMap, options: Partial<ColorMap>): Color
     }
 }
 
-const componentKeys: ComponentNames[] = ["Button", "Input", "Toaster", "Card", "Select"]
+const componentKeys: ComponentNames[] = ["Button", "Input", "Toaster", "Card", "Select", "Modal"]
 function genComponents(
     seed: SeedMap,
     color: ColorMap,

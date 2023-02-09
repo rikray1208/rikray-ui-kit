@@ -66,7 +66,7 @@ const Outline = css<StyledProps>`
     &:hover {
       border-color: ${theme.Button.colorHoverPrimary};
       color: ${theme.Button.colorHoverPrimary};
-      background: ${theme.Button.colorHoverPrimary + '06 '};
+      background: ${theme.Button.colorHoverPrimary + '06'};
     }
     &:disabled {
       border-color: ${theme.Button.colorDisable};
@@ -115,16 +115,22 @@ const variants = {
 }
 
 const ButtonStyle = css<StyledProps>`
-  ${({ theme, shape, size, variant }) => css`
+  ${({ theme, shape, size, variant, icon }) => css`
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: ${theme.Button["fontFamily"]};
 
     background: transparent;
     border: none;
 
     color: ${theme.Button.colorTextBase};
-
-    padding: ${theme.Button["padding-1"] + 'rem'} ${theme.Button["padding-3"] + 'rem'};
-
+    ${
+            icon ?
+                    css`padding: ${theme.Button["padding-1"] + 'rem'};`
+                    :
+                    css`padding: ${theme.Button["padding-1"] + 'rem'} ${theme.Button["padding-3"] + 'rem'};`
+    }
     transition: all ${theme.Button["durationBase"] + 'ms'} ${theme.Button['transitionEaseInOut']};
 
     cursor: pointer;

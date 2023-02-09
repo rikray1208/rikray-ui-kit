@@ -2,6 +2,7 @@ import Button from "../../components/Button";
 import {ComponentMeta, ComponentStory} from "@storybook/react";
 import React from "react";
 import {ThemeProvider} from "../../index";
+import {X} from "lucide-react";
 
 export const decorators = [
     (Story: any) => (
@@ -17,6 +18,12 @@ export default {
 
 } as ComponentMeta<typeof Button>;
 const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
+
+export const IconButton = Template.bind({});
+IconButton.args = {
+    size: 'Small',
+    icon: <X size={19}/>
+}
 
 export const LargeButton = Template.bind({});
 LargeButton.args = {

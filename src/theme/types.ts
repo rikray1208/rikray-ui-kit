@@ -11,6 +11,10 @@ interface CardStyles {}
 interface SelectStyles {
     maxHeight?: number
 }
+interface ModalStyles {
+    defaultWidth?: number
+    screenMargin?: number
+}
 
 export interface ComponentMap {
     Button: ButtonStyles;
@@ -18,6 +22,7 @@ export interface ComponentMap {
     Toaster: ToasterStyles;
     Card: CardStyles;
     Select: SelectStyles;
+    Modal: ModalStyles;
 }
 
 export type ComponentNames = keyof ComponentMap;
@@ -102,6 +107,10 @@ export interface SizeMap{
     'borderRadius-md': number;
     'borderRadius-lg': number;
     'borderRadius-xl': number;
+    screenMaxSm: number;
+    screenMaxMd: number;
+    screenMaxLg: number;
+    screenMaxXl: number;
 
 }
 
@@ -115,6 +124,7 @@ export interface SeedMap {
     colorBgBase: string;
     colorWhite: string
     colorBgContainer: string
+    colorOverlay: string
 
     borderRadius: number;
     borderStyle: string;
@@ -139,6 +149,7 @@ export interface SeedMap {
 
     shadowWidthBase: number;
     boxShadowBase: string;
+    boxShadowPopup: string;
 }
 
 export type Theme = OverrideComponents;

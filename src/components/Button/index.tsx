@@ -9,15 +9,14 @@ export interface ButtonProps {
     danger?: boolean,
     success?: boolean
     disabled?: boolean,
-    onClick?: () => void,
+    onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void,
+    icon?: React.ReactNode
 }
-
-const Button: FC<PropsWithChildren<ButtonProps>> = ({children, ...props}) => {
+const Button: FC<PropsWithChildren<ButtonProps>> = ({children, icon, ...props}) => {
     return (
-        <StyledButton {...props}>
-                    <span>
-                        {children}
-                    </span>
+        <StyledButton icon={icon} {...props}>
+            {icon}
+            {children}
         </StyledButton>
     );
 };
