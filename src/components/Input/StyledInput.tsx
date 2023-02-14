@@ -136,7 +136,7 @@ export const StyledInputWrapper = styled.div<Pick<InputProps, 'Size'>>`
   display: flex;
   width: 100%;
   font-family: ${({theme}) => theme.Input.fontFamily};
-  ${({Size}) => Size && setFontSize(Size, 'Input')}
+  ${({Size}) => Size && setFontSize(Size, 'Input', {})}
 `
 
 const StyledInput = styled.input<InputProps>`

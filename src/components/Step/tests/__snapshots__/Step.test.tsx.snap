@@ -1,0 +1,1261 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Step should return a Step 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  gap: 10px;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0.42500000000000004rem 0.675rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  background: #dedede;
+  background: #3B74F3;
+  border-radius: 50%;
+  -webkit-transition: background 100ms cubic-bezier(0.4,0,0.2,1);
+  transition: background 100ms cubic-bezier(0.4,0,0.2,1);
+  color: #ffffff;
+  white-space: pre;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0.42500000000000004rem 0.675rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  background: #dedede;
+  border-radius: 50%;
+  -webkit-transition: background 100ms cubic-bezier(0.4,0,0.2,1);
+  transition: background 100ms cubic-bezier(0.4,0,0.2,1);
+  color: #ffffff;
+  white-space: pre;
+}
+
+.c3 {
+  position: relative;
+}
+
+.c10 {
+  min-width: 200px;
+  position: relative;
+}
+
+.c4 {
+  font-size: 1.25rem;
+  line-height: 2rem;
+  color: #000000;
+  white-space: nowrap;
+  height: 100%;
+}
+
+.c8 {
+  font-size: 1.25rem;
+  line-height: 2rem;
+  color: rgba(0,0,0,0.50);
+  white-space: nowrap;
+  height: 100%;
+}
+
+.c5 {
+  position: absolute;
+  width: 200px;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: #000000;
+  font-weight: 300;
+}
+
+.c9 {
+  position: absolute;
+  width: 200px;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: rgba(0,0,0,0.50);
+  font-weight: 300;
+}
+
+.c6 {
+  position: relative;
+  margin-right: 10px;
+  width: 100%;
+}
+
+.c6::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  border-radius: 1px;
+  -webkit-transition: all 300ms cubic-bezier(0.4,0,0.2,1);
+  transition: all 300ms cubic-bezier(0.4,0,0.2,1);
+  background: #dedede;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+    id="item"
+    style={{}}
+  >
+    <div
+      className="c2"
+      id="step number"
+    >
+       1 
+    </div>
+    <div
+      className="c3"
+      id="content"
+    >
+      <div
+        className="c4"
+        id="title"
+      >
+        Login
+      </div>
+      <div
+        className="c5"
+        id="description"
+      >
+        This is a description
+      </div>
+    </div>
+    <div
+      className="c6"
+      id="step line"
+    />
+  </div>
+  <div
+    className="c1"
+    id="item"
+    style={{}}
+  >
+    <div
+      className="c7"
+      id="step number"
+    >
+       2 
+    </div>
+    <div
+      className="c3"
+      id="content"
+    >
+      <div
+        className="c8"
+        id="title"
+      >
+        Password asd
+      </div>
+      <div
+        className="c9"
+        id="description"
+      >
+        This is a description
+      </div>
+    </div>
+    <div
+      className="c6"
+      id="step line"
+    />
+  </div>
+  <div
+    className="c1"
+    id="item"
+    style={
+      {
+        "flex": "0 1 0",
+      }
+    }
+  >
+    <div
+      className="c7"
+      id="step number"
+    >
+       3 
+    </div>
+    <div
+      className="c10"
+      id="content"
+    >
+      <div
+        className="c8"
+        id="title"
+      >
+        Auth Code
+      </div>
+      <div
+        className="c9"
+        id="description"
+      >
+        This is a description
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Step should return a Step with one success element 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  gap: 10px;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0.42500000000000004rem 0.42500000000000004rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  background: #dedede;
+  background: #3B74F3;
+  border-radius: 50%;
+  -webkit-transition: background 100ms cubic-bezier(0.4,0,0.2,1);
+  transition: background 100ms cubic-bezier(0.4,0,0.2,1);
+  color: #ffffff;
+  white-space: pre;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0.42500000000000004rem 0.675rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  background: #dedede;
+  background: #3B74F3;
+  border-radius: 50%;
+  -webkit-transition: background 100ms cubic-bezier(0.4,0,0.2,1);
+  transition: background 100ms cubic-bezier(0.4,0,0.2,1);
+  color: #ffffff;
+  white-space: pre;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0.42500000000000004rem 0.675rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  background: #dedede;
+  border-radius: 50%;
+  -webkit-transition: background 100ms cubic-bezier(0.4,0,0.2,1);
+  transition: background 100ms cubic-bezier(0.4,0,0.2,1);
+  color: #ffffff;
+  white-space: pre;
+}
+
+.c3 {
+  position: relative;
+}
+
+.c10 {
+  min-width: 200px;
+  position: relative;
+}
+
+.c4 {
+  font-size: 1.25rem;
+  line-height: 2rem;
+  color: #000000;
+  white-space: nowrap;
+  height: 100%;
+}
+
+.c11 {
+  font-size: 1.25rem;
+  line-height: 2rem;
+  color: rgba(0,0,0,0.50);
+  white-space: nowrap;
+  height: 100%;
+}
+
+.c5 {
+  position: absolute;
+  width: 200px;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: #000000;
+  font-weight: 300;
+}
+
+.c12 {
+  position: absolute;
+  width: 200px;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: rgba(0,0,0,0.50);
+  font-weight: 300;
+}
+
+.c6 {
+  position: relative;
+  margin-right: 10px;
+  width: 100%;
+}
+
+.c6::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  border-radius: 1px;
+  -webkit-transition: all 300ms cubic-bezier(0.4,0,0.2,1);
+  transition: all 300ms cubic-bezier(0.4,0,0.2,1);
+  background: #dedede;
+  background: #3B74F3;
+}
+
+.c8 {
+  position: relative;
+  margin-right: 10px;
+  width: 100%;
+}
+
+.c8::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  border-radius: 1px;
+  -webkit-transition: all 300ms cubic-bezier(0.4,0,0.2,1);
+  transition: all 300ms cubic-bezier(0.4,0,0.2,1);
+  background: #dedede;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+    id="item"
+    style={{}}
+  >
+    <div
+      className="c2"
+      id="step number"
+    >
+      <svg
+        className="lucide lucide-check"
+        fill="none"
+        height={24}
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        viewBox="0 0 24 24"
+        width={24}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <polyline
+          points="20 6 9 17 4 12"
+        />
+      </svg>
+    </div>
+    <div
+      className="c3"
+      id="content"
+    >
+      <div
+        className="c4"
+        id="title"
+      >
+        Login
+      </div>
+      <div
+        className="c5"
+        id="description"
+      >
+        This is a description
+      </div>
+    </div>
+    <div
+      className="c6"
+      id="step line"
+    />
+  </div>
+  <div
+    className="c1"
+    id="item"
+    style={{}}
+  >
+    <div
+      className="c7"
+      id="step number"
+    >
+       2 
+    </div>
+    <div
+      className="c3"
+      id="content"
+    >
+      <div
+        className="c4"
+        id="title"
+      >
+        Password asd
+      </div>
+      <div
+        className="c5"
+        id="description"
+      >
+        This is a description
+      </div>
+    </div>
+    <div
+      className="c8"
+      id="step line"
+    />
+  </div>
+  <div
+    className="c1"
+    id="item"
+    style={
+      {
+        "flex": "0 1 0",
+      }
+    }
+  >
+    <div
+      className="c9"
+      id="step number"
+    >
+       3 
+    </div>
+    <div
+      className="c10"
+      id="content"
+    >
+      <div
+        className="c11"
+        id="title"
+      >
+        Auth Code
+      </div>
+      <div
+        className="c12"
+        id="description"
+      >
+        This is a description
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Step should return a small Step 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  gap: 10px;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0.42500000000000004rem 0.675rem;
+  padding: 0.30000000000000004rem 0.55rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  background: #dedede;
+  background: #3B74F3;
+  border-radius: 50%;
+  -webkit-transition: background 100ms cubic-bezier(0.4,0,0.2,1);
+  transition: background 100ms cubic-bezier(0.4,0,0.2,1);
+  color: #ffffff;
+  white-space: pre;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0.42500000000000004rem 0.675rem;
+  padding: 0.30000000000000004rem 0.55rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  background: #dedede;
+  border-radius: 50%;
+  -webkit-transition: background 100ms cubic-bezier(0.4,0,0.2,1);
+  transition: background 100ms cubic-bezier(0.4,0,0.2,1);
+  color: #ffffff;
+  white-space: pre;
+}
+
+.c3 {
+  position: relative;
+}
+
+.c10 {
+  min-width: 200px;
+  position: relative;
+}
+
+.c4 {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: #000000;
+  white-space: nowrap;
+  height: 100%;
+}
+
+.c8 {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: rgba(0,0,0,0.50);
+  white-space: nowrap;
+  height: 100%;
+}
+
+.c5 {
+  position: absolute;
+  width: 200px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #000000;
+  font-weight: 300;
+}
+
+.c9 {
+  position: absolute;
+  width: 200px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: rgba(0,0,0,0.50);
+  font-weight: 300;
+}
+
+.c6 {
+  position: relative;
+  margin-right: 10px;
+  width: 100%;
+}
+
+.c6::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  border-radius: 1px;
+  -webkit-transition: all 300ms cubic-bezier(0.4,0,0.2,1);
+  transition: all 300ms cubic-bezier(0.4,0,0.2,1);
+  background: #dedede;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+    id="item"
+    style={{}}
+  >
+    <div
+      className="c2"
+      id="step number"
+    >
+       1 
+    </div>
+    <div
+      className="c3"
+      id="content"
+    >
+      <div
+        className="c4"
+        id="title"
+      >
+        Login
+      </div>
+      <div
+        className="c5"
+        id="description"
+      >
+        This is a description
+      </div>
+    </div>
+    <div
+      className="c6"
+      id="step line"
+    />
+  </div>
+  <div
+    className="c1"
+    id="item"
+    style={{}}
+  >
+    <div
+      className="c7"
+      id="step number"
+    >
+       2 
+    </div>
+    <div
+      className="c3"
+      id="content"
+    >
+      <div
+        className="c8"
+        id="title"
+      >
+        Password asd
+      </div>
+      <div
+        className="c9"
+        id="description"
+      >
+        This is a description
+      </div>
+    </div>
+    <div
+      className="c6"
+      id="step line"
+    />
+  </div>
+  <div
+    className="c1"
+    id="item"
+    style={
+      {
+        "flex": "0 1 0",
+      }
+    }
+  >
+    <div
+      className="c7"
+      id="step number"
+    >
+       3 
+    </div>
+    <div
+      className="c10"
+      id="content"
+    >
+      <div
+        className="c8"
+        id="title"
+      >
+        Auth Code
+      </div>
+      <div
+        className="c9"
+        id="description"
+      >
+        This is a description
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Step should return a small vertical Step 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.c1 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0.42500000000000004rem 0.675rem;
+  padding: 0.30000000000000004rem 0.55rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  background: #dedede;
+  background: #3B74F3;
+  border-radius: 50%;
+  -webkit-transition: background 100ms cubic-bezier(0.4,0,0.2,1);
+  transition: background 100ms cubic-bezier(0.4,0,0.2,1);
+  color: #ffffff;
+  white-space: pre;
+  float: left;
+  margin-right: 12px;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0.42500000000000004rem 0.675rem;
+  padding: 0.30000000000000004rem 0.55rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  background: #dedede;
+  border-radius: 50%;
+  -webkit-transition: background 100ms cubic-bezier(0.4,0,0.2,1);
+  transition: background 100ms cubic-bezier(0.4,0,0.2,1);
+  color: #ffffff;
+  white-space: pre;
+  float: left;
+  margin-right: 12px;
+}
+
+.c3 {
+  overflow: hidden;
+}
+
+.c10 {
+  min-width: 200px;
+  overflow: hidden;
+}
+
+.c4 {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: #000000;
+  white-space: nowrap;
+  height: 100%;
+}
+
+.c8 {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: rgba(0,0,0,0.50);
+  white-space: nowrap;
+  height: 100%;
+}
+
+.c5 {
+  width: 350px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #000000;
+  font-weight: 300;
+}
+
+.c9 {
+  width: 350px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: rgba(0,0,0,0.50);
+  font-weight: 300;
+}
+
+.c6 {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 17px;
+  padding: 39px 0 3px;
+  left: 14px;
+  padding: 32px 0 4px;
+}
+
+.c6::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 100%;
+  border-radius: 1px;
+  border-radius: 1px;
+  -webkit-transition: all 300ms cubic-bezier(0.4,0,0.2,1);
+  transition: all 300ms cubic-bezier(0.4,0,0.2,1);
+  background: #dedede;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+    id="item"
+    style={{}}
+  >
+    <div
+      className="c2"
+      id="step number"
+    >
+       1 
+    </div>
+    <div
+      className="c3"
+      id="content"
+    >
+      <div
+        className="c4"
+        id="title"
+      >
+        Login
+      </div>
+      <div
+        className="c5"
+        id="description"
+      >
+        This is a description
+      </div>
+    </div>
+    <div
+      className="c6"
+      id="step line"
+    />
+  </div>
+  <div
+    className="c1"
+    id="item"
+    style={{}}
+  >
+    <div
+      className="c7"
+      id="step number"
+    >
+       2 
+    </div>
+    <div
+      className="c3"
+      id="content"
+    >
+      <div
+        className="c8"
+        id="title"
+      >
+        Password asd
+      </div>
+      <div
+        className="c9"
+        id="description"
+      >
+        This is a description
+      </div>
+    </div>
+    <div
+      className="c6"
+      id="step line"
+    />
+  </div>
+  <div
+    className="c1"
+    id="item"
+    style={
+      {
+        "flex": "0 1 0",
+      }
+    }
+  >
+    <div
+      className="c7"
+      id="step number"
+    >
+       3 
+    </div>
+    <div
+      className="c10"
+      id="content"
+    >
+      <div
+        className="c8"
+        id="title"
+      >
+        Auth Code
+      </div>
+      <div
+        className="c9"
+        id="description"
+      >
+        This is a description
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Step should return a vertical Step 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.c1 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0.42500000000000004rem 0.675rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  background: #dedede;
+  background: #3B74F3;
+  border-radius: 50%;
+  -webkit-transition: background 100ms cubic-bezier(0.4,0,0.2,1);
+  transition: background 100ms cubic-bezier(0.4,0,0.2,1);
+  color: #ffffff;
+  white-space: pre;
+  float: left;
+  margin-right: 12px;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0.42500000000000004rem 0.675rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  background: #dedede;
+  border-radius: 50%;
+  -webkit-transition: background 100ms cubic-bezier(0.4,0,0.2,1);
+  transition: background 100ms cubic-bezier(0.4,0,0.2,1);
+  color: #ffffff;
+  white-space: pre;
+  float: left;
+  margin-right: 12px;
+}
+
+.c3 {
+  overflow: hidden;
+}
+
+.c10 {
+  min-width: 200px;
+  overflow: hidden;
+}
+
+.c4 {
+  font-size: 1.25rem;
+  line-height: 2rem;
+  color: #000000;
+  white-space: nowrap;
+  height: 100%;
+}
+
+.c8 {
+  font-size: 1.25rem;
+  line-height: 2rem;
+  color: rgba(0,0,0,0.50);
+  white-space: nowrap;
+  height: 100%;
+}
+
+.c5 {
+  width: 350px;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: #000000;
+  font-weight: 300;
+}
+
+.c9 {
+  width: 350px;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: rgba(0,0,0,0.50);
+  font-weight: 300;
+}
+
+.c6 {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 17px;
+  padding: 39px 0 3px;
+}
+
+.c6::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 100%;
+  border-radius: 1px;
+  border-radius: 1px;
+  -webkit-transition: all 300ms cubic-bezier(0.4,0,0.2,1);
+  transition: all 300ms cubic-bezier(0.4,0,0.2,1);
+  background: #dedede;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+    id="item"
+    style={{}}
+  >
+    <div
+      className="c2"
+      id="step number"
+    >
+       1 
+    </div>
+    <div
+      className="c3"
+      id="content"
+    >
+      <div
+        className="c4"
+        id="title"
+      >
+        Login
+      </div>
+      <div
+        className="c5"
+        id="description"
+      >
+        This is a description
+      </div>
+    </div>
+    <div
+      className="c6"
+      id="step line"
+    />
+  </div>
+  <div
+    className="c1"
+    id="item"
+    style={{}}
+  >
+    <div
+      className="c7"
+      id="step number"
+    >
+       2 
+    </div>
+    <div
+      className="c3"
+      id="content"
+    >
+      <div
+        className="c8"
+        id="title"
+      >
+        Password asd
+      </div>
+      <div
+        className="c9"
+        id="description"
+      >
+        This is a description
+      </div>
+    </div>
+    <div
+      className="c6"
+      id="step line"
+    />
+  </div>
+  <div
+    className="c1"
+    id="item"
+    style={
+      {
+        "flex": "0 1 0",
+      }
+    }
+  >
+    <div
+      className="c7"
+      id="step number"
+    >
+       3 
+    </div>
+    <div
+      className="c10"
+      id="content"
+    >
+      <div
+        className="c8"
+        id="title"
+      >
+        Auth Code
+      </div>
+      <div
+        className="c9"
+        id="description"
+      >
+        This is a description
+      </div>
+    </div>
+  </div>
+</div>
+`;

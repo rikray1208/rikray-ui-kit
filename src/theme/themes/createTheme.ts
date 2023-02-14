@@ -98,14 +98,15 @@ export function genColorStyles(seed: SeedMap, options: Partial<ColorMap>): Color
         colorPrimaryText: seed.colorPrimary,
         colorSuccessText: seed.colorSuccess,
         colorWarningText: seed.colorWarning,
+        colorTextSecondary: "rgba(0, 0, 0, 0.70)",
+        colorTextTertiary: "rgba(0, 0, 0, 0.50)",
         colorTextPlaceholder: "rgba(0, 0, 0, 0.25)",
         colorBorderBase: '#e6e9ee',
         colorShadowError: seed.colorError + '20',
         colorShadowInfo: seed.colorInfo + '20',
         colorShadowPrimary: seed.colorPrimary + '20',
         colorShadowSuccess: seed.colorSuccess + '20',
-        colorShadowWarning: seed.colorWarning + '20'
-
+        colorShadowWarning: seed.colorWarning + '20',
     }
 
     return {
@@ -114,7 +115,7 @@ export function genColorStyles(seed: SeedMap, options: Partial<ColorMap>): Color
     }
 }
 
-const componentKeys: ComponentNames[] = ["Button", "Input", "Toaster", "Card", "Select", "Modal"]
+const componentKeys: ComponentNames[] = ["Button", "Input", "Toaster", "Card", "Select", "Modal", "Step", "Global"]
 function genComponents(
     seed: SeedMap,
     color: ColorMap,

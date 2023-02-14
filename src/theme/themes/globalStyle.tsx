@@ -1,5 +1,4 @@
 import {createGlobalStyle, css} from "styled-components";
-
 export const GlobalStyle = createGlobalStyle`
   ${({ theme }) => css`
     html {
@@ -17,10 +16,10 @@ export const GlobalStyle = createGlobalStyle`
       -webkit-font-smoothing: antialiased;
     }
     body {
-      color: ${theme.Select.colorTextBase};
-      font-family: ${theme.Select.fontFamily};
-      font-size: ${theme.Select["fontSize-base"] + 'rem'};
-      line-height: ${theme.Select["lineHeight-base"] + 'rem'};
+      color: ${theme.Global.colorTextBase};
+      font-family: ${theme.Global.fontFamily};
+      font-size: ${theme.Global["fontSize-base"] + 'rem'};
+      line-height: ${theme.Global["lineHeight-base"] + 'rem'};
     }
   `}
 `

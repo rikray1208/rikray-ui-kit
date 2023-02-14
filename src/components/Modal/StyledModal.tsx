@@ -31,7 +31,7 @@ export const StyledModal = styled.div<WrapperProps>`
     max-width: ${width ? width + 'px' : theme.Modal.defaultWidth + 'px'};
     z-index: ${theme.Modal.zIndexPopup};
     
-    ${setFontSize('Medium', 'Modal')};
+    ${setFontSize('Medium', 'Modal', {})};
 
     box-shadow: ${theme.Modal.boxShadowPopup};
     background: ${theme.Modal.colorBgContainer};
@@ -52,7 +52,7 @@ export const Header = styled.div`
     justify-content: space-between;
     align-items: center;
     margin-bottom: ${theme.Modal["margin-3"]};
-    ${setFontSize('Large', 'Modal')};
+    ${setFontSize('Large', 'Modal', {})};
     font-weight: ${theme.Modal.fontWeightBold};
   `}
 `

@@ -151,7 +151,7 @@ const ButtonStyle = css<StyledProps>`
             shape && setShape(shape, 'Button')
     }
     ${
-            size && setFontSize(size, 'Button')
+            size && setFontSize(size, 'Button', {})
     }
   `}
 `

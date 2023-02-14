@@ -15,6 +15,10 @@ interface ModalStyles {
     defaultWidth?: number
     screenMargin?: number
 }
+interface StepStyles {
+    descriptionWidth?: number;
+    descriptionVerticalWidth?: number;
+}
 
 export interface ComponentMap {
     Button: ButtonStyles;
@@ -23,6 +27,8 @@ export interface ComponentMap {
     Card: CardStyles;
     Select: SelectStyles;
     Modal: ModalStyles;
+    Step: StepStyles;
+    Global: object;
 }
 
 export type ComponentNames = keyof ComponentMap;
@@ -56,14 +62,15 @@ export interface ColorMap {
     colorInfoText: string;
     colorWarningText: string;
     colorTextPlaceholder: string;
+    colorTextSecondary: string;
+    colorTextTertiary: string;
     colorBorderBase: string;
 
     colorShadowPrimary: string;
     colorShadowSuccess: string;
     colorShadowError: string;
     colorShadowInfo: string;
-    colorShadowWarning: string
-
+    colorShadowWarning: string;
 }
 
 export interface SizeMap{
@@ -121,10 +128,11 @@ export interface SeedMap {
     colorInfo: string;
     colorWarning: string;
     colorTextBase: string;
-    colorBgBase: string;
     colorWhite: string
-    colorBgContainer: string
-    colorOverlay: string
+    colorBgBase: string;
+    colorBgContainer: string;
+    colorBgSecondary: string;
+    colorOverlay: string;
 
     borderRadius: number;
     borderStyle: string;
@@ -134,6 +142,7 @@ export interface SeedMap {
     fontSize: number;
     lineHeight: number;
     fontWeightBold: number;
+    fontWeightLight: number;
 
     zIndexBase: number;
     zIndexPopup: number

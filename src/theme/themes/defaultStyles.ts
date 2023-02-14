@@ -2,7 +2,7 @@ import {ComponentMap, SeedMap} from "../types";
 
 export const defaultSeed: SeedMap = {
     colorPrimary: '#3B74F3',
-    colorSuccess: '#198754',
+    colorSuccess: '#00AB66',
     colorError: '#ff0e0e',
     colorInfo: '#f4f4f599',
     colorWarning: '#ffcc00',
@@ -10,6 +10,7 @@ export const defaultSeed: SeedMap = {
     colorBgBase: '#3B74F3',
     colorWhite: '#ffffff',
     colorBgContainer: '#ffffff',
+    colorBgSecondary: '#dedede',
     colorOverlay: 'rgba(0, 0, 0, 0.45)',
 
     borderRadius: 8,
@@ -19,7 +20,8 @@ export const defaultSeed: SeedMap = {
     fontFamily: `-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'`,
     fontSize: 16,
     lineHeight: 1.5,
-    fontWeightBold: 600,
+    fontWeightBold: 500,
+    fontWeightLight: 300,
 
     zIndexBase: 0,
     zIndexPopup: 1000,
@@ -54,5 +56,11 @@ export const defaultComponents: ComponentMap = {
     Modal: {
         defaultWidth: 500,
         screenMargin: 20,
-    }
+    },
+    Step:{
+        descriptionWidth: 200,
+        descriptionVerticalWidth: 350
+    },
+
+    Global: {}
 }

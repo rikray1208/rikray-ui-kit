@@ -18,7 +18,7 @@ export const SelectWrapper = styled.div<Pick<SelectProps,'size'>>`
     box-sizing: border-box;
     font-family: ${theme.Select.fontFamily};
     color: ${theme.Select.colorTextBase};
-    ${setFontSize(size as Size, "Select", true)}
+    ${setFontSize(size as Size, "Select", {less: true})}
   `}
 `
 export const Select = styled.div<SelectStyledProps>`
