@@ -1,4 +1,4 @@
-import {ComponentMap, SeedMap} from "../types";
+import { ComponentMap, SeedMap } from '../types';
 
 export const defaultSeed: SeedMap = {
     colorPrimary: '#3B74F3',
@@ -37,31 +37,31 @@ export const defaultSeed: SeedMap = {
 
     shadowWidthBase: 2,
     boxShadowBase: 'rgba(100, 100, 111, 0.2) 0 7px 29px 0',
-    boxShadowPopup: 'rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px'
-}
+    boxShadowPopup: 'rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px',
+};
 
 export const defaultComponents: ComponentMap = {
     Card: {},
     Button: {
         scaleButtonActive: 0.92,
-        buttonBorderDashed: 'dashed'
+        buttonBorderDashed: 'dashed',
     },
     Toaster: {
-        gapBetweenToasts: 12
+        gapBetweenToasts: 12,
     },
     Input: {},
     Select: {
-        maxHeight: 250
+        maxHeight: 250,
     },
     Modal: {
         defaultWidth: 500,
         screenMargin: 20,
     },
-    Step:{
+    Step: {
         descriptionWidth: 200,
-        descriptionVerticalWidth: 350
+        descriptionVerticalWidth: 350,
     },
     Accordion: {},
 
-    Global: {}
-}
+    Global: {},
+};
