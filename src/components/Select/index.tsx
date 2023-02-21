@@ -1,42 +1,36 @@
-import React, {FC, useEffect, useRef, useState} from 'react';
-import {ChevronDown, ChevronUp, X} from "lucide-react";
-import {
-    OptionItem,
-    OptionsList,
-    SelectedValue,
-    SelectWrapper,
-    Select,
-    SelectedButton
-} from "./StyledSelect";
-import {Shape, Size, Status} from "../types";
+import { ChevronDown, ChevronUp, X } from 'lucide-react';
+import React, { FC, useEffect, useRef, useState } from 'react';
 
+import { OptionItem, OptionsList, SelectedValue, SelectWrapper, Select, SelectedButton } from './StyledSelect';
+
+import { Shape, Size, Status } from '../types';
 
 export type SelectType = Status | 'primary';
 type Option = {
     value: number | string;
     label: string;
-    disabled?: boolean
-}
+    disabled?: boolean;
+};
 export type SelectProps = {
     options: Option[];
     defaultSelected?: Option[];
     multiple?: boolean;
-    shape?: Shape,
-    size?: Size,
-    type?: SelectType,
-    width?: number
-}
-const BaseSelect: FC<SelectProps> = ({ options, defaultSelected, multiple, shape, type, size, width}) => {
+    shape?: Shape;
+    size?: Size;
+    type?: SelectType;
+    width?: number;
+};
+const BaseSelect: FC<SelectProps> = ({ options, defaultSelected, multiple, shape, type, size, width }) => {
     const [isShow, setIsShow] = useState(false);
     const [selected, setSelected] = useState<Option[]>(defaultSelected ? [...defaultSelected] : []);
     const [highlightedIndex, setHighlightedIndex] = useState(0);
-    const selectRef = useRef<HTMLDivElement | null>(null)
+    const selectRef = useRef<HTMLDivElement | null>(null);
 
     function toggleShow() {
-        setIsShow(prevState => !prevState)
+        setIsShow((prevState) => !prevState);
     }
     function toggleOption(option: Option, event?: React.MouseEvent<HTMLButtonElement | HTMLLIElement, MouseEvent>) {
-        if (event) event.stopPropagation()
+        if (event) event.stopPropagation();
         if (option.disabled) return;
         if (multiple) {
             const newSelected = [...selected];
@@ -48,43 +42,43 @@ const BaseSelect: FC<SelectProps> = ({ options, defaultSelected, multiple, shape
             }
             setSelected(newSelected);
         } else {
-            setSelected([option])
-            setIsShow(false)
+            setSelected([option]);
+            setIsShow(false);
         }
     }
     useEffect(() => {
         const KeyboardEventHandler = (event: KeyboardEvent) => {
-            if (event.target != selectRef.current) return
+            if (event.target != selectRef.current) return;
             switch (event.code) {
-                case "Enter":
-                case "Space":
-                    setIsShow(prev => !prev)
-                    if (isShow) toggleOption(options[highlightedIndex])
-                    break
-                case "ArrowUp":
-                case "ArrowDown": {
+                case 'Enter':
+                case 'Space':
+                    setIsShow((prev) => !prev);
+                    if (isShow) toggleOption(options[highlightedIndex]);
+                    break;
+                case 'ArrowUp':
+                case 'ArrowDown': {
                     if (!isShow) {
-                        setIsShow(true)
-                        break
+                        setIsShow(true);
+                        break;
                     }
 
-                    const newValue = highlightedIndex + (event.code === "ArrowDown" ? 1 : -1)
+                    const newValue = highlightedIndex + (event.code === 'ArrowDown' ? 1 : -1);
                     if (newValue >= 0 && newValue < options.length) {
-                        setHighlightedIndex(newValue)
+                        setHighlightedIndex(newValue);
                     }
-                    break
+                    break;
                 }
-                case "Escape":
-                    setIsShow(false)
-                    break
+                case 'Escape':
+                    setIsShow(false);
+                    break;
             }
-        }
-        selectRef.current?.addEventListener("keydown", KeyboardEventHandler)
+        };
+        selectRef.current?.addEventListener('keydown', KeyboardEventHandler);
 
         return () => {
-            selectRef.current?.removeEventListener("keydown", KeyboardEventHandler)
-        }
-    }, [isShow, highlightedIndex, options])
+            selectRef.current?.removeEventListener('keydown', KeyboardEventHandler);
+        };
+    }, [isShow, highlightedIndex, options, toggleOption]);
 
     const renderedOptions: React.ReactNode = options.map((option, index) => {
         const isSelected = selected.findIndex((selectedOption) => selectedOption.value === option.value) !== -1;
@@ -113,36 +107,30 @@ const BaseSelect: FC<SelectProps> = ({ options, defaultSelected, multiple, shape
                 tabIndex={0}
                 onBlur={() => setIsShow(false)}
                 onClick={toggleShow}
-                style={width ? {width: width + 'px'} : {}}
+                style={width ? { width: width + 'px' } : {}}
             >
                 <SelectedValue>
-                    {
-                        multiple ?
-                            selected.map((option) =>
-                                <SelectedButton
-                                    key={option.value}
-                                    onClick={(event) => toggleOption(option, event)}
-                                    shape={shape}
-                                >
-                                    {option.label}
-                                    <X size={12}/>
-                                </SelectedButton>
-                            )
-                            :
-                            <>{selected[0]?.label}</>
-                    }
+                    {multiple ? (
+                        selected.map((option) => (
+                            <SelectedButton
+                                key={option.value}
+                                onClick={(event) => toggleOption(option, event)}
+                                shape={shape}
+                            >
+                                {option.label}
+                                <X size={12} />
+                            </SelectedButton>
+                        ))
+                    ) : (
+                        <>{selected[0]?.label}</>
+                    )}
                 </SelectedValue>
-                {
-                    isShow ?
-                    <ChevronUp style={{flexShrink: 0}} width={16} color={'rgba(0, 0, 0, 35%)'}/>
-                    :
-                    <ChevronDown style={{flexShrink: 0}} width={16} color={'rgba(0, 0, 0, 35%)'}/>
-                }
-                <OptionsList
-                    shape={shape}
-                    type={type}
-                    isOpen={isShow}
-                >
+                {isShow ? (
+                    <ChevronUp style={{ flexShrink: 0 }} width={16} color={'rgba(0, 0, 0, 35%)'} />
+                ) : (
+                    <ChevronDown style={{ flexShrink: 0 }} width={16} color={'rgba(0, 0, 0, 35%)'} />
+                )}
+                <OptionsList shape={shape} type={type} isOpen={isShow}>
                     {renderedOptions}
                 </OptionsList>
             </Select>
@@ -156,7 +144,6 @@ BaseSelect.defaultProps = {
     defaultSelected: [],
     shape: 'SemiRound',
     type: 'primary',
-    size: "Medium"
-}
+    size: 'Medium',
+};
 export default BaseSelect;
-
