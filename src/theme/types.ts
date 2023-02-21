@@ -1,25 +1,24 @@
-interface ButtonStyles {
-    scaleButtonActive?: number
-    buttonBorderDashed?: string
-}
-
-interface InputStyles {}
 interface ToasterStyles {
-    gapBetweenToasts?: number
+    gapBetweenToasts?: number;
 }
-interface CardStyles {}
-interface AccordionStyles {}
-interface SelectStyles {
-    maxHeight?: number
+interface ButtonStyles {
+    scaleButtonActive?: number;
+    buttonBorderDashed?: string;
 }
 interface ModalStyles {
-    defaultWidth?: number
-    screenMargin?: number
+    defaultWidth?: number;
+    screenMargin?: number;
+}
+interface SelectStyles {
+    maxHeight?: number;
 }
 interface StepStyles {
     descriptionWidth?: number;
     descriptionVerticalWidth?: number;
 }
+interface InputStyles {} // eslint-disable-line
+interface CardStyles {} // eslint-disable-line
+interface AccordionStyles {} // eslint-disable-line
 
 export interface ComponentMap {
     Button: ButtonStyles;
@@ -36,12 +35,12 @@ export interface ComponentMap {
 export type ComponentNames = keyof ComponentMap;
 
 export type OverrideComponents = {
-    [key in keyof ComponentMap]: ComponentMap[key] & SeedMap & SizeMap & ColorMap
-}
+    [key in keyof ComponentMap]: ComponentMap[key] & SeedMap & SizeMap & ColorMap;
+};
 
 export type OverrideComponentsPartial = {
-    [key in keyof ComponentMap]: ComponentMap[key] & Partial<SeedMap & SizeMap & ColorMap>
-}
+    [key in keyof ComponentMap]: ComponentMap[key] & Partial<SeedMap & SizeMap & ColorMap>;
+};
 
 export interface ColorMap {
     colorHoverPrimary: string;
@@ -57,7 +56,7 @@ export interface ColorMap {
     colorActiveWarning: string;
     colorActiveBase: string;
     colorDisable: string;
-    colorDisableText: string
+    colorDisableText: string;
     colorPrimaryText: string;
     colorSuccessText: string;
     colorErrorText: string;
@@ -75,7 +74,7 @@ export interface ColorMap {
     colorShadowWarning: string;
 }
 
-export interface SizeMap{
+export interface SizeMap {
     'fontSize-xs': number;
     'fontSize-sm': number;
     'fontSize-base': number;
@@ -120,7 +119,6 @@ export interface SizeMap{
     screenMaxMd: number;
     screenMaxLg: number;
     screenMaxXl: number;
-
 }
 
 export interface SeedMap {
@@ -130,7 +128,7 @@ export interface SeedMap {
     colorInfo: string;
     colorWarning: string;
     colorTextBase: string;
-    colorWhite: string
+    colorWhite: string;
     colorBgBase: string;
     colorBgContainer: string;
     colorBgSecondary: string;
@@ -147,7 +145,7 @@ export interface SeedMap {
     fontWeightLight: number;
 
     zIndexBase: number;
-    zIndexPopup: number
+    zIndexPopup: number;
 
     baseSize: number;
     sizeStep: number;
@@ -165,17 +163,16 @@ export interface SeedMap {
 
 export type Theme = OverrideComponents;
 
-
 export interface StyleMap {
-    seed?: Partial<SeedMap>,
-    size?: Partial<SizeMap>,
-    color?: Partial<ColorMap>
+    seed?: Partial<SeedMap>;
+    size?: Partial<SizeMap>;
+    color?: Partial<ColorMap>;
 }
 
 export interface ThemeConfig {
-    options?: StyleMap
-    components?: OverrideComponentsPartial
-    theme?: ThemeNames
+    options?: StyleMap;
+    components?: OverrideComponentsPartial;
+    theme?: ThemeNames;
 }
 
 export type ThemeNames = 'dark' | 'compact' | 'default';
