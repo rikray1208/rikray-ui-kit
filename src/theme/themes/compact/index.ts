@@ -1,5 +1,4 @@
-import {sizeMap} from "./sizeMap";
-import {seedMap} from "./seedMap";
+import { seedMap } from './seedMap';
+import { sizeMap } from './sizeMap';
 
-
-export default {seedMap, sizeMap}
+export default { seedMap, sizeMap };

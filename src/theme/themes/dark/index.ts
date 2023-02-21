@@ -1,4 +1,3 @@
-import {seedMap} from "./seedMap";
+import { seedMap } from './seedMap';
 
-
-export default {seedMap}
+export default { seedMap };
