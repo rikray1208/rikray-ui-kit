@@ -21,13 +21,13 @@ exports[`Input should return a Input 1`] = `
   margin: 0;
   -webkit-transition: all 200ms cubic-bezier(0.4,0,0.2,1);
   transition: all 200ms cubic-bezier(0.4,0,0.2,1);
-  background-color: #fff;
+  background-color: #ffffff;
   border-width: 1px;
   border-style: solid;
-  border-color: #e6e9ee;
+  border-color: #d2d3d9;
   color: black;
   outline: none;
-  border-color: #e6e9ee;
+  border-color: #d2d3d9;
   border-radius: 12px;
 }
 
@@ -87,13 +87,13 @@ exports[`Input should return a Large Input 1`] = `
   margin: 0;
   -webkit-transition: all 200ms cubic-bezier(0.4,0,0.2,1);
   transition: all 200ms cubic-bezier(0.4,0,0.2,1);
-  background-color: #fff;
+  background-color: #ffffff;
   border-width: 1px;
   border-style: solid;
-  border-color: #e6e9ee;
+  border-color: #d2d3d9;
   color: black;
   outline: none;
-  border-color: #e6e9ee;
+  border-color: #d2d3d9;
   border-radius: 12px;
 }
 
@@ -153,13 +153,13 @@ exports[`Input should return a Medium Input 1`] = `
   margin: 0;
   -webkit-transition: all 200ms cubic-bezier(0.4,0,0.2,1);
   transition: all 200ms cubic-bezier(0.4,0,0.2,1);
-  background-color: #fff;
+  background-color: #ffffff;
   border-width: 1px;
   border-style: solid;
-  border-color: #e6e9ee;
+  border-color: #d2d3d9;
   color: black;
   outline: none;
-  border-color: #e6e9ee;
+  border-color: #d2d3d9;
   border-radius: 12px;
 }
 
@@ -219,13 +219,13 @@ exports[`Input should return a Small Input 1`] = `
   margin: 0;
   -webkit-transition: all 200ms cubic-bezier(0.4,0,0.2,1);
   transition: all 200ms cubic-bezier(0.4,0,0.2,1);
-  background-color: #fff;
+  background-color: #ffffff;
   border-width: 1px;
   border-style: solid;
-  border-color: #e6e9ee;
+  border-color: #d2d3d9;
   color: black;
   outline: none;
-  border-color: #e6e9ee;
+  border-color: #d2d3d9;
   border-radius: 12px;
 }
 
@@ -285,13 +285,13 @@ exports[`Input should return a error Input 1`] = `
   margin: 0;
   -webkit-transition: all 200ms cubic-bezier(0.4,0,0.2,1);
   transition: all 200ms cubic-bezier(0.4,0,0.2,1);
-  background-color: #fff;
+  background-color: #ffffff;
   border-width: 1px;
   border-style: solid;
-  border-color: #e6e9ee;
+  border-color: #d2d3d9;
   color: black;
   outline: none;
-  border-color: #e6e9ee;
+  border-color: #d2d3d9;
   border-radius: 12px;
 }
 
@@ -351,23 +351,23 @@ exports[`Input should return a success Input 1`] = `
   margin: 0;
   -webkit-transition: all 200ms cubic-bezier(0.4,0,0.2,1);
   transition: all 200ms cubic-bezier(0.4,0,0.2,1);
-  background-color: #fff;
+  background-color: #ffffff;
   border-width: 1px;
   border-style: solid;
-  border-color: #e6e9ee;
+  border-color: #d2d3d9;
   color: black;
   outline: none;
-  border-color: #e6e9ee;
+  border-color: #d2d3d9;
   border-radius: 12px;
 }
 
 .c1:hover {
-  border-color: #198754;
+  border-color: #00AB66;
 }
 
 .c1:focus {
-  box-shadow: 0 0 0 2px #19875420;
-  border-color: #198754;
+  box-shadow: 0 0 0 2px #00AB6620;
+  border-color: #00AB66;
 }
 
 .c1::-webkit-input-placeholder {
@@ -417,13 +417,13 @@ exports[`Input should return a warning Input 1`] = `
   margin: 0;
   -webkit-transition: all 200ms cubic-bezier(0.4,0,0.2,1);
   transition: all 200ms cubic-bezier(0.4,0,0.2,1);
-  background-color: #fff;
+  background-color: #ffffff;
   border-width: 1px;
   border-style: solid;
-  border-color: #e6e9ee;
+  border-color: #d2d3d9;
   color: black;
   outline: none;
-  border-color: #e6e9ee;
+  border-color: #d2d3d9;
   border-radius: 12px;
 }
 
@@ -469,11 +469,11 @@ exports[`Input should return a with prefix and postfix Input 1`] = `
   padding: 0.55rem 1.05rem;
   margin: 0;
   font: inherit;
-  background-color: #fff;
+  background-color: #ffffff;
   border-top: 1px solid;
   border-bottom: 1px solid;
-  border-color: #e6e9ee;
-  color: #000;
+  border-color: #d2d3d9;
+  color: #000000;
   -webkit-transition: all 200ms cubic-bezier(0.4,0,0.2,1);
   transition: all 200ms cubic-bezier(0.4,0,0.2,1);
 }
@@ -484,11 +484,11 @@ exports[`Input should return a with prefix and postfix Input 1`] = `
   padding: 0.55rem 1.05rem;
   margin: 0;
   font: inherit;
-  background-color: #fff;
+  background-color: #ffffff;
   border-top: 1px solid;
   border-bottom: 1px solid;
-  border-color: #e6e9ee;
-  color: #000;
+  border-color: #d2d3d9;
+  color: #000000;
   -webkit-transition: all 200ms cubic-bezier(0.4,0,0.2,1);
   transition: all 200ms cubic-bezier(0.4,0,0.2,1);
 }
@@ -513,13 +513,13 @@ exports[`Input should return a with prefix and postfix Input 1`] = `
   margin: 0;
   -webkit-transition: all 200ms cubic-bezier(0.4,0,0.2,1);
   transition: all 200ms cubic-bezier(0.4,0,0.2,1);
-  background-color: #fff;
+  background-color: #ffffff;
   border-width: 1px;
   border-style: solid;
-  border-color: #e6e9ee;
+  border-color: #d2d3d9;
   color: black;
   outline: none;
-  border-color: #e6e9ee;
+  border-color: #d2d3d9;
   border-radius: 0;
 }
 

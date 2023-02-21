@@ -33,7 +33,7 @@ export const defaultSeed: SeedMap = {
 
     durationFast: 100,
     durationBase: 200,
-    durationSlow: 300,
+    durationSlow: 400,
 
     shadowWidthBase: 2,
     boxShadowBase: 'rgba(100, 100, 111, 0.2) 0 7px 29px 0',
@@ -61,6 +61,7 @@ export const defaultComponents: ComponentMap = {
         descriptionWidth: 200,
         descriptionVerticalWidth: 350
     },
+    Accordion: {},
 
     Global: {}
 }

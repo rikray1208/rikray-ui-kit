@@ -4,6 +4,7 @@ import {X} from "lucide-react";
 import Button, {ButtonProps} from "../Button";
 import {Shape} from "../types";
 import {createPortal} from "react-dom";
+import styled from "styled-components";
 export interface ModalProps {
     open: boolean
     title?: React.ReactNode,
@@ -24,6 +25,8 @@ const Modal: FC<PropsWithChildren<ModalProps>> = (props) => {
     const {open, title, onCancel, onConfirm, children, width, shape, titleIcon, cancelText, confirmText, closeIcon, overlay, btnCansel, btnConfirm, btnClose} = props
     const modalRef = useRef<HTMLDivElement | null>(null);
 
+    const Div = styled.div``;
+    const DivError = () => <Div onClick={() => 0} />
     useEffect(() => {
         const EscHandler = (event: KeyboardEvent) => {
             if (event.code === 'Escape') {

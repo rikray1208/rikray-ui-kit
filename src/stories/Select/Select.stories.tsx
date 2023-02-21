@@ -1,7 +1,6 @@
-import {ThemeProvider} from "../../index";
+import {Select, ThemeProvider} from "../../index";
 import {ComponentMeta, ComponentStory} from "@storybook/react";
 import React from "react";
-import Select from "../../components/Select";
 
 const options = [
     { value: 'jack', label: 'Jack' },

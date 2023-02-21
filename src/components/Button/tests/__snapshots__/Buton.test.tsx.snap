@@ -799,7 +799,7 @@ exports[`button should return a success Button 1`] = `
   cursor: pointer;
   background: #3B74F3;
   color: #ffffff;
-  background: #198754;
+  background: #00AB66;
   border-radius: 8px;
   font-size: 1rem;
   line-height: 1.5rem;
@@ -820,7 +820,7 @@ exports[`button should return a success Button 1`] = `
 }
 
 .c0:hover {
-  background: #218f5c;
+  background: #8b36e;
 }
 
 .c0:disabled {

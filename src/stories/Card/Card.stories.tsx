@@ -1,12 +1,13 @@
 import {ComponentMeta, ComponentStory} from "@storybook/react";
 import React from "react";
-import {ThemeProvider} from "../../index";
-import Card from "../../components/Card";
+import {Card, ThemeProvider} from "../../index";
 
 const decorators = [
     (Story: any) => (
         <ThemeProvider>
-            <Story />
+            <div>
+                <Story />
+            </div>
         </ThemeProvider>
     ),
 ];
@@ -14,15 +15,7 @@ const decorators = [
 export default {
     title: 'Design System/Global/Card',
     component: Card,
-    decorators: [
-        (Story: any) => (
-            <ThemeProvider>
-               <div>
-                   <Story />
-               </div>
-            </ThemeProvider>
-        ),
-    ]
+    decorators
 } as ComponentMeta<typeof Card>;
 
 

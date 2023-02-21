@@ -27,7 +27,7 @@ exports[`Step should return a Medium Select 1`] = `
   position: relative;
   padding: 0.30000000000000004rem 0.42500000000000004rem;
   background-color: #ffffff;
-  border: 1px solid #e6e9ee;
+  border: 1px solid #d2d3d9;
   border-radius: 8px;
   outline: none;
   -webkit-transition: all 200ms cubic-bezier(0.4,0,0.2,1);
@@ -270,7 +270,7 @@ exports[`Step should return a Rectangle Select 1`] = `
   position: relative;
   padding: 0.30000000000000004rem 0.42500000000000004rem;
   background-color: #ffffff;
-  border: 1px solid #e6e9ee;
+  border: 1px solid #d2d3d9;
   border-radius: 4px;
   outline: none;
   -webkit-transition: all 200ms cubic-bezier(0.4,0,0.2,1);
@@ -513,7 +513,7 @@ exports[`Step should return a Round Select 1`] = `
   position: relative;
   padding: 0.30000000000000004rem 0.42500000000000004rem;
   background-color: #ffffff;
-  border: 1px solid #e6e9ee;
+  border: 1px solid #d2d3d9;
   border-radius: 12px;
   outline: none;
   -webkit-transition: all 200ms cubic-bezier(0.4,0,0.2,1);
@@ -756,7 +756,7 @@ exports[`Step should return a Select 1`] = `
   position: relative;
   padding: 0.30000000000000004rem 0.42500000000000004rem;
   background-color: #ffffff;
-  border: 1px solid #e6e9ee;
+  border: 1px solid #d2d3d9;
   border-radius: 8px;
   outline: none;
   -webkit-transition: all 200ms cubic-bezier(0.4,0,0.2,1);
@@ -999,7 +999,7 @@ exports[`Step should return a SemiRound Select 1`] = `
   position: relative;
   padding: 0.30000000000000004rem 0.42500000000000004rem;
   background-color: #ffffff;
-  border: 1px solid #e6e9ee;
+  border: 1px solid #d2d3d9;
   border-radius: 8px;
   outline: none;
   -webkit-transition: all 200ms cubic-bezier(0.4,0,0.2,1);
@@ -1242,7 +1242,7 @@ exports[`Step should return a Small Select 1`] = `
   position: relative;
   padding: 0.30000000000000004rem 0.42500000000000004rem;
   background-color: #ffffff;
-  border: 1px solid #e6e9ee;
+  border: 1px solid #d2d3d9;
   border-radius: 8px;
   outline: none;
   -webkit-transition: all 200ms cubic-bezier(0.4,0,0.2,1);
@@ -1485,7 +1485,7 @@ exports[`Step should return a error Select 1`] = `
   position: relative;
   padding: 0.30000000000000004rem 0.42500000000000004rem;
   background-color: #ffffff;
-  border: 1px solid #e6e9ee;
+  border: 1px solid #d2d3d9;
   border-radius: 8px;
   outline: none;
   -webkit-transition: all 200ms cubic-bezier(0.4,0,0.2,1);
@@ -1729,7 +1729,7 @@ exports[`Step should return a large Select 1`] = `
   position: relative;
   padding: 0.30000000000000004rem 0.42500000000000004rem;
   background-color: #ffffff;
-  border: 1px solid #e6e9ee;
+  border: 1px solid #d2d3d9;
   border-radius: 8px;
   outline: none;
   -webkit-transition: all 200ms cubic-bezier(0.4,0,0.2,1);
@@ -1972,7 +1972,7 @@ exports[`Step should return a multiple Select 1`] = `
   position: relative;
   padding: 0.30000000000000004rem 0.42500000000000004rem;
   background-color: #ffffff;
-  border: 1px solid #e6e9ee;
+  border: 1px solid #d2d3d9;
   border-radius: 8px;
   outline: none;
   -webkit-transition: all 200ms cubic-bezier(0.4,0,0.2,1);
@@ -2215,7 +2215,7 @@ exports[`Step should return a success Select 1`] = `
   position: relative;
   padding: 0.30000000000000004rem 0.42500000000000004rem;
   background-color: #ffffff;
-  border: 1px solid #e6e9ee;
+  border: 1px solid #d2d3d9;
   border-radius: 8px;
   outline: none;
   -webkit-transition: all 200ms cubic-bezier(0.4,0,0.2,1);
@@ -2459,7 +2459,7 @@ exports[`Step should return a warning Select 1`] = `
   position: relative;
   padding: 0.30000000000000004rem 0.42500000000000004rem;
   background-color: #ffffff;
-  border: 1px solid #e6e9ee;
+  border: 1px solid #d2d3d9;
   border-radius: 8px;
   outline: none;
   -webkit-transition: all 200ms cubic-bezier(0.4,0,0.2,1);

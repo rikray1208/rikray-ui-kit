@@ -8,6 +8,7 @@ interface ToasterStyles {
     gapBetweenToasts?: number
 }
 interface CardStyles {}
+interface AccordionStyles {}
 interface SelectStyles {
     maxHeight?: number
 }
@@ -28,6 +29,7 @@ export interface ComponentMap {
     Select: SelectStyles;
     Modal: ModalStyles;
     Step: StepStyles;
+    Accordion: AccordionStyles;
     Global: object;
 }
 

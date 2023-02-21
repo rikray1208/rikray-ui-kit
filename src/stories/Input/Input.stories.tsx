@@ -1,7 +1,6 @@
 import {ComponentMeta, ComponentStory} from "@storybook/react";
-import Input from "../../components/Input";
 import React from "react";
-import {ThemeProvider} from "../../index";
+import {Input, ThemeProvider} from "../../index";
 
 export const decorators = [
     (Story: any) => (
