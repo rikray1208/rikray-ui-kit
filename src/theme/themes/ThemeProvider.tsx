@@ -1,19 +1,21 @@
-import React, {FC, PropsWithChildren} from 'react';
-import {Theme, ThemeConfig} from "../types";
-import {createTheme} from "./createTheme";
-import {ThemeProvider as Provider} from "styled-components";
-import {GlobalStyle} from "./globalStyle";
+import React, { FC, PropsWithChildren } from 'react';
+
+import { ThemeProvider as Provider } from 'styled-components';
+
+import { createTheme } from './createTheme';
+import { GlobalStyle } from './globalStyle';
+
+import { Theme, ThemeConfig } from '../types';
 
 interface ThemeProviderProps {
-    config?: ThemeConfig
+    config?: ThemeConfig;
 }
-const ThemeProvider: FC<PropsWithChildren<ThemeProviderProps>> = ({children, config}) => {
-
-    const theme: Theme = createTheme(config?.theme ? config.theme : 'default', config?.options, config?.components)
+const ThemeProvider: FC<PropsWithChildren<ThemeProviderProps>> = ({ children, config }) => {
+    const theme: Theme = createTheme(config?.theme ? config.theme : 'default', config?.options, config?.components);
 
     return (
         <Provider theme={theme}>
-            <GlobalStyle/>
+            <GlobalStyle />
             {children}
         </Provider>
     );
