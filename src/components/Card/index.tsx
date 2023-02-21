@@ -1,23 +1,23 @@
-import React, {FC, PropsWithChildren} from 'react';
-import {Shape, Size} from "../types";
-import {CardContent, CardWrapper, CardHeader, CardFooter} from "./StyledCard";
-import {ThemeProvider} from "../../index";
-import {AlertCircle} from "lucide-react";
+import { AlertCircle } from 'lucide-react';
+import React, { FC, PropsWithChildren } from 'react';
+
+import { CardContent, CardWrapper, CardHeader, CardFooter } from './StyledCard';
+
+import { ThemeProvider } from '../../index';
+import { Shape } from '../types';
 
 export interface CardProps {
     header?: string;
     footer?: string;
-    shape?: Shape
+    shape?: Shape;
 }
-const Card: FC<PropsWithChildren<CardProps>> = ({children, ...props}) => {
+const Card: FC<PropsWithChildren<CardProps>> = ({ children, ...props }) => {
     return (
         <ThemeProvider>
             <CardWrapper shape={props.shape}>
-                <AlertCircle/>
+                <AlertCircle />
                 {props.header && <CardHeader>{props.header}</CardHeader>}
-                <CardContent>
-                    {children}
-                </CardContent>
+                <CardContent>{children}</CardContent>
                 {props.footer && <CardFooter>{props.footer}</CardFooter>}
             </CardWrapper>
         </ThemeProvider>
@@ -26,7 +26,7 @@ const Card: FC<PropsWithChildren<CardProps>> = ({children, ...props}) => {
 
 Card.defaultProps = {
     header: 'Card title',
-    children: <p style={{margin: 0}}>Card content...</p>,
-    shape: 'SemiRound'
-}
+    children: <p style={{ margin: 0 }}>Card content...</p>,
+    shape: 'SemiRound',
+};
 export default Card;
