@@ -1,6 +1,7 @@
-import {Select, ThemeProvider} from "../../index";
-import {ComponentMeta, ComponentStory} from "@storybook/react";
-import React from "react";
+import { ComponentMeta, ComponentStory } from '@storybook/react';
+import React from 'react';
+
+import { Select, ThemeProvider } from '../../index';
 
 const options = [
     { value: 'jack', label: 'Jack' },
@@ -12,11 +13,11 @@ const options = [
     { value: 'christopher', label: 'Christopher' },
     { value: 'matthew', label: 'Matthew' },
     { value: 'mark', label: 'Mark', disabled: true },
-]
+];
 export const decorators = [
     (Story: any) => (
         <ThemeProvider>
-            <Story/>
+            <Story />
         </ThemeProvider>
     ),
 ];
@@ -49,15 +50,14 @@ export default {
             description: 'Задает конкретную ширину селекту',
             control: { type: 'number' },
         },
-    }
+    },
 } as ComponentMeta<typeof Select>;
 
-const Template: ComponentStory<typeof Select> = (args) => <Select {...args}/>;
+const Template: ComponentStory<typeof Select> = (args) => <Select {...args} />;
 
-export const BaseSelect = Template.bind({})
+export const BaseSelect = Template.bind({});
 BaseSelect.args = {
     options,
     defaultSelected: [{ value: 'jack', label: 'Jack' }],
-    width: 250
-}
-
+    width: 250,
+};

@@ -1,6 +1,7 @@
-import {ComponentMeta, ComponentStory} from "@storybook/react";
-import React from "react";
-import {Input, ThemeProvider} from "../../index";
+import { ComponentMeta, ComponentStory } from '@storybook/react';
+import React from 'react';
+
+import { Input, ThemeProvider } from '../../index';
 
 export const decorators = [
     (Story: any) => (
@@ -15,48 +16,47 @@ export const decorators = [
 export default {
     title: 'Design System/Data Entry/Inputs/Input',
     component: Input,
-    decorators: decorators
+    decorators: decorators,
 } as ComponentMeta<typeof Input>;
-
 
 const Template: ComponentStory<typeof Input> = (args) => <Input {...args} />;
 
 export const SmallInput = Template.bind({});
 SmallInput.args = {
     placeholder: 'Placeholder...',
-    Size: 'Small'
-}
+    Size: 'Small',
+};
 
 export const MediumInput = Template.bind({});
 MediumInput.args = {
     placeholder: 'Placeholder...',
-    Size: 'Medium'
-}
+    Size: 'Medium',
+};
 
 export const LargeInput = Template.bind({});
 LargeInput.args = {
     placeholder: 'Placeholder...',
-    Size: 'Large'
-}
+    Size: 'Large',
+};
 
 export const PrefixInput = Template.bind({});
 PrefixInput.args = {
     placeholder: 'Placeholder...',
     Size: 'Small',
-    prefix: 'https://'
-}
+    prefix: 'https://',
+};
 
 export const PostfixInput = Template.bind({});
 PostfixInput.args = {
     placeholder: 'Placeholder...',
     Size: 'Small',
-    postfix: '.com'
-}
+    postfix: '.com',
+};
 
 export const PrefixAndPostfixInput = Template.bind({});
 PrefixAndPostfixInput.args = {
     placeholder: 'Placeholder...',
     Size: 'Small',
     prefix: 'https://',
-    postfix: '.com'
-}
+    postfix: '.com',
+};
