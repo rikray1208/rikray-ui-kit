@@ -1,4 +1,10 @@
-import {
+import compact from './compact';
+import dark from './dark';
+import { defaultComponents, defaultSeed } from './defaultStyles';
+
+import { genColors } from '../../utils/genColors';
+
+import type {
     OverrideComponents,
     SeedMap,
     SizeMap,
@@ -7,19 +13,14 @@ import {
     Theme,
     ComponentNames,
     ThemeNames,
-    OverrideComponentsPartial
-} from "../types";
-import {genColors} from "../../utils/genColors";
-
-import dark from "./dark";
-import compact from "./compact";
-import {defaultComponents, defaultSeed} from "./defaultStyles";
+    OverrideComponentsPartial,
+} from '../types';
 
 type ThemePresets = {
     [key in ThemeNames]: StyleMap;
-}
+};
 
-export function genSizeStyles (seed: SeedMap, options: Partial<SizeMap>): SizeMap {
+export function genSizeStyles(seed: SeedMap, options: Partial<SizeMap>): SizeMap {
     const sizeUnit = 10;
     const fontUnit = 16;
 
@@ -27,54 +28,54 @@ export function genSizeStyles (seed: SeedMap, options: Partial<SizeMap>): SizeMa
     const sizeStep = seed.sizeStep / sizeUnit;
 
     const size: SizeMap = {
-        "borderRadius-lg": 12,
-        "borderRadius-md": 10,
-        "borderRadius-sm": 8,
-        "borderRadius-xl": 6,
-        "borderRadius-xs": 4,
-        "margin-1": baseSize - sizeStep * 2,
-        "margin-1.5": baseSize - sizeStep - sizeStep / 2,
-        "margin-2": baseSize - sizeStep,
-        "margin-2.5": baseSize - sizeStep / 2,
-        "margin-3": baseSize,
-        "margin-4": baseSize + sizeStep,
-        "margin-5": baseSize + sizeStep * 2,
-        "margin-6": baseSize + sizeStep * 3,
-        "padding-1": baseSize - sizeStep * 2,
-        "padding-1.5": baseSize - sizeStep - sizeStep / 2,
-        "padding-2": baseSize - sizeStep,
-        "padding-2.5": baseSize - sizeStep / 2,
-        "padding-3": baseSize,
-        "padding-4": baseSize + sizeStep,
-        "padding-5": baseSize + sizeStep * 2,
-        "padding-6": baseSize + sizeStep * 3,
-        "size-2xl": "",
-        "size-lg": "",
-        "size-md": "",
-        "size-sm": "",
-        "size-xl": "",
-        "fontSize-2xl": (seed.fontSize / fontUnit) + 0.375,
-        "fontSize-xl": (seed.fontSize / fontUnit) + 0.250,
-        "fontSize-lg": (seed.fontSize / fontUnit) + 0.125,
-        "fontSize-base": (seed.fontSize / fontUnit),
-        "fontSize-sm":(seed.fontSize / fontUnit) - 0.125,
-        "fontSize-xs": (seed.fontSize / fontUnit) - 0.250,
-        "lineHeight-2xl": seed.lineHeight + 0.750,
-        "lineHeight-xl": seed.lineHeight + 0.500,
-        "lineHeight-lg": seed.lineHeight + 0.250,
-        "lineHeight-base": seed.lineHeight,
-        "lineHeight-sm": seed.lineHeight - 0.250,
-        "lineHeight-xs": seed.lineHeight - 0.500,
+        'borderRadius-lg': 12,
+        'borderRadius-md': 10,
+        'borderRadius-sm': 8,
+        'borderRadius-xl': 6,
+        'borderRadius-xs': 4,
+        'margin-1': baseSize - sizeStep * 2,
+        'margin-1.5': baseSize - sizeStep - sizeStep / 2,
+        'margin-2': baseSize - sizeStep,
+        'margin-2.5': baseSize - sizeStep / 2,
+        'margin-3': baseSize,
+        'margin-4': baseSize + sizeStep,
+        'margin-5': baseSize + sizeStep * 2,
+        'margin-6': baseSize + sizeStep * 3,
+        'padding-1': baseSize - sizeStep * 2,
+        'padding-1.5': baseSize - sizeStep - sizeStep / 2,
+        'padding-2': baseSize - sizeStep,
+        'padding-2.5': baseSize - sizeStep / 2,
+        'padding-3': baseSize,
+        'padding-4': baseSize + sizeStep,
+        'padding-5': baseSize + sizeStep * 2,
+        'padding-6': baseSize + sizeStep * 3,
+        'size-2xl': '',
+        'size-lg': '',
+        'size-md': '',
+        'size-sm': '',
+        'size-xl': '',
+        'fontSize-2xl': seed.fontSize / fontUnit + 0.375,
+        'fontSize-xl': seed.fontSize / fontUnit + 0.25,
+        'fontSize-lg': seed.fontSize / fontUnit + 0.125,
+        'fontSize-base': seed.fontSize / fontUnit,
+        'fontSize-sm': seed.fontSize / fontUnit - 0.125,
+        'fontSize-xs': seed.fontSize / fontUnit - 0.25,
+        'lineHeight-2xl': seed.lineHeight + 0.75,
+        'lineHeight-xl': seed.lineHeight + 0.5,
+        'lineHeight-lg': seed.lineHeight + 0.25,
+        'lineHeight-base': seed.lineHeight,
+        'lineHeight-sm': seed.lineHeight - 0.25,
+        'lineHeight-xs': seed.lineHeight - 0.5,
         screenMaxSm: 640,
         screenMaxMd: 768,
         screenMaxLg: 1024,
         screenMaxXl: 1280,
-    }
+    };
 
     return {
         ...size,
-        ...options
-    }
+        ...options,
+    };
 }
 
 export function genColorStyles(seed: SeedMap, options: Partial<ColorMap>): ColorMap {
@@ -85,86 +86,92 @@ export function genColorStyles(seed: SeedMap, options: Partial<ColorMap>): Color
         colorActivePrimary: genColors(seed.colorPrimary, -0.2),
         colorActiveSuccess: genColors(seed.colorSuccess, -0.2),
         colorActiveWarning: genColors(seed.colorWarning, -0.2),
-        colorDisable: "rgba(0, 0, 0, 0.12)",
-        colorDisableText: "rgba(0, 0, 0, 0.25)",
+        colorDisable: 'rgba(0, 0, 0, 0.12)',
+        colorDisableText: 'rgba(0, 0, 0, 0.25)',
         colorHoverBase: '#f5f5f5',
         colorHoverError: genColors(seed.colorError, 8),
         colorHoverInfo: genColors(seed.colorInfo, 8),
         colorHoverPrimary: genColors(seed.colorPrimary, 8),
         colorHoverSuccess: genColors(seed.colorSuccess, 8),
-        colorHoverWarning:  genColors(seed.colorWarning, 8),
+        colorHoverWarning: genColors(seed.colorWarning, 8),
         colorErrorText: seed.colorError,
         colorInfoText: seed.colorInfo,
         colorPrimaryText: seed.colorPrimary,
         colorSuccessText: seed.colorSuccess,
         colorWarningText: seed.colorWarning,
-        colorTextSecondary: "rgba(0, 0, 0, 0.70)",
-        colorTextTertiary: "rgba(0, 0, 0, 0.50)",
-        colorTextPlaceholder: "rgba(0, 0, 0, 0.25)",
+        colorTextSecondary: 'rgba(0, 0, 0, 0.70)',
+        colorTextTertiary: 'rgba(0, 0, 0, 0.50)',
+        colorTextPlaceholder: 'rgba(0, 0, 0, 0.25)',
         colorBorderBase: '#d2d3d9', //d2d3d9 // e6e9ee - old
         colorShadowError: seed.colorError + '20',
         colorShadowInfo: seed.colorInfo + '20',
         colorShadowPrimary: seed.colorPrimary + '20',
         colorShadowSuccess: seed.colorSuccess + '20',
         colorShadowWarning: seed.colorWarning + '20',
-    }
+    };
 
     return {
         ...color,
-        ...options
-    }
+        ...options,
+    };
 }
 
-const componentKeys: ComponentNames[] = ["Button", "Input", "Toaster", "Card", "Select", "Modal", "Step", 'Accordion' ,"Global"]
+const componentKeys: ComponentNames[] = [
+    'Button',
+    'Input',
+    'Toaster',
+    'Card',
+    'Select',
+    'Modal',
+    'Step',
+    'Accordion',
+    'Global',
+];
 function genComponents(
     seed: SeedMap,
     color: ColorMap,
     size: SizeMap,
-    options?: OverrideComponentsPartial
+    options?: OverrideComponentsPartial,
 ): OverrideComponents {
     const components: OverrideComponents = {} as OverrideComponents;
-    componentKeys.forEach(el =>
-        components[el] = {
-            ...seed,
-            ...size,
-            ...color,
-            ...defaultComponents[el],
-            ...options?.[el]
-        }
-    )
+    componentKeys.forEach(
+        (el) =>
+            (components[el] = {
+                ...seed,
+                ...size,
+                ...color,
+                ...defaultComponents[el],
+                ...options?.[el],
+            }),
+    );
 
     return components;
 }
 
 const themePresets: ThemePresets = {
     dark: {
-        seed: dark.seedMap
+        seed: dark.seedMap,
     },
     compact: {
         seed: compact.seedMap,
-        size: compact.sizeMap
+        size: compact.sizeMap,
     },
-    default: {}
-}
+    default: {},
+};
 
-export function createTheme(
-    themeName: ThemeNames,
-    options?: StyleMap,
-    compOptions?: OverrideComponentsPartial
-): Theme {
-
+export function createTheme(themeName: ThemeNames, options?: StyleMap, compOptions?: OverrideComponentsPartial): Theme {
     const seed: SeedMap = {
         ...defaultSeed,
         ...themePresets?.[themeName].seed,
-        ...options?.seed
-    }
+        ...options?.seed,
+    };
 
-    const size: SizeMap = genSizeStyles(seed, {...themePresets?.[themeName].size, ...options?.size});
-    const color: ColorMap = genColorStyles(seed, {...themePresets?.[themeName].color, ...options?.color});
+    const size: SizeMap = genSizeStyles(seed, { ...themePresets?.[themeName].size, ...options?.size });
+    const color: ColorMap = genColorStyles(seed, { ...themePresets?.[themeName].color, ...options?.color });
 
     const components: OverrideComponents = genComponents(seed, color, size, compOptions);
 
     return {
-        ...components
-    }
+        ...components,
+    };
 }
