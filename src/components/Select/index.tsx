@@ -76,9 +76,9 @@ const BaseSelect: FC<SelectProps> = ({ options, defaultSelected, multiple, shape
         selectRef.current?.addEventListener('keydown', KeyboardEventHandler);
 
         return () => {
-            selectRef.current?.removeEventListener('keydown', KeyboardEventHandler);
+            selectRef.current?.removeEventListener('keydown', KeyboardEventHandler); // eslint-disable-line
         };
-    }, [isShow, highlightedIndex, options, toggleOption]);
+    }, [isShow, highlightedIndex, options]); // eslint-disable-line
 
     const renderedOptions: React.ReactNode = options.map((option, index) => {
         const isSelected = selected.findIndex((selectedOption) => selectedOption.value === option.value) !== -1;

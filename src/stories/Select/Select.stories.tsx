@@ -29,7 +29,7 @@ export default {
     argTypes: {
         size: {
             options: ['Small', 'Medium', 'Large'],
-            description: 'Переключатель мульти и сингл режима',
+            description: 'Изменяет размер компонента',
             control: { type: 'radio' },
         },
         shape: {

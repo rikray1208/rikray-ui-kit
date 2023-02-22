@@ -55,7 +55,7 @@ const Modal: FC<PropsWithChildren<ModalProps>> = (props) => {
         modalRef.current?.addEventListener('keydown', EscHandler, true);
 
         return () => {
-            modalRef.current?.removeEventListener('keydown', EscHandler);
+            modalRef.current?.removeEventListener('keydown', EscHandler); // eslint-disable-line
         };
     });
 
