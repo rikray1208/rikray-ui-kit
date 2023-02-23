@@ -8,4 +8,5 @@ export { default as Select } from './components/Select';
 export { default as Step } from './components/Step';
 export { default as Modal } from './components/Modal';
 export { default as Accordion } from './components/Accordion';
+export { default as Divider } from './components/Divider';
 export { default as ThemeProvider } from './theme/themes/ThemeProvider';

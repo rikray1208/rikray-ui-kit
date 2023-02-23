@@ -16,6 +16,7 @@ interface StepStyles {
     descriptionWidth?: number;
     descriptionVerticalWidth?: number;
 }
+interface DividerStyles {} // eslint-disable-line
 interface InputStyles {} // eslint-disable-line
 interface CardStyles {} // eslint-disable-line
 interface AccordionStyles {} // eslint-disable-line
@@ -29,6 +30,7 @@ export interface ComponentMap {
     Modal: ModalStyles;
     Step: StepStyles;
     Accordion: AccordionStyles;
+    Divider: DividerStyles;
     Global: object;
 }
 

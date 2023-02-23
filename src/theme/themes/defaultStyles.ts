@@ -62,6 +62,6 @@ export const defaultComponents: ComponentMap = {
         descriptionVerticalWidth: 350,
     },
     Accordion: {},
-
+    Divider: {},
     Global: {},
 };

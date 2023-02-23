@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Divider should return a Divider 1`] = `
+<div
+  className="sc-kMjNwy guHMzt"
+>
+  <div
+    className="sc-ilhmMj fPBMgh"
+  />
+  <div
+    className="sc-ilhmMj fPBMgh"
+  />
+</div>
+`;
+
+exports[`Divider should return a Divider with left title 1`] = `
+<div
+  className="sc-kMjNwy guHMzt"
+>
+  <div
+    className="sc-ilhmMj fpcCpj"
+  />
+  <span
+    className="sc-jIRcFI cafQor"
+  >
+    Title
+  </span>
+  <div
+    className="sc-ilhmMj fpcCpj"
+  />
+</div>
+`;
+
+exports[`Divider should return a Divider with right title 1`] = `
+<div
+  className="sc-kMjNwy guHMzt"
+>
+  <div
+    className="sc-ilhmMj csdLvb"
+  />
+  <span
+    className="sc-jIRcFI erHcis"
+  >
+    Title
+  </span>
+  <div
+    className="sc-ilhmMj csdLvb"
+  />
+</div>
+`;
+
+exports[`Divider should return a Divider with title 1`] = `
+<div
+  className="sc-kMjNwy guHMzt"
+>
+  <div
+    className="sc-ilhmMj fPBMgh"
+  />
+  <span
+    className="sc-jIRcFI DanrR"
+  >
+    Title
+  </span>
+  <div
+    className="sc-ilhmMj fPBMgh"
+  />
+</div>
+`;
+
+exports[`Divider should return a dashed Divider 1`] = `
+<div
+  className="sc-kMjNwy guHMzt"
+>
+  <div
+    className="sc-ilhmMj eJsRUv"
+  />
+  <div
+    className="sc-ilhmMj eJsRUv"
+  />
+</div>
+`;
+
+exports[`Divider should return a vertical Divider 1`] = `
+<div
+  className="sc-kMjNwy fYTzZa"
+/>
+`;

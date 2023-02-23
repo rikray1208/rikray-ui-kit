@@ -125,6 +125,7 @@ const componentKeys: ComponentNames[] = [
     'Modal',
     'Step',
     'Accordion',
+    'Divider',
     'Global',
 ];
 function genComponents(
