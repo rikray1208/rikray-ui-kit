@@ -55,7 +55,7 @@ export const MenuList: FC<MenuProps> = ({ list, onSelect, defaultSelectedItem })
             const activeItems = [...getMenuPatents(defaultSelectedItem, state.globalList), defaultSelectedItem];
             dispatch({ type: 'add', payload: activeItems });
         }
-    }, [defaultSelectedItem]);
+    }, [defaultSelectedItem]); // eslint-disable-line
 
     return (
         <StyledMenu className={'Menu'}>

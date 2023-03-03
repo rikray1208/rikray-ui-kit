@@ -1,4 +1,4 @@
-import React, { FC, PropsWithChildren, useState } from 'react';
+import React, { FC } from 'react';
 
 import { MenuContext, MenuReducer } from './index';
 

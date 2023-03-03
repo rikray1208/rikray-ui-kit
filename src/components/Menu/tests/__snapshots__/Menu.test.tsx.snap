@@ -1,0 +1,291 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Menu should return a Menu 1`] = `
+<ul
+  className="sc-hhOBVt dPKplo Menu"
+>
+  <li
+    className="sc-gYbzsP imrgbM MenuItem  ItemGroup"
+    onClick={[Function]}
+  >
+    <span
+      className="sc-cCjUiG dehrLs"
+    >
+      Getting Started
+    </span>
+  </li>
+  <li
+    className="sc-gYbzsP iiYEgl MenuItem  "
+    onClick={[Function]}
+  >
+    <span
+      className="sc-cCjUiG dehrLs"
+    >
+      Guides
+      <svg
+        className="lucide lucide-chevron-right"
+        fill="none"
+        height={16}
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        viewBox="0 0 24 24"
+        width={16}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <polyline
+          points="9 18 15 12 9 6"
+        />
+      </svg>
+    </span>
+    <ul
+      className="sc-hhOBVt dPKplo Menu"
+    >
+      <li
+        className="sc-gYbzsP cxSJwU MenuItem  "
+        onClick={[Function]}
+      >
+        <span
+          className="sc-cCjUiG dehrLs"
+        >
+          Start new project
+        </span>
+      </li>
+    </ul>
+  </li>
+  <li
+    className="sc-gYbzsP iiYEgl MenuItem  "
+    onClick={[Function]}
+  >
+    <span
+      className="sc-cCjUiG dehrLs"
+    >
+      Components
+      <svg
+        className="lucide lucide-chevron-right"
+        fill="none"
+        height={16}
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        viewBox="0 0 24 24"
+        width={16}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <polyline
+          points="9 18 15 12 9 6"
+        />
+      </svg>
+    </span>
+    <ul
+      className="sc-hhOBVt dPKplo Menu"
+    >
+      <li
+        className="sc-gYbzsP kMqVUh MenuItem  ItemGroup"
+        onClick={[Function]}
+      >
+        <span
+          className="sc-cCjUiG dehrLs"
+        >
+          <div
+            className="sc-kMjNwy eedxQV"
+            style={
+              {
+                "marginBottom": 6,
+                "width": "100%",
+              }
+            }
+          >
+            <div
+              className="sc-ilhmMj jRudac"
+              disabled={true}
+            />
+            <div
+              className="sc-ilhmMj jRudac"
+              disabled={true}
+            />
+          </div>
+          Navigation
+        </span>
+      </li>
+      <li
+        className="sc-gYbzsP cxSJwU MenuItem  "
+        onClick={[Function]}
+      >
+        <span
+          className="sc-cCjUiG dehrLs"
+        >
+          Menu
+        </span>
+      </li>
+      <li
+        className="sc-gYbzsP cxSJwU MenuItem  "
+        onClick={[Function]}
+      >
+        <span
+          className="sc-cCjUiG dehrLs"
+        >
+          Step
+        </span>
+      </li>
+    </ul>
+  </li>
+  <li
+    className="sc-gYbzsP iiYEgl MenuItem  "
+    onClick={[Function]}
+  >
+    <span
+      className="sc-cCjUiG dehrLs"
+    >
+      Themes
+    </span>
+  </li>
+</ul>
+`;
+
+exports[`Menu should return a Menu with default selected item 1`] = `
+<ul
+  className="sc-hhOBVt dPKplo Menu"
+>
+  <li
+    className="sc-gYbzsP imrgbM MenuItem  ItemGroup"
+    onClick={[Function]}
+  >
+    <span
+      className="sc-cCjUiG dehrLs"
+    >
+      Getting Started
+    </span>
+  </li>
+  <li
+    className="sc-gYbzsP iiYEgl MenuItem  "
+    onClick={[Function]}
+  >
+    <span
+      className="sc-cCjUiG dehrLs"
+    >
+      Guides
+      <svg
+        className="lucide lucide-chevron-right"
+        fill="none"
+        height={16}
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        viewBox="0 0 24 24"
+        width={16}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <polyline
+          points="9 18 15 12 9 6"
+        />
+      </svg>
+    </span>
+    <ul
+      className="sc-hhOBVt dPKplo Menu"
+    >
+      <li
+        className="sc-gYbzsP cxSJwU MenuItem  "
+        onClick={[Function]}
+      >
+        <span
+          className="sc-cCjUiG dehrLs"
+        >
+          Start new project
+        </span>
+      </li>
+    </ul>
+  </li>
+  <li
+    className="sc-gYbzsP iiYEgl MenuItem  "
+    onClick={[Function]}
+  >
+    <span
+      className="sc-cCjUiG dehrLs"
+    >
+      Components
+      <svg
+        className="lucide lucide-chevron-right"
+        fill="none"
+        height={16}
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        viewBox="0 0 24 24"
+        width={16}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <polyline
+          points="9 18 15 12 9 6"
+        />
+      </svg>
+    </span>
+    <ul
+      className="sc-hhOBVt dPKplo Menu"
+    >
+      <li
+        className="sc-gYbzsP kMqVUh MenuItem  ItemGroup"
+        onClick={[Function]}
+      >
+        <span
+          className="sc-cCjUiG dehrLs"
+        >
+          <div
+            className="sc-kMjNwy eedxQV"
+            style={
+              {
+                "marginBottom": 6,
+                "width": "100%",
+              }
+            }
+          >
+            <div
+              className="sc-ilhmMj jRudac"
+              disabled={true}
+            />
+            <div
+              className="sc-ilhmMj jRudac"
+              disabled={true}
+            />
+          </div>
+          Navigation
+        </span>
+      </li>
+      <li
+        className="sc-gYbzsP cxSJwU MenuItem  "
+        onClick={[Function]}
+      >
+        <span
+          className="sc-cCjUiG dehrLs"
+        >
+          Menu
+        </span>
+      </li>
+      <li
+        className="sc-gYbzsP cxSJwU MenuItem  "
+        onClick={[Function]}
+      >
+        <span
+          className="sc-cCjUiG dehrLs"
+        >
+          Step
+        </span>
+      </li>
+    </ul>
+  </li>
+  <li
+    className="sc-gYbzsP iiYEgl MenuItem  "
+    onClick={[Function]}
+  >
+    <span
+      className="sc-cCjUiG dehrLs"
+    >
+      Themes
+    </span>
+  </li>
+</ul>
+`;
