@@ -1,0 +1,238 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TabSwitcher should return a Medium TabSwitcher 1`] = `
+<div
+  className="sc-cjibBx jnFkqj"
+>
+  <ul
+    className="sc-jcMfQk dDEEna"
+  >
+    <li
+      className="sc-cabOPr iATa-Dz Active"
+      onClick={[Function]}
+      size="Medium"
+    >
+      First
+    </li>
+    <li
+      className="sc-cabOPr iATa-Dz"
+      onClick={[Function]}
+      size="Medium"
+    >
+      Second
+    </li>
+    <li
+      className="sc-cabOPr iATa-Dz"
+      onClick={[Function]}
+      size="Medium"
+    >
+      Third
+    </li>
+  </ul>
+  <p
+    style={
+      {
+        "margin": 0,
+      }
+    }
+  >
+    This is the first item.
+  </p>
+</div>
+`;
+
+exports[`TabSwitcher should return a Small TabSwitcher 1`] = `
+<div
+  className="sc-cjibBx jnFkqj"
+>
+  <ul
+    className="sc-jcMfQk dDEEna"
+  >
+    <li
+      className="sc-cabOPr fpvFsY Active"
+      onClick={[Function]}
+      size="Small"
+    >
+      First
+    </li>
+    <li
+      className="sc-cabOPr fpvFsY"
+      onClick={[Function]}
+      size="Small"
+    >
+      Second
+    </li>
+    <li
+      className="sc-cabOPr fpvFsY"
+      onClick={[Function]}
+      size="Small"
+    >
+      Third
+    </li>
+  </ul>
+  <p
+    style={
+      {
+        "margin": 0,
+      }
+    }
+  >
+    This is the first item.
+  </p>
+</div>
+`;
+
+exports[`TabSwitcher should return a TabSwitcher 1`] = `
+<div
+  className="sc-cjibBx jnFkqj"
+>
+  <ul
+    className="sc-jcMfQk dDEEna"
+  >
+    <li
+      className="sc-cabOPr iATa-Dz Active"
+      onClick={[Function]}
+    >
+      First
+    </li>
+    <li
+      className="sc-cabOPr iATa-Dz"
+      onClick={[Function]}
+    >
+      Second
+    </li>
+    <li
+      className="sc-cabOPr iATa-Dz"
+      onClick={[Function]}
+    >
+      Third
+    </li>
+  </ul>
+  <p
+    style={
+      {
+        "margin": 0,
+      }
+    }
+  >
+    This is the first item.
+  </p>
+</div>
+`;
+
+exports[`TabSwitcher should return a bold TabSwitcher 1`] = `
+<div
+  className="sc-cjibBx jnFkqj"
+>
+  <ul
+    className="sc-jcMfQk dDEEna"
+  >
+    <li
+      className="sc-cabOPr fpCetm Active"
+      onClick={[Function]}
+    >
+      First
+    </li>
+    <li
+      className="sc-cabOPr fpCetm"
+      onClick={[Function]}
+    >
+      Second
+    </li>
+    <li
+      className="sc-cabOPr fpCetm"
+      onClick={[Function]}
+    >
+      Third
+    </li>
+  </ul>
+  <p
+    style={
+      {
+        "margin": 0,
+      }
+    }
+  >
+    This is the first item.
+  </p>
+</div>
+`;
+
+exports[`TabSwitcher should return a centered TabSwitcher 1`] = `
+<div
+  className="sc-cjibBx jnFkqj"
+>
+  <ul
+    className="sc-jcMfQk nFVRi"
+  >
+    <li
+      className="sc-cabOPr iATa-Dz Active"
+      onClick={[Function]}
+    >
+      First
+    </li>
+    <li
+      className="sc-cabOPr iATa-Dz"
+      onClick={[Function]}
+    >
+      Second
+    </li>
+    <li
+      className="sc-cabOPr iATa-Dz"
+      onClick={[Function]}
+    >
+      Third
+    </li>
+  </ul>
+  <p
+    style={
+      {
+        "margin": 0,
+      }
+    }
+  >
+    This is the first item.
+  </p>
+</div>
+`;
+
+exports[`TabSwitcher should return a large TabSwitcher 1`] = `
+<div
+  className="sc-cjibBx jnFkqj"
+>
+  <ul
+    className="sc-jcMfQk dDEEna"
+  >
+    <li
+      className="sc-cabOPr mfxPU Active"
+      onClick={[Function]}
+      size="Large"
+    >
+      First
+    </li>
+    <li
+      className="sc-cabOPr mfxPU"
+      onClick={[Function]}
+      size="Large"
+    >
+      Second
+    </li>
+    <li
+      className="sc-cabOPr mfxPU"
+      onClick={[Function]}
+      size="Large"
+    >
+      Third
+    </li>
+  </ul>
+  <p
+    style={
+      {
+        "margin": 0,
+      }
+    }
+  >
+    This is the first item.
+  </p>
+</div>
+`;

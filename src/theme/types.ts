@@ -21,6 +21,7 @@ interface InputStyles {} // eslint-disable-line
 interface CardStyles {} // eslint-disable-line
 interface AccordionStyles {} // eslint-disable-line
 interface MenuStyles {} // eslint-disable-line
+interface TabSwitcherStyles {} // eslint-disable-line
 
 export interface ComponentMap {
     Button: ButtonStyles;
@@ -33,6 +34,7 @@ export interface ComponentMap {
     Accordion: AccordionStyles;
     Divider: DividerStyles;
     Menu: MenuStyles;
+    TabSwitcher: TabSwitcherStyles;
     Global: object;
 }
 

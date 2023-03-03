@@ -129,6 +129,7 @@ const componentKeys: ComponentNames[] = [
     'Accordion',
     'Divider',
     'Menu',
+    'TabSwitcher',
     'Global',
 ];
 function genComponents(

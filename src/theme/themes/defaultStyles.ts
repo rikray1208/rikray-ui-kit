@@ -66,6 +66,7 @@ export const defaultComponents: ComponentMap = {
     },
     Accordion: {},
     Divider: {},
-    Global: {},
     Menu: {},
+    TabSwitcher: {},
+    Global: {},
 };
