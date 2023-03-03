@@ -4,6 +4,7 @@ import { css } from 'styled-components';
 import type { Shape, Size } from '../components/types';
 
 import type { ColorMap, ComponentMap, SeedMap, SizeMap } from '../theme/types';
+import { MenuItem } from '../components/Menu';
 
 type Component = keyof ComponentMap;
 type DefaultColors = 'primary' | 'info' | 'success' | 'warning' | 'error';
@@ -84,4 +85,27 @@ export function setCustomScrollBar() {
             background: rgb(129, 126, 126);
         }
     `;
+}
+
+export function getMenuPatents(targetID: number, list: MenuItem[]) {
+    const parentIds: number[] = [];
+
+    function findParents(node: MenuItem, path: number[]): boolean {
+        if (node.id === targetID) {
+            parentIds.push(...path);
+            return true;
+        } else if (node.children) {
+            for (const child of node.children) {
+                const found = findParents(child, [...path, node.id]);
+                if (found) return true;
+            }
+        }
+        return false;
+    }
+
+    for (const node of list) {
+        findParents(node, []);
+    }
+
+    return parentIds;
 }

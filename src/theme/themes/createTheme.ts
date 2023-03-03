@@ -100,14 +100,16 @@ export function genColorStyles(seed: SeedMap, options: Partial<ColorMap>): Color
         colorSuccessText: seed.colorSuccess,
         colorWarningText: seed.colorWarning,
         colorTextSecondary: 'rgba(0, 0, 0, 0.70)',
-        colorTextTertiary: 'rgba(0, 0, 0, 0.50)',
+        colorTextTertiary: 'rgba(0, 0, 0, 0.40)',
+        colorTextHeading: 'rgba(0, 0, 0, 0.82)',
         colorTextPlaceholder: 'rgba(0, 0, 0, 0.25)',
         colorBorderBase: '#d2d3d9', //d2d3d9 // e6e9ee - old
-        colorShadowError: seed.colorError + '20',
-        colorShadowInfo: seed.colorInfo + '20',
-        colorShadowPrimary: seed.colorPrimary + '20',
-        colorShadowSuccess: seed.colorSuccess + '20',
-        colorShadowWarning: seed.colorWarning + '20',
+        colorBorderSecondary: '#f0f0f0',
+        colorShadowError: seed.colorError + '15',
+        colorShadowInfo: seed.colorInfo + '15',
+        colorShadowPrimary: seed.colorPrimary + '15',
+        colorShadowSuccess: seed.colorSuccess + '15',
+        colorShadowWarning: seed.colorWarning + '15',
     };
 
     return {
@@ -126,6 +128,7 @@ const componentKeys: ComponentNames[] = [
     'Step',
     'Accordion',
     'Divider',
+    'Menu',
     'Global',
 ];
 function genComponents(

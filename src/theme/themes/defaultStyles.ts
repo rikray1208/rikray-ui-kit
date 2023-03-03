@@ -20,6 +20,7 @@ export const defaultSeed: SeedMap = {
     fontFamily: `-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'`,
     fontSize: 16,
     lineHeight: 1.5,
+    fontWeightExtraBold: 700,
     fontWeightBold: 500,
     fontWeightLight: 300,
 
@@ -30,10 +31,12 @@ export const defaultSeed: SeedMap = {
     sizeStep: 2.5,
 
     transitionEaseInOut: 'cubic-bezier(0.4, 0, 0.2, 1)',
+    transitionEaseIn: 'cubic-bezier(1, 0.15, 1, 1)',
+    transitionEaseOut: 'cubic-bezier(0, 1, 0.3, 1)',
 
     durationFast: 100,
     durationBase: 200,
-    durationSlow: 400,
+    durationSlow: 500,
 
     shadowWidthBase: 2,
     boxShadowBase: 'rgba(100, 100, 111, 0.2) 0 7px 29px 0',
@@ -64,4 +67,5 @@ export const defaultComponents: ComponentMap = {
     Accordion: {},
     Divider: {},
     Global: {},
+    Menu: {},
 };

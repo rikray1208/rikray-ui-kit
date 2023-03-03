@@ -20,6 +20,7 @@ interface DividerStyles {} // eslint-disable-line
 interface InputStyles {} // eslint-disable-line
 interface CardStyles {} // eslint-disable-line
 interface AccordionStyles {} // eslint-disable-line
+interface MenuStyles {} // eslint-disable-line
 
 export interface ComponentMap {
     Button: ButtonStyles;
@@ -31,6 +32,7 @@ export interface ComponentMap {
     Step: StepStyles;
     Accordion: AccordionStyles;
     Divider: DividerStyles;
+    Menu: MenuStyles;
     Global: object;
 }
 
@@ -64,10 +66,12 @@ export interface ColorMap {
     colorErrorText: string;
     colorInfoText: string;
     colorWarningText: string;
-    colorTextPlaceholder: string;
     colorTextSecondary: string;
     colorTextTertiary: string;
+    colorTextHeading: string;
+    colorTextPlaceholder: string;
     colorBorderBase: string;
+    colorBorderSecondary: string;
 
     colorShadowPrimary: string;
     colorShadowSuccess: string;
@@ -143,6 +147,7 @@ export interface SeedMap {
     fontFamily: string;
     fontSize: number;
     lineHeight: number;
+    fontWeightExtraBold: number;
     fontWeightBold: number;
     fontWeightLight: number;
 
@@ -153,6 +158,8 @@ export interface SeedMap {
     sizeStep: number;
 
     transitionEaseInOut: string;
+    transitionEaseIn: string;
+    transitionEaseOut: string;
 
     durationFast: number;
     durationBase: number;
