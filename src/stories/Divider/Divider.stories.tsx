@@ -1,5 +1,5 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react';
-import React, { FC } from 'react';
+import React from 'react';
 
 import { Divider, ThemeProvider } from '../../index';
 

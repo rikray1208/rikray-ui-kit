@@ -1,4 +1,3 @@
-import { AlertCircle } from 'lucide-react';
 import React, { FC, PropsWithChildren } from 'react';
 
 import { CardContent, CardWrapper, CardHeader, CardFooter } from './StyledCard';
@@ -10,12 +9,12 @@ export interface CardProps {
     header?: string;
     footer?: string;
     shape?: Shape;
+    style?: React.CSSProperties;
 }
 const Card: FC<PropsWithChildren<CardProps>> = ({ children, ...props }) => {
     return (
         <ThemeProvider>
-            <CardWrapper shape={props.shape}>
-                <AlertCircle />
+            <CardWrapper style={props.style} shape={props.shape}>
                 {props.header && <CardHeader>{props.header}</CardHeader>}
                 <CardContent>{children}</CardContent>
                 {props.footer && <CardFooter>{props.footer}</CardFooter>}
@@ -25,7 +24,6 @@ const Card: FC<PropsWithChildren<CardProps>> = ({ children, ...props }) => {
 };
 
 Card.defaultProps = {
-    header: 'Card title',
     children: <p style={{ margin: 0 }}>Card content...</p>,
     shape: 'SemiRound',
 };

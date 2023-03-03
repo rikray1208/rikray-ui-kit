@@ -67,7 +67,7 @@ export const ItemContent = styled.div<{ show: boolean }>`
         overflow: hidden;
         animation-name: ${show ? expand : collapse};
         animation-duration: ${theme.Accordion.durationSlow + 'ms'};
-        animation-timing-function: ${theme.Accordion.transitionEaseInOut};
+        animation-timing-function: ${show ? theme.Accordion.transitionEaseIn : theme.Accordion.transitionEaseOut};
         animation-delay: 0ms;
         animation-fill-mode: forwards;
     `}
