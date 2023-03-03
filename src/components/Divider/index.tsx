@@ -16,22 +16,31 @@ export interface DividerProps {
     dashed?: boolean;
     space?: number;
     sideGap?: number;
+    disabled?: boolean;
     children?: React.ReactNode;
+    style?: React.CSSProperties;
 }
 
 const Divider: FC<DividerProps> = ({ children, ...props }) => {
-    const { titlePosition = 'Center', dashed = false, vertical = false, space = 10, sideGap = 20 } = props;
+    const {
+        titlePosition = 'Center',
+        dashed = false,
+        vertical = false,
+        space = 10,
+        sideGap = 20,
+        disabled = false,
+    } = props;
     return (
-        <DividerWrapper vertical={vertical}>
+        <DividerWrapper style={props.style} vertical={vertical}>
             {!vertical && (
                 <>
-                    <Line sideGap={sideGap} titlePosition={titlePosition} dashed={dashed} />
+                    <Line disabled={disabled} sideGap={sideGap} titlePosition={titlePosition} dashed={dashed} />
                     {children && (
                         <TextContainer titlePosition={titlePosition} space={space}>
                             {children}
                         </TextContainer>
                     )}
-                    <Line sideGap={sideGap} titlePosition={titlePosition} dashed={dashed} />
+                    <Line disabled={disabled} sideGap={sideGap} titlePosition={titlePosition} dashed={dashed} />
                 </>
             )}
         </DividerWrapper>

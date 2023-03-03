@@ -1,4 +1,3 @@
-import React from 'react';
 import styled, { css } from 'styled-components';
 
 import { setFontSize } from '../../utils/helpers';
@@ -24,8 +23,8 @@ export const DividerWrapper = styled.div<Required<Pick<DividerProps, 'vertical'>
               `}
     `}
 `;
-export const Line = styled.div<Required<Pick<DividerProps, 'dashed' | 'titlePosition' | 'sideGap'>>>`
-    ${({ titlePosition, sideGap, dashed, theme }) => css`
+export const Line = styled.div<Required<Pick<DividerProps, 'dashed' | 'titlePosition' | 'sideGap' | 'disabled'>>>`
+    ${({ titlePosition, sideGap, dashed, theme, disabled }) => css`
         height: 1px;
         width: 100%;
 
@@ -35,8 +34,13 @@ export const Line = styled.div<Required<Pick<DividerProps, 'dashed' | 'titlePosi
         &:last-child {
             width: ${titlePosition == 'Right' && sideGap + 'px'};
         }
-        border: ${theme.Divider.borderWidth} ${dashed ? 'dashed' : theme.Divider.borderStyle}
-            ${theme.Divider.colorBorderBase};
+        border-top: ${theme.Divider.borderWidth} ${dashed ? 'dashed' : theme.Divider.borderStyle}
+            ${theme.Divider.colorBorderSecondary};
+
+        ${disabled &&
+        css`
+            border-color: ${theme.Divider.colorDisable};
+        `}
     `};
 `;
 
