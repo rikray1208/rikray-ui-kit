@@ -22,6 +22,11 @@ interface CardStyles {} // eslint-disable-line
 interface AccordionStyles {} // eslint-disable-line
 interface MenuStyles {} // eslint-disable-line
 interface TabSwitcherStyles {} // eslint-disable-line
+interface InputNumberStyles {} // eslint-disable-line
+interface TooltipStyles {
+    arrowSize?: number;
+    colorBgSpotlight?: string;
+}
 
 export interface ComponentMap {
     Button: ButtonStyles;
@@ -35,6 +40,8 @@ export interface ComponentMap {
     Divider: DividerStyles;
     Menu: MenuStyles;
     TabSwitcher: TabSwitcherStyles;
+    Tooltip: TooltipStyles;
+    InputNumber: InputNumberStyles;
     Global: object;
 }
 

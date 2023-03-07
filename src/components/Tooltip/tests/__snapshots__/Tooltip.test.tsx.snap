@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tooltip should return a Tooltip 1`] = `
+<div
+  className="sc-iTFTee ivzIZU"
+  data-id="Some text"
+  data-testid="Tooltip"
+/>
+`;

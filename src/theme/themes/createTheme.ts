@@ -130,6 +130,8 @@ const componentKeys: ComponentNames[] = [
     'Divider',
     'Menu',
     'TabSwitcher',
+    'Tooltip',
+    'InputNumber',
     'Global',
 ];
 function genComponents(

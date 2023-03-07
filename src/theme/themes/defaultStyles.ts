@@ -1,5 +1,4 @@
 import { ComponentMap, SeedMap } from '../types';
-
 export const defaultSeed: SeedMap = {
     colorPrimary: '#3B74F3',
     colorSuccess: '#00AB66',
@@ -68,5 +67,10 @@ export const defaultComponents: ComponentMap = {
     Divider: {},
     Menu: {},
     TabSwitcher: {},
+    InputNumber: {},
+    Tooltip: {
+        arrowSize: 6,
+        colorBgSpotlight: 'rgba(0, 0, 0, 0.85)',
+    },
     Global: {},
 };

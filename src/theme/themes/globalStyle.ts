@@ -3,7 +3,6 @@ export const GlobalStyle = createGlobalStyle`
   ${({ theme }) => css`
       html {
           box-sizing: border-box;
-          font-size: 14px;
       }
       *,
       *:before,
