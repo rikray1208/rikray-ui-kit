@@ -165,7 +165,6 @@ const InputStyles = css<InputProps>`
             border-width: ${theme.Input.borderWidth};
             border-style: ${theme.Input.borderStyle};
             border-color: ${theme.Input.colorBorderBase};
-            color: black;
             outline: none;
             border-color: ${theme.Input.colorBorderBase};
             ${setBorderRadius(postfix, prefix)}

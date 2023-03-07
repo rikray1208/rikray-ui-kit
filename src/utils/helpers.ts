@@ -58,7 +58,7 @@ export function setFontSize(size: Size, Component: Component, options: FontOptio
 export function getColor(
     color: DefaultColors,
     Component: Component,
-    options?: { isHover?: boolean; isActive?: boolean; isShadow: boolean },
+    options?: { isHover?: boolean; isActive?: boolean; isShadow?: boolean },
 ) {
     const validatedColor = color[0].toUpperCase() + color.slice(1);
     const genStr: AllStyles = ('color' +
