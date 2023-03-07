@@ -1,0 +1,343 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputNumber should return a InputNumber 1`] = `
+<div
+  className="sc-iAEawV hAjudQ InputNumberWrapper"
+  shape="SemiRound"
+  size="Medium"
+  tabIndex={1}
+>
+  <input
+    className="sc-eeMvmM dfHLYm NumberInput"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    step={1}
+    type="number"
+    value=""
+  />
+  <div
+    className="sc-cUEOzv kJxOtX Controls"
+  >
+    <svg
+      className="lucide lucide-chevron-up"
+      fill="none"
+      height={16}
+      onClick={[Function]}
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      viewBox="0 0 24 24"
+      width={16}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <polyline
+        points="18 15 12 9 6 15"
+      />
+    </svg>
+    <svg
+      className="lucide lucide-chevron-down"
+      fill="none"
+      height={16}
+      onClick={[Function]}
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      viewBox="0 0 24 24"
+      width={16}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <polyline
+        points="6 9 12 15 18 9"
+      />
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`InputNumber should return a InputNumber with default value 1`] = `
+<div
+  className="sc-iAEawV hAjudQ InputNumberWrapper"
+  shape="SemiRound"
+  size="Medium"
+  tabIndex={1}
+>
+  <input
+    className="sc-eeMvmM dfHLYm NumberInput"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    step={1}
+    type="number"
+    value=""
+  />
+  <div
+    className="sc-cUEOzv kJxOtX Controls"
+  >
+    <svg
+      className="lucide lucide-chevron-up"
+      fill="none"
+      height={16}
+      onClick={[Function]}
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      viewBox="0 0 24 24"
+      width={16}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <polyline
+        points="18 15 12 9 6 15"
+      />
+    </svg>
+    <svg
+      className="lucide lucide-chevron-down"
+      fill="none"
+      height={16}
+      onClick={[Function]}
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      viewBox="0 0 24 24"
+      width={16}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <polyline
+        points="6 9 12 15 18 9"
+      />
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`InputNumber should return a Rectangle InputNumber 1`] = `
+<div
+  className="sc-iAEawV cSlQDg InputNumberWrapper"
+  shape="Rectangle"
+  size="Medium"
+  tabIndex={1}
+>
+  <input
+    className="sc-eeMvmM dfHLYm NumberInput"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    step={1}
+    type="number"
+    value=""
+  />
+  <div
+    className="sc-cUEOzv kJxOtX Controls"
+  >
+    <svg
+      className="lucide lucide-chevron-up"
+      fill="none"
+      height={16}
+      onClick={[Function]}
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      viewBox="0 0 24 24"
+      width={16}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <polyline
+        points="18 15 12 9 6 15"
+      />
+    </svg>
+    <svg
+      className="lucide lucide-chevron-down"
+      fill="none"
+      height={16}
+      onClick={[Function]}
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      viewBox="0 0 24 24"
+      width={16}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <polyline
+        points="6 9 12 15 18 9"
+      />
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`InputNumber should return a Round InputNumber 1`] = `
+<div
+  className="sc-iAEawV gGoIHP InputNumberWrapper"
+  shape="Round"
+  size="Medium"
+  tabIndex={1}
+>
+  <input
+    className="sc-eeMvmM dfHLYm NumberInput"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    step={1}
+    type="number"
+    value=""
+  />
+  <div
+    className="sc-cUEOzv kJxOtX Controls"
+  >
+    <svg
+      className="lucide lucide-chevron-up"
+      fill="none"
+      height={16}
+      onClick={[Function]}
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      viewBox="0 0 24 24"
+      width={16}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <polyline
+        points="18 15 12 9 6 15"
+      />
+    </svg>
+    <svg
+      className="lucide lucide-chevron-down"
+      fill="none"
+      height={16}
+      onClick={[Function]}
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      viewBox="0 0 24 24"
+      width={16}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <polyline
+        points="6 9 12 15 18 9"
+      />
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`InputNumber should return a large InputNumber 1`] = `
+<div
+  className="sc-iAEawV bDeEfn InputNumberWrapper"
+  shape="SemiRound"
+  size="Large"
+  tabIndex={1}
+>
+  <input
+    className="sc-eeMvmM dfHLYm NumberInput"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    step={1}
+    type="number"
+    value=""
+  />
+  <div
+    className="sc-cUEOzv kJxOtX Controls"
+  >
+    <svg
+      className="lucide lucide-chevron-up"
+      fill="none"
+      height={16}
+      onClick={[Function]}
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      viewBox="0 0 24 24"
+      width={16}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <polyline
+        points="18 15 12 9 6 15"
+      />
+    </svg>
+    <svg
+      className="lucide lucide-chevron-down"
+      fill="none"
+      height={16}
+      onClick={[Function]}
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      viewBox="0 0 24 24"
+      width={16}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <polyline
+        points="6 9 12 15 18 9"
+      />
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`InputNumber should return a small InputNumber 1`] = `
+<div
+  className="sc-iAEawV UTcx InputNumberWrapper"
+  shape="SemiRound"
+  size="Small"
+  tabIndex={1}
+>
+  <input
+    className="sc-eeMvmM dfHLYm NumberInput"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    step={1}
+    type="number"
+    value=""
+  />
+  <div
+    className="sc-cUEOzv kJxOtX Controls"
+  >
+    <svg
+      className="lucide lucide-chevron-up"
+      fill="none"
+      height={16}
+      onClick={[Function]}
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      viewBox="0 0 24 24"
+      width={16}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <polyline
+        points="18 15 12 9 6 15"
+      />
+    </svg>
+    <svg
+      className="lucide lucide-chevron-down"
+      fill="none"
+      height={16}
+      onClick={[Function]}
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      viewBox="0 0 24 24"
+      width={16}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <polyline
+        points="6 9 12 15 18 9"
+      />
+    </svg>
+  </div>
+</div>
+`;
